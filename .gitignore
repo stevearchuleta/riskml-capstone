@@ -239,3 +239,4 @@ external/gwp660/*
 # ALLOW FINAL CAPSTONE REPORT + SLIDES PDFs FOR RECRUITER VISIBILITY
 !reports/MScFE_692_Capstone_Report_Archuleta*.pdf
 !reports/MScFE_692_Capstone_Slides_Archuleta*.pdf
+
