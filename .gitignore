@@ -225,3 +225,17 @@ notebooks/dev_*.ipynb
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 !reports/figures/.gitkeep
+
+# =====================================================
+# CAPSTONE STEP 5 ADDITIONS (MINIMAL)
+# =====================================================
+# EXTERNAL / GWP REFERENCE (NOT FOR PUBLIC REPO)
+external/gwp660/*
+!external/gwp660/.gitkeep
+
+# CATCH-ALL FOR .env VARIANTS (production.env, staging.env, etc.)
+*.env
+
+# ALLOW FINAL CAPSTONE REPORT + SLIDES PDFs FOR RECRUITER VISIBILITY
+!reports/MScFE_692_Capstone_Report_Archuleta*.pdf
+!reports/MScFE_692_Capstone_Slides_Archuleta*.pdf
