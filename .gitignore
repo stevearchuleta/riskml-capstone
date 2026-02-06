@@ -1,0 +1,227 @@
+# =============================================================================
+# riskml-capstone .gitignore
+# Python Data Science + Azure ML + Jupyter
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Python
+# -----------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# -----------------------------------------------------------------------------
+# Virtual Environments
+# -----------------------------------------------------------------------------
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.conda/
+*.conda
+
+# -----------------------------------------------------------------------------
+# Jupyter Notebooks
+# -----------------------------------------------------------------------------
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+*.ipynb_checkpoints
+profile_default/
+ipython_config.py
+
+# Jupyter notebook output cells (optional - uncomment if you want clean notebooks)
+# *.ipynb
+
+# -----------------------------------------------------------------------------
+# Data Files (DO NOT COMMIT LARGE DATA)
+# -----------------------------------------------------------------------------
+data/raw/
+data/processed/
+*.parquet
+*.csv
+*.xlsx
+*.xls
+*.feather
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.joblib
+
+# Exception: Keep small reference/config CSVs if needed
+# !data/config/*.csv
+
+# -----------------------------------------------------------------------------
+# Model Artifacts
+# -----------------------------------------------------------------------------
+*.pt
+*.pth
+*.onnx
+*.pkl
+*.joblib
+models/saved/
+mlruns/
+mlartifacts/
+
+# -----------------------------------------------------------------------------
+# IDE and Editors
+# -----------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# -----------------------------------------------------------------------------
+# OS Generated
+# -----------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# -----------------------------------------------------------------------------
+# Testing and Coverage
+# -----------------------------------------------------------------------------
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# -----------------------------------------------------------------------------
+# Documentation
+# -----------------------------------------------------------------------------
+docs/_build/
+site/
+
+# -----------------------------------------------------------------------------
+# Secrets and Credentials (CRITICAL)
+# -----------------------------------------------------------------------------
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+secrets.yaml
+secrets.yml
+credentials.json
+*_credentials.json
+*.secret
+config/local.yaml
+
+# Azure
+.azure/
+azureml-setup.py
+config.json
+
+# AWS
+.aws/
+
+# GCP
+*.json
+!package.json
+!tsconfig.json
+
+# API Keys
+api_keys.txt
+api_keys.yaml
+
+# -----------------------------------------------------------------------------
+# Azure ML
+# -----------------------------------------------------------------------------
+.azureml/
+azureml-models/
+outputs/
+logs/
+.amlignore
+
+# -----------------------------------------------------------------------------
+# Docker
+# -----------------------------------------------------------------------------
+.docker/
+
+# -----------------------------------------------------------------------------
+# Logs and Temp Files
+# -----------------------------------------------------------------------------
+*.log
+*.tmp
+*.temp
+*.bak
+logs/
+temp/
+tmp/
+
+# -----------------------------------------------------------------------------
+# Reports and Exports (keep reports/ folder but ignore large exports)
+# -----------------------------------------------------------------------------
+reports/exports/
+reports/*.pdf
+!reports/figures/
+
+# -----------------------------------------------------------------------------
+# Streamlit
+# -----------------------------------------------------------------------------
+.streamlit/secrets.toml
+
+# -----------------------------------------------------------------------------
+# Project-Specific
+# -----------------------------------------------------------------------------
+# Parquet smoke test files
+parquet_smoke_test.parquet
+test.parquet
+
+# Large artifacts folder (outside git, in parent directory)
+# ../artifacts/
+# ../data_lake/
+
+# Scratch/temporary notebooks
+notebooks/scratch_*.ipynb
+notebooks/temp_*.ipynb
+notebooks/dev_*.ipynb
+
+# -----------------------------------------------------------------------------
+# Keep These (using negation)
+# -----------------------------------------------------------------------------
+!.gitkeep
+!data/.gitkeep
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!reports/figures/.gitkeep
