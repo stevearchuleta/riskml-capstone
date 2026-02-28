@@ -240,3 +240,12 @@ external/gwp660/*
 !reports/MScFE_692_Capstone_Report_Archuleta*.pdf
 !reports/MScFE_692_Capstone_Slides_Archuleta*.pdf
 
+
+# =============================================================
+# CAPSTONE: ALLOW PROJECT DATA, TABLES, AND MODEL ARTIFACTS
+# =============================================================
+!data/raw/*.parquet
+!data/processed/*.parquet
+!reports/tables/*.csv
+!reports/models/*.json
+!docs/feature_contract.csv

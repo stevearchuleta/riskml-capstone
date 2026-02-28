@@ -1,0 +1,167 @@
+feature_column,dag_node,feature_family,ticker,window,inputs,formula,leakage_policy
+MACRO__dtb3,MACRO,macro_risk_inputs,,daily,fred_macro_series,pass_through(DTB3),uses_dates_<=t_only
+MACRO__t10y2y,MACRO,macro_risk_inputs,,daily,fred_macro_series,pass_through(T10Y2Y),uses_dates_<=t_only
+MACRO__vixcls,MACRO,macro_risk_inputs,,daily,fred_macro_series,pass_through(VIXCLS),uses_dates_<=t_only
+ML__pca_ret_pc1__252d,ML,rolling_pca_latent_factor,,252d,cross_section_log_returns,PCA_scores_pc1(standardized_returns_window),uses_dates_<=t_only
+ML__pca_ret_pc2__252d,ML,rolling_pca_latent_factor,,252d,cross_section_log_returns,PCA_scores_pc2(standardized_returns_window),uses_dates_<=t_only
+ML__pca_ret_pc3__252d,ML,rolling_pca_latent_factor,,252d,cross_section_log_returns,PCA_scores_pc3(standardized_returns_window),uses_dates_<=t_only
+MOM__DBC__cum_ret__10d,MOM,price_momentum,DBC,10d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__DBC__cum_ret__21d,MOM,price_momentum,DBC,21d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__DBC__cum_ret__5d,MOM,price_momentum,DBC,5d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__DBC__cum_ret__63d,MOM,price_momentum,DBC,63d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__EEM__cum_ret__10d,MOM,price_momentum,EEM,10d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__EEM__cum_ret__21d,MOM,price_momentum,EEM,21d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__EEM__cum_ret__5d,MOM,price_momentum,EEM,5d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__EEM__cum_ret__63d,MOM,price_momentum,EEM,63d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__EFA__cum_ret__10d,MOM,price_momentum,EFA,10d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__EFA__cum_ret__21d,MOM,price_momentum,EFA,21d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__EFA__cum_ret__5d,MOM,price_momentum,EFA,5d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__EFA__cum_ret__63d,MOM,price_momentum,EFA,63d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__GLD__cum_ret__10d,MOM,price_momentum,GLD,10d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__GLD__cum_ret__21d,MOM,price_momentum,GLD,21d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__GLD__cum_ret__5d,MOM,price_momentum,GLD,5d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__GLD__cum_ret__63d,MOM,price_momentum,GLD,63d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__HYG__cum_ret__10d,MOM,price_momentum,HYG,10d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__HYG__cum_ret__21d,MOM,price_momentum,HYG,21d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__HYG__cum_ret__5d,MOM,price_momentum,HYG,5d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__HYG__cum_ret__63d,MOM,price_momentum,HYG,63d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__IWM__cum_ret__10d,MOM,price_momentum,IWM,10d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__IWM__cum_ret__21d,MOM,price_momentum,IWM,21d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__IWM__cum_ret__5d,MOM,price_momentum,IWM,5d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__IWM__cum_ret__63d,MOM,price_momentum,IWM,63d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__LQD__cum_ret__10d,MOM,price_momentum,LQD,10d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__LQD__cum_ret__21d,MOM,price_momentum,LQD,21d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__LQD__cum_ret__5d,MOM,price_momentum,LQD,5d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__LQD__cum_ret__63d,MOM,price_momentum,LQD,63d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__QQQ__cum_ret__10d,MOM,price_momentum,QQQ,10d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__QQQ__cum_ret__21d,MOM,price_momentum,QQQ,21d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__QQQ__cum_ret__5d,MOM,price_momentum,QQQ,5d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__QQQ__cum_ret__63d,MOM,price_momentum,QQQ,63d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__SPY__cum_ret__10d,MOM,price_momentum,SPY,10d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__SPY__cum_ret__21d,MOM,price_momentum,SPY,21d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__SPY__cum_ret__5d,MOM,price_momentum,SPY,5d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__SPY__cum_ret__63d,MOM,price_momentum,SPY,63d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__TLT__cum_ret__10d,MOM,price_momentum,TLT,10d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__TLT__cum_ret__21d,MOM,price_momentum,TLT,21d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__TLT__cum_ret__5d,MOM,price_momentum,TLT,5d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__TLT__cum_ret__63d,MOM,price_momentum,TLT,63d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__XLE__cum_ret__10d,MOM,price_momentum,XLE,10d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__XLE__cum_ret__21d,MOM,price_momentum,XLE,21d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__XLE__cum_ret__5d,MOM,price_momentum,XLE,5d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__XLE__cum_ret__63d,MOM,price_momentum,XLE,63d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__XLF__cum_ret__10d,MOM,price_momentum,XLF,10d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__XLF__cum_ret__21d,MOM,price_momentum,XLF,21d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__XLF__cum_ret__5d,MOM,price_momentum,XLF,5d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__XLF__cum_ret__63d,MOM,price_momentum,XLF,63d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__XLK__cum_ret__10d,MOM,price_momentum,XLK,10d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__XLK__cum_ret__21d,MOM,price_momentum,XLK,21d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__XLK__cum_ret__5d,MOM,price_momentum,XLK,5d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__XLK__cum_ret__63d,MOM,price_momentum,XLK,63d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__XLV__cum_ret__10d,MOM,price_momentum,XLV,10d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__XLV__cum_ret__21d,MOM,price_momentum,XLV,21d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__XLV__cum_ret__5d,MOM,price_momentum,XLV,5d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+MOM__XLV__cum_ret__63d,MOM,price_momentum,XLV,63d,log_returns,exp(sum(log_return[t-window+1:t])) - 1,uses_dates_<=t_only
+REGIME__vix_high,REGIME,regime_label,,expanding_median_min252,VIXCLS,indicator(VIXCLS > expanding_median(VIXCLS)),uses_dates_<=t_only
+SENT__sentiment_market,SENT,nlp_sentiment,,daily,sentiment_market,pass_through(Sentiment_Market),uses_dates_<=t_only
+TARGET__DBC__fwd_rvol__20d,TARGET,forward_realized_volatility_label,DBC,20d_forward,log_returns_future_window,sqrt(252) * std(log_return[t+1:t+20]),uses_dates_>t_only_label_not_feature
+TARGET__EEM__fwd_rvol__20d,TARGET,forward_realized_volatility_label,EEM,20d_forward,log_returns_future_window,sqrt(252) * std(log_return[t+1:t+20]),uses_dates_>t_only_label_not_feature
+TARGET__EFA__fwd_rvol__20d,TARGET,forward_realized_volatility_label,EFA,20d_forward,log_returns_future_window,sqrt(252) * std(log_return[t+1:t+20]),uses_dates_>t_only_label_not_feature
+TARGET__GLD__fwd_rvol__20d,TARGET,forward_realized_volatility_label,GLD,20d_forward,log_returns_future_window,sqrt(252) * std(log_return[t+1:t+20]),uses_dates_>t_only_label_not_feature
+TARGET__HYG__fwd_rvol__20d,TARGET,forward_realized_volatility_label,HYG,20d_forward,log_returns_future_window,sqrt(252) * std(log_return[t+1:t+20]),uses_dates_>t_only_label_not_feature
+TARGET__IWM__fwd_rvol__20d,TARGET,forward_realized_volatility_label,IWM,20d_forward,log_returns_future_window,sqrt(252) * std(log_return[t+1:t+20]),uses_dates_>t_only_label_not_feature
+TARGET__LQD__fwd_rvol__20d,TARGET,forward_realized_volatility_label,LQD,20d_forward,log_returns_future_window,sqrt(252) * std(log_return[t+1:t+20]),uses_dates_>t_only_label_not_feature
+TARGET__QQQ__fwd_rvol__20d,TARGET,forward_realized_volatility_label,QQQ,20d_forward,log_returns_future_window,sqrt(252) * std(log_return[t+1:t+20]),uses_dates_>t_only_label_not_feature
+TARGET__SPY__fwd_rvol__20d,TARGET,forward_realized_volatility_label,SPY,20d_forward,log_returns_future_window,sqrt(252) * std(log_return[t+1:t+20]),uses_dates_>t_only_label_not_feature
+TARGET__TLT__fwd_rvol__20d,TARGET,forward_realized_volatility_label,TLT,20d_forward,log_returns_future_window,sqrt(252) * std(log_return[t+1:t+20]),uses_dates_>t_only_label_not_feature
+TARGET__XLE__fwd_rvol__20d,TARGET,forward_realized_volatility_label,XLE,20d_forward,log_returns_future_window,sqrt(252) * std(log_return[t+1:t+20]),uses_dates_>t_only_label_not_feature
+TARGET__XLF__fwd_rvol__20d,TARGET,forward_realized_volatility_label,XLF,20d_forward,log_returns_future_window,sqrt(252) * std(log_return[t+1:t+20]),uses_dates_>t_only_label_not_feature
+TARGET__XLK__fwd_rvol__20d,TARGET,forward_realized_volatility_label,XLK,20d_forward,log_returns_future_window,sqrt(252) * std(log_return[t+1:t+20]),uses_dates_>t_only_label_not_feature
+TARGET__XLV__fwd_rvol__20d,TARGET,forward_realized_volatility_label,XLV,20d_forward,log_returns_future_window,sqrt(252) * std(log_return[t+1:t+20]),uses_dates_>t_only_label_not_feature
+VAL__DBC__hml_beta__63d,VAL,rolling_factor_exposure,DBC,63d,"log_returns,HML_factor","beta = cov(returns,HML) / var(HML) over rolling window",uses_dates_<=t_only
+VAL__EEM__hml_beta__63d,VAL,rolling_factor_exposure,EEM,63d,"log_returns,HML_factor","beta = cov(returns,HML) / var(HML) over rolling window",uses_dates_<=t_only
+VAL__EFA__hml_beta__63d,VAL,rolling_factor_exposure,EFA,63d,"log_returns,HML_factor","beta = cov(returns,HML) / var(HML) over rolling window",uses_dates_<=t_only
+VAL__GLD__hml_beta__63d,VAL,rolling_factor_exposure,GLD,63d,"log_returns,HML_factor","beta = cov(returns,HML) / var(HML) over rolling window",uses_dates_<=t_only
+VAL__HYG__hml_beta__63d,VAL,rolling_factor_exposure,HYG,63d,"log_returns,HML_factor","beta = cov(returns,HML) / var(HML) over rolling window",uses_dates_<=t_only
+VAL__IWM__hml_beta__63d,VAL,rolling_factor_exposure,IWM,63d,"log_returns,HML_factor","beta = cov(returns,HML) / var(HML) over rolling window",uses_dates_<=t_only
+VAL__LQD__hml_beta__63d,VAL,rolling_factor_exposure,LQD,63d,"log_returns,HML_factor","beta = cov(returns,HML) / var(HML) over rolling window",uses_dates_<=t_only
+VAL__QQQ__hml_beta__63d,VAL,rolling_factor_exposure,QQQ,63d,"log_returns,HML_factor","beta = cov(returns,HML) / var(HML) over rolling window",uses_dates_<=t_only
+VAL__SPY__hml_beta__63d,VAL,rolling_factor_exposure,SPY,63d,"log_returns,HML_factor","beta = cov(returns,HML) / var(HML) over rolling window",uses_dates_<=t_only
+VAL__TLT__hml_beta__63d,VAL,rolling_factor_exposure,TLT,63d,"log_returns,HML_factor","beta = cov(returns,HML) / var(HML) over rolling window",uses_dates_<=t_only
+VAL__XLE__hml_beta__63d,VAL,rolling_factor_exposure,XLE,63d,"log_returns,HML_factor","beta = cov(returns,HML) / var(HML) over rolling window",uses_dates_<=t_only
+VAL__XLF__hml_beta__63d,VAL,rolling_factor_exposure,XLF,63d,"log_returns,HML_factor","beta = cov(returns,HML) / var(HML) over rolling window",uses_dates_<=t_only
+VAL__XLK__hml_beta__63d,VAL,rolling_factor_exposure,XLK,63d,"log_returns,HML_factor","beta = cov(returns,HML) / var(HML) over rolling window",uses_dates_<=t_only
+VAL__XLV__hml_beta__63d,VAL,rolling_factor_exposure,XLV,63d,"log_returns,HML_factor","beta = cov(returns,HML) / var(HML) over rolling window",uses_dates_<=t_only
+VAL__ff_hml,VAL,raw_factor_return,,daily,fama_french_daily_factors,pass_through(HML),uses_dates_<=t_only
+VAL__ff_mkt_rf,VAL,raw_factor_return,,daily,fama_french_daily_factors,pass_through(Mkt-RF),uses_dates_<=t_only
+VAL__ff_rf,VAL,raw_factor_return,,daily,fama_french_daily_factors,pass_through(RF),uses_dates_<=t_only
+VAL__ff_smb,VAL,raw_factor_return,,daily,fama_french_daily_factors,pass_through(SMB),uses_dates_<=t_only
+VOL__DBC__ewma_vol__span21,VOL,ewma_volatility,DBC,span21,log_returns,"sqrt(252) * ewm_std(log_returns, span=21)",uses_dates_<=t_only
+VOL__DBC__ewma_vol__span63,VOL,ewma_volatility,DBC,span63,log_returns,"sqrt(252) * ewm_std(log_returns, span=63)",uses_dates_<=t_only
+VOL__DBC__rvol__10d,VOL,realized_volatility,DBC,10d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__DBC__rvol__21d,VOL,realized_volatility,DBC,21d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__DBC__rvol__63d,VOL,realized_volatility,DBC,63d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__EEM__ewma_vol__span21,VOL,ewma_volatility,EEM,span21,log_returns,"sqrt(252) * ewm_std(log_returns, span=21)",uses_dates_<=t_only
+VOL__EEM__ewma_vol__span63,VOL,ewma_volatility,EEM,span63,log_returns,"sqrt(252) * ewm_std(log_returns, span=63)",uses_dates_<=t_only
+VOL__EEM__rvol__10d,VOL,realized_volatility,EEM,10d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__EEM__rvol__21d,VOL,realized_volatility,EEM,21d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__EEM__rvol__63d,VOL,realized_volatility,EEM,63d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__EFA__ewma_vol__span21,VOL,ewma_volatility,EFA,span21,log_returns,"sqrt(252) * ewm_std(log_returns, span=21)",uses_dates_<=t_only
+VOL__EFA__ewma_vol__span63,VOL,ewma_volatility,EFA,span63,log_returns,"sqrt(252) * ewm_std(log_returns, span=63)",uses_dates_<=t_only
+VOL__EFA__rvol__10d,VOL,realized_volatility,EFA,10d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__EFA__rvol__21d,VOL,realized_volatility,EFA,21d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__EFA__rvol__63d,VOL,realized_volatility,EFA,63d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__GLD__ewma_vol__span21,VOL,ewma_volatility,GLD,span21,log_returns,"sqrt(252) * ewm_std(log_returns, span=21)",uses_dates_<=t_only
+VOL__GLD__ewma_vol__span63,VOL,ewma_volatility,GLD,span63,log_returns,"sqrt(252) * ewm_std(log_returns, span=63)",uses_dates_<=t_only
+VOL__GLD__rvol__10d,VOL,realized_volatility,GLD,10d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__GLD__rvol__21d,VOL,realized_volatility,GLD,21d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__GLD__rvol__63d,VOL,realized_volatility,GLD,63d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__HYG__ewma_vol__span21,VOL,ewma_volatility,HYG,span21,log_returns,"sqrt(252) * ewm_std(log_returns, span=21)",uses_dates_<=t_only
+VOL__HYG__ewma_vol__span63,VOL,ewma_volatility,HYG,span63,log_returns,"sqrt(252) * ewm_std(log_returns, span=63)",uses_dates_<=t_only
+VOL__HYG__rvol__10d,VOL,realized_volatility,HYG,10d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__HYG__rvol__21d,VOL,realized_volatility,HYG,21d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__HYG__rvol__63d,VOL,realized_volatility,HYG,63d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__IWM__ewma_vol__span21,VOL,ewma_volatility,IWM,span21,log_returns,"sqrt(252) * ewm_std(log_returns, span=21)",uses_dates_<=t_only
+VOL__IWM__ewma_vol__span63,VOL,ewma_volatility,IWM,span63,log_returns,"sqrt(252) * ewm_std(log_returns, span=63)",uses_dates_<=t_only
+VOL__IWM__rvol__10d,VOL,realized_volatility,IWM,10d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__IWM__rvol__21d,VOL,realized_volatility,IWM,21d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__IWM__rvol__63d,VOL,realized_volatility,IWM,63d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__LQD__ewma_vol__span21,VOL,ewma_volatility,LQD,span21,log_returns,"sqrt(252) * ewm_std(log_returns, span=21)",uses_dates_<=t_only
+VOL__LQD__ewma_vol__span63,VOL,ewma_volatility,LQD,span63,log_returns,"sqrt(252) * ewm_std(log_returns, span=63)",uses_dates_<=t_only
+VOL__LQD__rvol__10d,VOL,realized_volatility,LQD,10d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__LQD__rvol__21d,VOL,realized_volatility,LQD,21d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__LQD__rvol__63d,VOL,realized_volatility,LQD,63d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__QQQ__ewma_vol__span21,VOL,ewma_volatility,QQQ,span21,log_returns,"sqrt(252) * ewm_std(log_returns, span=21)",uses_dates_<=t_only
+VOL__QQQ__ewma_vol__span63,VOL,ewma_volatility,QQQ,span63,log_returns,"sqrt(252) * ewm_std(log_returns, span=63)",uses_dates_<=t_only
+VOL__QQQ__rvol__10d,VOL,realized_volatility,QQQ,10d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__QQQ__rvol__21d,VOL,realized_volatility,QQQ,21d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__QQQ__rvol__63d,VOL,realized_volatility,QQQ,63d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__SPY__ewma_vol__span21,VOL,ewma_volatility,SPY,span21,log_returns,"sqrt(252) * ewm_std(log_returns, span=21)",uses_dates_<=t_only
+VOL__SPY__ewma_vol__span63,VOL,ewma_volatility,SPY,span63,log_returns,"sqrt(252) * ewm_std(log_returns, span=63)",uses_dates_<=t_only
+VOL__SPY__rvol__10d,VOL,realized_volatility,SPY,10d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__SPY__rvol__21d,VOL,realized_volatility,SPY,21d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__SPY__rvol__63d,VOL,realized_volatility,SPY,63d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__TLT__ewma_vol__span21,VOL,ewma_volatility,TLT,span21,log_returns,"sqrt(252) * ewm_std(log_returns, span=21)",uses_dates_<=t_only
+VOL__TLT__ewma_vol__span63,VOL,ewma_volatility,TLT,span63,log_returns,"sqrt(252) * ewm_std(log_returns, span=63)",uses_dates_<=t_only
+VOL__TLT__rvol__10d,VOL,realized_volatility,TLT,10d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__TLT__rvol__21d,VOL,realized_volatility,TLT,21d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__TLT__rvol__63d,VOL,realized_volatility,TLT,63d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__XLE__ewma_vol__span21,VOL,ewma_volatility,XLE,span21,log_returns,"sqrt(252) * ewm_std(log_returns, span=21)",uses_dates_<=t_only
+VOL__XLE__ewma_vol__span63,VOL,ewma_volatility,XLE,span63,log_returns,"sqrt(252) * ewm_std(log_returns, span=63)",uses_dates_<=t_only
+VOL__XLE__rvol__10d,VOL,realized_volatility,XLE,10d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__XLE__rvol__21d,VOL,realized_volatility,XLE,21d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__XLE__rvol__63d,VOL,realized_volatility,XLE,63d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__XLF__ewma_vol__span21,VOL,ewma_volatility,XLF,span21,log_returns,"sqrt(252) * ewm_std(log_returns, span=21)",uses_dates_<=t_only
+VOL__XLF__ewma_vol__span63,VOL,ewma_volatility,XLF,span63,log_returns,"sqrt(252) * ewm_std(log_returns, span=63)",uses_dates_<=t_only
+VOL__XLF__rvol__10d,VOL,realized_volatility,XLF,10d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__XLF__rvol__21d,VOL,realized_volatility,XLF,21d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__XLF__rvol__63d,VOL,realized_volatility,XLF,63d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__XLK__ewma_vol__span21,VOL,ewma_volatility,XLK,span21,log_returns,"sqrt(252) * ewm_std(log_returns, span=21)",uses_dates_<=t_only
+VOL__XLK__ewma_vol__span63,VOL,ewma_volatility,XLK,span63,log_returns,"sqrt(252) * ewm_std(log_returns, span=63)",uses_dates_<=t_only
+VOL__XLK__rvol__10d,VOL,realized_volatility,XLK,10d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__XLK__rvol__21d,VOL,realized_volatility,XLK,21d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__XLK__rvol__63d,VOL,realized_volatility,XLK,63d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__XLV__ewma_vol__span21,VOL,ewma_volatility,XLV,span21,log_returns,"sqrt(252) * ewm_std(log_returns, span=21)",uses_dates_<=t_only
+VOL__XLV__ewma_vol__span63,VOL,ewma_volatility,XLV,span63,log_returns,"sqrt(252) * ewm_std(log_returns, span=63)",uses_dates_<=t_only
+VOL__XLV__rvol__10d,VOL,realized_volatility,XLV,10d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__XLV__rvol__21d,VOL,realized_volatility,XLV,21d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
+VOL__XLV__rvol__63d,VOL,realized_volatility,XLV,63d,log_returns,sqrt(252) * std(log_return[t-window+1:t]),uses_dates_<=t_only
