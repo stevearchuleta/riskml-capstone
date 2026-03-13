@@ -1,0 +1,11 @@
+artifact_type,artifact_path,exists_now
+TABLE,/content/riskml-capstone/reports/tables/notebook05_portfolio_weights.csv,True
+TABLE,/content/riskml-capstone/reports/tables/notebook05_portfolio_performance.csv,True
+TABLE,/content/riskml-capstone/reports/tables/notebook05_turnover_summary.csv,True
+TABLE,/content/riskml-capstone/reports/tables/notebook05_monthly_returns.csv,True
+TABLE,/content/riskml-capstone/reports/tables/notebook05_risk_targeting_stability.csv,True
+DATA,/content/riskml-capstone/data/processed/notebook05_portfolio_returns_daily.csv,True
+FIGURE,/content/riskml-capstone/reports/figures/notebook05_equity_curves.png,True
+FIGURE,/content/riskml-capstone/reports/figures/notebook05_drawdown_comparison.png,True
+FIGURE,/content/riskml-capstone/reports/figures/notebook05_realized_vs_target_volatility.png,True
+FIGURE,/content/riskml-capstone/reports/figures/notebook05_weight_timeseries.png,True
