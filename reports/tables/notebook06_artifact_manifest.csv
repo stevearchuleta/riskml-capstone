@@ -1,0 +1,13 @@
+artifact_type,artifact_path,exists_now
+TABLE,/content/riskml-capstone/reports/tables/notebook06_ablation_table.csv,True
+TABLE,/content/riskml-capstone/reports/tables/notebook06_benchmark_comparison.csv,True
+TABLE,/content/riskml-capstone/reports/tables/notebook06_regime_forecast_metrics.csv,True
+TABLE,/content/riskml-capstone/reports/tables/notebook06_regime_portfolio_metrics.csv,True
+TABLE,/content/riskml-capstone/reports/tables/notebook06_stress_drawdown.csv,True
+TABLE,/content/riskml-capstone/reports/tables/notebook06_factor_exposure_entropy.csv,True
+TABLE,/content/riskml-capstone/reports/tables/notebook06_dm_test_results.csv,True
+FIGURE,/content/riskml-capstone/reports/figures/notebook06_ablation_comparison.png,True
+FIGURE,/content/riskml-capstone/reports/figures/notebook06_regime_rmse_comparison.png,True
+FIGURE,/content/riskml-capstone/reports/figures/notebook06_regime_portfolio_comparison.png,True
+FIGURE,/content/riskml-capstone/reports/figures/notebook06_stress_drawdown.png,True
+FIGURE,/content/riskml-capstone/reports/figures/notebook06_factor_exposure_entropy.png,True
