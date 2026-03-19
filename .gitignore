@@ -252,3 +252,8 @@ external/gwp660/*
 !reports/models/*.json
 !docs/feature_contract.csv
 !data/processed/*.csv
+
+
+# NOTEBOOK ARCHIVE AND HTML EXPORTS — LOCAL ONLY, NOT FOR GITHUB
+notebooks/archive/
+notebooks/*.html
