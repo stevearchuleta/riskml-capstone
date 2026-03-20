@@ -1,2 +1,2 @@
-total_trading_days,non_null_days,pct_non_null,first_non_null_date,last_non_null_date,pre_2020_nan_days,post_2020_nan_days,session_note
-2798,1477,52.79,2020-01-03 00:00:00,2026-01-02 00:00:00,1257,64,PREMIUM FULL HISTORY — 2020-01-01 THROUGH TODAY — SINGLE SESSION WITH MAX DEPTH GUARD
+total_trading_days,non_null_days,pct_non_null,first_non_null_date,last_non_null_date,pre_2020_nan_days,post_2020_nan_days,test_partition_days,test_partition_nonnull,test_partition_pct,session_note
+2798,1540,55.04,2020-01-03 00:00:00,2026-02-19 00:00:00,1257,1,504,504,100.0,PREMIUM FULL HISTORY - 2020-01-01 THROUGH 2026-03-18 - SINGLE SESSION WITH MAX DEPTH GUARD AND CONNECTION RETRY
