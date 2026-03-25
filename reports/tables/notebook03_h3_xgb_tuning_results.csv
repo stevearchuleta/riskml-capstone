@@ -1,0 +1,7 @@
+n_estimators,max_depth,learning_rate,subsample,colsample_bytree,reg_lambda,tree_method,avg_rmse_rep_tickers,rep_tickers
+600,3,0.03,0.8,0.8,1.0,hist,0.028263211410344304,"SPY,TLT,GLD,HYG"
+600,4,0.03,0.8,0.8,1.0,hist,0.028560393352396247,"SPY,TLT,GLD,HYG"
+500,4,0.05,0.7,0.9,1.0,hist,0.028612835710952855,"SPY,TLT,GLD,HYG"
+400,3,0.05,0.8,0.8,1.0,hist,0.0286194051531483,"SPY,TLT,GLD,HYG"
+500,3,0.05,0.7,0.9,1.0,hist,0.028671079648713026,"SPY,TLT,GLD,HYG"
+400,4,0.05,0.8,0.8,1.0,hist,0.028721960398930598,"SPY,TLT,GLD,HYG"
