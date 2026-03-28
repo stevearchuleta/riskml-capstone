@@ -5,7 +5,7 @@ DATA,/content/riskml-capstone/data/processed/notebook04_causal_predictions_long.
 TABLE,/content/riskml-capstone/reports/tables/notebook04_dag_gating_summary.csv,True,4857
 TABLE,/content/riskml-capstone/reports/tables/notebook04_effective_window_summary.csv,True,245
 TABLE,/content/riskml-capstone/reports/tables/notebook04_split_summary.csv,True,137
-TABLE,/content/riskml-capstone/reports/tables/causal_vs_baseline_rmse_mae.csv,True,4221
+TABLE,/content/riskml-capstone/reports/tables/notebook04_causal_vs_baseline_rmse_mae.csv,True,4221
 TABLE,/content/riskml-capstone/reports/tables/notebook04_causal_feature_importance.csv,True,36785
 TABLE,/content/riskml-capstone/reports/tables/notebook04_entropy_comparison.csv,True,1113
 TABLE,/content/riskml-capstone/reports/tables/notebook04_prefix_gain_share.csv,True,1358
