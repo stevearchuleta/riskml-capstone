@@ -4,6 +4,7 @@ TABLE,/content/riskml-capstone/reports/tables/notebook05_portfolio_performance.c
 TABLE,/content/riskml-capstone/reports/tables/notebook05_turnover_summary.csv,True
 TABLE,/content/riskml-capstone/reports/tables/notebook05_monthly_returns.csv,True
 TABLE,/content/riskml-capstone/reports/tables/notebook05_risk_targeting_stability.csv,True
+TABLE,/content/riskml-capstone/reports/tables/notebook05_forecast_sanitization_summary.csv,True
 DATA,/content/riskml-capstone/data/processed/notebook05_portfolio_returns_daily.csv,True
 FIGURE,/content/riskml-capstone/reports/figures/notebook05_equity_curves.png,True
 FIGURE,/content/riskml-capstone/reports/figures/notebook05_drawdown_comparison.png,True
