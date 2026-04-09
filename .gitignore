@@ -257,3 +257,6 @@ external/gwp660/*
 # NOTEBOOK ARCHIVE AND HTML EXPORTS — LOCAL ONLY, NOT FOR GITHUB
 notebooks/archive/
 notebooks/*.html
+
+# COLAB SESSION CACHE — LOCAL ONLY, NOT FOR GITHUB
+colab_data_cache.zip
