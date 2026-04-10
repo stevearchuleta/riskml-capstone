@@ -260,3 +260,5 @@ notebooks/*.html
 
 # COLAB SESSION CACHE â€” LOCAL ONLY, NOT FOR GITHUB
 colab_data_cache.zip
+# VS CODE VIRTUAL DOCUMENTS — LOCAL ONLY
+.virtual_documents/
