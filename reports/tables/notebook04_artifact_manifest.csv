@@ -10,7 +10,7 @@ TABLE,/content/riskml-capstone/reports/tables/notebook04_causal_feature_importan
 TABLE,/content/riskml-capstone/reports/tables/notebook04_entropy_comparison.csv,True,1113
 TABLE,/content/riskml-capstone/reports/tables/notebook04_prefix_gain_share.csv,True,1358
 TABLE,/content/riskml-capstone/reports/tables/notebook04_top_feature_comparison.csv,True,3184
-TABLE,/content/riskml-capstone/reports/tables/notebook04_asset_class_comparison.csv,True,812
+TABLE,/content/riskml-capstone/reports/tables/notebook04_asset_class_comparison.csv,True,711
 FIGURE,/content/riskml-capstone/reports/figures/notebook04_dag_figure.png,True,72339
 FIGURE,/content/riskml-capstone/reports/figures/notebook04_forecast_vs_realized_SPY.png,True,283257
 FIGURE,/content/riskml-capstone/reports/figures/notebook04_causal_vs_baseline_rmse_delta.png,True,83815
