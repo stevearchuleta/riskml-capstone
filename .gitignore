@@ -262,3 +262,5 @@ notebooks/*.html
 colab_data_cache.zip
 # VS CODE VIRTUAL DOCUMENTS — LOCAL ONLY
 .virtual_documents/
+
+folder_structure.txt
