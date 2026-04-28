@@ -15,7 +15,10 @@ import pytest
 
 from riskml.storage import load_parquet
 from riskml.etl.market_data import extract_price_panel
-from riskml.features.transforms import compute_momentum_features
+from riskml.features.transforms import (
+    compute_momentum_features,
+    compute_realized_volatility,
+)
 
 
 # ---------------------------------------------------------------------------
@@ -104,3 +107,51 @@ def test_compute_momentum_features_rejects_empty():
     """Empty input raises ValueError (defensive contract)."""
     with pytest.raises(ValueError, match="Empty"):
         compute_momentum_features(pd.DataFrame())
+
+
+# ---------------------------------------------------------------------------
+# Test 5 — compute_realized_volatility produces correctly-scaled DAG-aligned output
+# ---------------------------------------------------------------------------
+def test_compute_realized_volatility():
+    """Realized volatility features have correct shape, naming, scale, and finite values."""
+    rng = np.random.default_rng(692)
+    n_days = 100
+    daily_sigma = 0.01
+    returns = pd.DataFrame(
+        {
+            "SPY": rng.standard_normal(n_days) * daily_sigma,
+            "QQQ": rng.standard_normal(n_days) * daily_sigma,
+        },
+        index=pd.date_range("2024-01-02", periods=n_days, freq="B"),
+    )
+
+    features = compute_realized_volatility(returns, windows=(10, 21))
+
+    assert isinstance(features, pd.DataFrame)
+    assert features.shape == (100, 4)
+    expected_cols = {
+        "VOL__SPY__rvol__10d",
+        "VOL__QQQ__rvol__10d",
+        "VOL__SPY__rvol__21d",
+        "VOL__QQQ__rvol__21d",
+    }
+    assert set(features.columns) == expected_cols
+
+    # Strict warmup: first (window - 1) rows must be NaN
+    assert features["VOL__SPY__rvol__10d"].iloc[:9].isna().all()
+    assert features["VOL__SPY__rvol__21d"].iloc[:20].isna().all()
+
+    # Past warmup: all values must be finite and positive
+    post_warmup = features.iloc[21:]
+    assert post_warmup.notna().all().all()
+    assert np.isfinite(post_warmup.values).all()
+    assert (post_warmup.values > 0).all()
+
+    # Annualization sanity: with daily sigma ~0.01, annualized sigma ~0.01 * sqrt(252) ≈ 0.159
+    # Allow a wide tolerance (random sample of 100 days has noise around the population value)
+    mean_annualized_vol = post_warmup["VOL__SPY__rvol__21d"].mean()
+    expected_scale = daily_sigma * np.sqrt(252)
+    assert 0.10 < mean_annualized_vol < 0.25, (
+        f"Annualized vol {mean_annualized_vol:.4f} outside expected range "
+        f"around {expected_scale:.4f}"
+    )
