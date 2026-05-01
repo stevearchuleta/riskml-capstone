@@ -1,0 +1,61 @@
+# .dockerignore — controls what Docker copies into the build context.
+# Same syntax as .gitignore. Keeps the build fast and the image lean.
+
+# Git internals (large, useless in a running container)
+.git/
+.github/
+.gitignore
+.gitattributes
+
+# Python bytecode and caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Tool caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Jupyter autosave noise
+.ipynb_checkpoints/
+
+# Notebooks and tests are not needed inside the deployed dashboard image.
+# They ship via the git repo for reproducibility, not via the container.
+notebooks/
+tests/
+
+# Python packaging build artifacts
+*.egg-info/
+build/
+dist/
+*.egg
+
+# Local virtual environments — never ship these
+.venv/
+venv/
+env/
+ENV/
+
+# IDE and editor config
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Local log files
+*.log
+
+# Generated repo-tree artifact (already in .gitignore)
+folder_structure.txt
+
+# Docker scaffolding itself does not need to land in the image
+Dockerfile
+.dockerignore
