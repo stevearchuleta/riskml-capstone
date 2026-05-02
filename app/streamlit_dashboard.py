@@ -143,7 +143,7 @@ PAGES = [
 page = st.sidebar.radio("Navigate", PAGES)
 
 st.sidebar.divider()
-st.sidebar.markdown(f"Repo: [`{REPO_ROOT.name}` ↗](https://github.com/stevearchuleta/riskml-capstone)")
+st.sidebar.markdown("Repo: [`riskml-capstone` ↗](https://github.com/stevearchuleta/riskml-capstone)")
 st.sidebar.caption(
     "Read-only dashboard. All numbers derive from saved artifacts produced "
     "by notebooks NB01 through NB06."
@@ -1377,16 +1377,17 @@ elif page == "§7 Engineering & Deployment":
         )
         st.markdown(
             "**Verification results:**\n"
-            "- Image SHA: `c7b0e4a83db7`\n"
+            "- Image SHA: `e19a0368e58f` (Phase 2.5 rebuild, 02 May 2026)\n"
             "- Image size: 1.89 GB (typical for scientific Python; multi-stage "
             "shrink path identified for Phase 5)\n"
             "- Container status verified: `Up (healthy)` — proof the HEALTHCHECK "
             "is operational\n"
             "- Runtime user verified: `whoami` returns `appuser` — proof the "
             "non-root hardening is operational\n"
-            "- The original six-page dashboard rendered correctly inside the "
-            "container. The expanded eight-page Phase 2.5 dashboard must be "
-            "re-verified with a fresh Docker rebuild and container smoke test."
+            "- All eight dashboard pages render correctly inside the Docker "
+            "container at `localhost:8501`. This confirms that the same "
+            "packaged application now verified locally can be promoted to "
+            "Azure Container Apps in Phase 3."
         )
 
     # -----------------------------------------------------------------
