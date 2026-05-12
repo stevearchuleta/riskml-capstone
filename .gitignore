@@ -260,7 +260,10 @@ notebooks/*.html
 
 # COLAB SESSION CACHE â€” LOCAL ONLY, NOT FOR GITHUB
 colab_data_cache.zip
-# VS CODE VIRTUAL DOCUMENTS — LOCAL ONLY
+# VS CODE VIRTUAL DOCUMENTS ï¿½ LOCAL ONLY
 .virtual_documents/
 
 folder_structure.txt
+
+# Federated credential parameter files (working JSON for az ad app federated-credential create)
+federated-credential*.json

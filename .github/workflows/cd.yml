@@ -1,0 +1,154 @@
+# .github/workflows/cd.yml
+#
+# Continuous Deployment for riskml-capstone.
+# Triggered on every push to main after CI succeeds (CI runs in parallel via ci.yml).
+# Builds the Docker image fresh, pushes to ACR with two tags (git SHA + latest),
+# and flips the live Azure Container App revision to the new SHA-tagged image.
+#
+# Authenticates to Azure via federated OIDC -- no client secret, no long-lived
+# credential of any kind. The trust relationship is established by a federated
+# credential on the sp-riskml-capstone-cd service principal pinned to
+# repo:stevearchuleta/riskml-capstone:ref:refs/heads/main.
+
+name: CD
+
+on:
+  push:
+    branches: [main]
+
+# Cancel any in-flight CD run if a newer push arrives.
+# Prevents two concurrent runs from racing to update the Container App revision.
+concurrency:
+  group: cd-${{ github.ref }}
+  cancel-in-progress: true
+
+# Permissions required by this workflow:
+#   id-token: write  -- needed for OIDC token minting (azure/login@v2 reads this token
+#                       to authenticate as the federated service principal). Without
+#                       this permission, azure/login fails with a misleading error.
+#   contents: read   -- needed for actions/checkout@v4 to read the repo at the pushed
+#                       commit. Default for public repos but explicit here as defensive
+#                       engineering.
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  deploy:
+    name: Build, push, and deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      # ----------------------------------------------------------------
+      # Step 1: Check out the repository at the pushed commit.
+      # Default fetch-depth=1 (shallow clone) is fine; we only need the
+      # tree at the SHA that triggered the workflow.
+      # ----------------------------------------------------------------
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      # ----------------------------------------------------------------
+      # Step 2: Compute the short SHA tag from the pushed commit.
+      # GITHUB_SHA is the full 40-character commit hash; we want the first 7
+      # for a human-readable tag. Exposed to subsequent steps as
+      # ${{ steps.vars.outputs.short_sha }}.
+      # ----------------------------------------------------------------
+      - name: Compute image tag from git short SHA
+        id: vars
+        run: |
+          SHORT_SHA=$(echo "${GITHUB_SHA}" | cut -c1-7)
+          echo "short_sha=${SHORT_SHA}" >> "$GITHUB_OUTPUT"
+          echo "Image tag for this deploy: ${SHORT_SHA}"
+
+      # ----------------------------------------------------------------
+      # Step 3: Authenticate to Azure via federated OIDC.
+      # No client-secret. The runner mints an OIDC token whose subject
+      # claim is repo:stevearchuleta/riskml-capstone:ref:refs/heads/main;
+      # Azure AD verifies the claim against the federated credential we
+      # created in Phase 4 Step 1 and issues a short-lived access token.
+      # ----------------------------------------------------------------
+      - name: Azure login (federated OIDC)
+        uses: azure/login@v2
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+      # ----------------------------------------------------------------
+      # Step 4: Log Docker in to ACR using the Azure session above.
+      # az acr login mints a short-lived ACR token from the Azure access
+      # token and hands it to the docker daemon under the magic username
+      # 00000000-0000-0000-0000-000000000000.
+      # ----------------------------------------------------------------
+      - name: Log Docker in to ACR
+        run: az acr login --name riskmlarchuleta
+
+      # ----------------------------------------------------------------
+      # Step 5: Build the Docker image, tagging it with both the git SHA
+      # and 'latest'. Build context is the repo root; Dockerfile is at
+      # the repo root (Phase 2 convention).
+      # No --platform flag needed: GitHub ubuntu-latest runners and ACA
+      # eastus compute are both linux/amd64.
+      # ----------------------------------------------------------------
+      - name: Build Docker image
+        run: |
+          docker build \
+            --tag riskmlarchuleta.azurecr.io/riskml-dashboard:${{ steps.vars.outputs.short_sha }} \
+            --tag riskmlarchuleta.azurecr.io/riskml-dashboard:latest \
+            .
+
+      # ----------------------------------------------------------------
+      # Step 6: Push both tags to ACR.
+      # The SHA tag is the canonical artifact for this commit; 'latest'
+      # is the convenience alias. Each push command uploads only layers
+      # that don't already exist in the registry, so the second push
+      # (latest) is essentially free.
+      # ----------------------------------------------------------------
+      - name: Push Docker image to ACR
+        run: |
+          docker push riskmlarchuleta.azurecr.io/riskml-dashboard:${{ steps.vars.outputs.short_sha }}
+          docker push riskmlarchuleta.azurecr.io/riskml-dashboard:latest
+
+      # ----------------------------------------------------------------
+      # Step 7: Flip the live Container App to the new SHA-tagged image.
+      # ACA creates a new revision (e.g., riskml-dashboard--0000002),
+      # starts it, waits for the startup probe, then atomically routes
+      # traffic from the old revision to the new one. Old revision lingers
+      # briefly for rollback. We pin to the SHA tag (not 'latest') for
+      # reproducibility: this revision is forever bound to this commit.
+      # ----------------------------------------------------------------
+      - name: Update Container App revision
+        run: |
+          az containerapp update \
+            --name riskml-dashboard \
+            --resource-group rg-riskml-capstone \
+            --image riskmlarchuleta.azurecr.io/riskml-dashboard:${{ steps.vars.outputs.short_sha }}
+
+      # ----------------------------------------------------------------
+      # Step 8: Verify the new revision came up healthy.
+      # az containerapp update returns when the control plane accepts the
+      # update, not when the new revision is actually serving. This step
+      # queries the provisioning state and asserts Succeeded. If the new
+      # revision crashed on startup, this step fails and surfaces the
+      # error in the workflow log.
+      # ----------------------------------------------------------------
+      - name: Verify deployment
+        run: |
+          STATE=$(az containerapp show \
+            --name riskml-dashboard \
+            --resource-group rg-riskml-capstone \
+            --query "properties.provisioningState" \
+            --output tsv)
+          REVISION=$(az containerapp show \
+            --name riskml-dashboard \
+            --resource-group rg-riskml-capstone \
+            --query "properties.latestRevisionName" \
+            --output tsv)
+          echo "Provisioning state: ${STATE}"
+          echo "Latest revision:    ${REVISION}"
+          if [ "${STATE}" != "Succeeded" ]; then
+            echo "ERROR: Container App provisioning state is ${STATE}, expected Succeeded"
+            exit 1
+          fi
+          echo "Deployment successful. New revision ${REVISION} is live at:"
+          echo "https://riskml-dashboard.agreeablewave-c95c8817.eastus.azurecontainerapps.io"
