@@ -47,7 +47,7 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
 )
-
+st.error("⚠️ DELIBERATE BAD DEPLOY — Phase 4 Step 4 rollback test in progress ⚠️")
 
 # -------------------------------------------------
 # Path resolution
