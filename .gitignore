@@ -267,3 +267,4 @@ folder_structure.txt
 
 # Federated credential parameter files (working JSON for az ad app federated-credential create)
 federated-credential*.json
+app/style_preview.py

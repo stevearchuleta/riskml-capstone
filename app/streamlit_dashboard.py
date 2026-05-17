@@ -1,9 +1,9 @@
 """
-RiskML Capstone — Streamlit Dashboard (Phase 2.5 v3 Storytelling Expansion).
+RiskML Capstone — Streamlit Dashboard.
 
 Read-only presentation layer for the riskml-capstone project. Reads
 pre-computed artifacts from reports/tables/ and reports/figures/ produced
-by notebooks NB01 through NB07, plus Phase 2.5 harvested dashboard figures.
+by notebooks NB01 through NB07, plus harvested dashboard figures.
 No model training, no data API calls, no overwrites of upstream artifacts.
 
 Dashboard structure (8 sections, 29 tabs):
@@ -121,7 +121,9 @@ st.sidebar.markdown(
     "01 June 2026<br>"
     "WorldQuant University<br>"
     "MScFE<br>"
-    "Master of Science in Financial Engineering<br>"
+    "Master of Science<br>"
+    "in<br>"
+    "Financial Engineering<br>"
     "Steven Archuleta (USA)<br>"
     "Andrew Nilsen (Indonesia)"
     "</div>",
@@ -241,7 +243,7 @@ if page == "§1 Overview":
 
     # -----------------------------------------------------------------
     # 1C Key Finding
-    # Source: corrected lead sentence (Steve, locked 1 May 2026)
+    # Source: corrected lead sentence
     #         + four verdict cards in 2x2 grid.
     # -----------------------------------------------------------------
     with tab_1c:
@@ -339,8 +341,8 @@ elif page == "§2 Data & Feature Engineering":
     st.title("§2 Data & Feature Engineering")
     # Source: AI-drafted connective prose; reviewed and approved by Steve.
     st.markdown(
-        "*The data sources, the asset universe, the engineered feature families, "
-        "the sentiment-coverage boundary, and a one-tab tour of NB01 through NB06.*"
+        "*The data sources  the asset universe · The engineered feature families · "
+        "The sentiment-coverage boundary · A tour of NB01 through NB06.*"
     )
 
     tab_2a, tab_2b, tab_2c, tab_2d, tab_2e = st.tabs(
@@ -699,8 +701,8 @@ elif page == "§4 DAG Constraint Experiment":
     st.title("§4 DAG Constraint Experiment")
     # Source: AI-drafted connective prose; reviewed and approved by Steve.
     st.markdown(
-        "*The gate, the 74 features it allows through, the 77 features it blocks, "
-        "and the matched-pair experiment that isolates the gate's effect.*"
+        "*The gate· The 74 features allowed through · The 77 features blocked · "
+        "The matched-pair experiment that isolates the gate's effect.*"
     )
 
     tab_4a, tab_4b, tab_4c, tab_4d = st.tabs(
@@ -848,8 +850,8 @@ elif page == "§5 Results & Interpretability":
     st.title("§5 Results & Interpretability")
     # Source: AI-drafted connective prose; reviewed and approved by Steve.
     st.markdown(
-        "*Forecast accuracy results, interpretability via Shannon entropy, "
-        "feature-importance evidence, and the three hypothesis verdicts plus "
+        "*Forecast accuracy results, · Interpretability via Shannon entropy · "
+        "Feature-importance evidence · The three hypothesis verdicts plus "
         "one secondary interpretability diagnostic.*"
     )
 
@@ -1071,8 +1073,8 @@ elif page == "§6 Portfolio & Stress Testing":
     st.title("§6 Portfolio & Stress Testing")
     # Source: AI-drafted connective prose; reviewed and approved by Steve.
     st.markdown(
-        "*The inverse-vol weighting logic, the equity curves, the drawdowns, "
-        "and the regime-conditional plus stress-episode evidence.*"
+        "*The inverse-vol weighting logic · The equity curves · The drawdowns · "
+        "The regime-conditional plus stress-episode evidence.*"
     )
 
     tab_6a, tab_6b, tab_6c, tab_6d = st.tabs(
@@ -1261,8 +1263,8 @@ elif page == "§7 Engineering & Deployment":
     st.title("§7 Engineering & Deployment")
     # Source: AI-drafted connective prose; reviewed and approved by Steve.
     st.markdown(
-        "*The riskml/ Python package, the CI test suite, the Docker container, "
-        "and the planned Azure Container Apps deployment.*"
+        "*The riskml/ Python package · The CI test suite · The Docker container · "
+        "Azure Container Apps deployment.*"
     )
 
     tab_7a, tab_7b, tab_7c, tab_7d = st.tabs(
@@ -1270,7 +1272,7 @@ elif page == "§7 Engineering & Deployment":
             "7A · Package Extraction",
             "7B · CI Tests",
             "7C · Docker",
-            "7D · Azure Plan",
+            "7D · Microsoft Azure",
         ]
     )
 
@@ -1279,16 +1281,18 @@ elif page == "§7 Engineering & Deployment":
     # Source: AI-drafted connective prose; reviewed and approved by Steve.
     # -----------------------------------------------------------------
     with tab_7a:
-        st.subheader("riskml/ — From Notebook Research to Reusable Package")
+        st.subheader("riskml/ · From Notebook Research to Reusable Package")
         st.markdown(
             "Research in this capstone happened in notebooks (NB01 through "
-            "NB07). Production code lives in the **riskml/** Python package — "
-            "an installable, importable, testable layer that mirrors the DAG's "
-            "subgraph structure."
+            "NB07).<br>"
+            "Production code lives in the **riskml/** Python package "
+            "(an installable, importable, testable layer that mirrors the "
+            "DAG's subgraph structure).",
+            unsafe_allow_html=True,
         )
         st.markdown(
-            "The package was bootstrapped during Phase 1 Day 1 of the CD plan "
-            "with two extracted functions, one from each DAG subgraph:"
+            "The **riskml/** package contains two extracted functions, "
+            "one from each DAG subgraph:"
         )
         st.markdown(
             "- **`riskml/etl/market_data.py`** — `extract_price_panel()` and "
@@ -1302,13 +1306,12 @@ elif page == "§7 Engineering & Deployment":
             "with automatic local fallback."
         )
         st.info(
-            "**Capstone defense statement:** one feature function was extracted "
-            "from each DAG subgraph — momentum from the return-generation path, "
-            "and realized volatility from the risk-allocation path that feeds "
-            "NB04. The dashboard reads notebook artifacts directly; these "
-            "extracted functions exist as the testable, reusable core of the "
-            "feature pipeline, with extension to remaining feature families "
-            "left as future work."
+            "Each DAG subgraph contributes one feature function: momentum "
+            "from the return-generation path, and realized volatility from "
+            "the risk-allocation path that feeds NB04.<br>"
+            "These functions form the testable core of the feature pipeline.<br>"
+            "The dashboard reads notebook artifacts directly.<br>"
+            "The other feature families remain in notebook form."
         )
 
     # -----------------------------------------------------------------
@@ -1318,114 +1321,526 @@ elif page == "§7 Engineering & Deployment":
     with tab_7b:
         st.subheader("Continuous Integration — GitHub Actions")
         st.markdown(
-            "Every push to `main` triggers a CI workflow that runs:"
+            "Every push to `main` triggers a CI workflow that runs "
+            "**14 deterministic tests** via `pytest`, organized into "
+            "three categories: **smoke tests** (catastrophic-failure "
+            "detection), **pipeline tests** (function-level correctness "
+            "of the `riskml/` package), and **invariant tests** "
+            "(project-wide constants and architectural assertions "
+            "documented in the capstone report)."
         )
         st.markdown(
-            "- **Checkout + Python 3.11 setup** — clean environment for each "
-            "run.\n"
-            "- **`pip install`** — the package and its dependencies.\n"
-            "- **Ruff lint** — code style and quality enforcement.\n"
-            "- **`pytest`** — the deterministic test suite.\n"
-            "- **Smoke test** — a final sanity check confirming the package "
-            "imports cleanly."
+            "The workflow file lives at `.github/workflows/ci.yml`. "
+            "Each run checks out the repository, sets up Python 3.11, "
+            "installs the package and its dependencies, runs Ruff for "
+            "code-style enforcement, executes `pytest`, and finally "
+            "runs a smoke import to confirm the package is reachable "
+            "from a clean environment."
         )
-        st.markdown("**Current test count: 7 deterministic tests passing in CI.**")
-        st.markdown(
-            "- 2 smoke tests (package import, Python version).\n"
-            "- 5 pipeline tests:\n"
-            "    1. `storage.load_parquet` local fallback (uses pytest "
-            "`tmp_path` for hermetic isolation).\n"
-            "    2. `extract_price_panel` realistic MultiIndex input.\n"
-            "    3. `compute_momentum_features` deterministic shape and naming "
-            "(seed 692).\n"
-            "    4. `compute_momentum_features` empty-input guard.\n"
-            "    5. `compute_realized_volatility` annualization, warmup, and "
-            "naming (seed 692)."
+       
+        tab_smoke, tab_pipeline, tab_invariants = st.tabs(
+            ["Smoke Tests", "Pipeline Tests", "Invariant Tests"]
         )
-        st.success(
-            "**CI runs #184 through #187 GREEN** at "
-            "`github.com/stevearchuleta/riskml-capstone/actions`, including "
-            "Phase 1 extractions, Phase 1 Day 2 dashboard, and Phase 2 "
-            "containerization."
-        )
+
+        # --------------------------------------------------
+        # Smoke Tests sub-tab — text only, no SVGs.
+        # --------------------------------------------------
+        with tab_smoke:
+            st.markdown(
+                "Smoke tests are the most basic CI checks. Smoke tests "
+                "catch catastrophic failures (the package is broken, "
+                "the wrong Python version is installed) without "
+                "exercising any specific feature. Smoke tests run first "
+                "in the CI pipeline; if a smoke test fails, no other "
+                "tests run because the package itself is unimportable. "
+                "Two tests live in this category."
+            )
+            st.markdown(
+                "**Smoke Test #1 — Riskml Import function.** Smoke "
+                "Test #1 asserts that `import riskml` succeeds and "
+                "returns a non-`None` module object. The smallest "
+                "possible CI signal: if this test fails, every "
+                "downstream test would fail with the same import "
+                "error, so failing fast here saves time "
+                "and unambiguously surfaces the root cause."
+            )
+            st.markdown(
+                "**Smoke Test #2 — Python Version function.** Smoke "
+                "Test #2 asserts that the Python interpreter on the "
+                "Ubuntu Linux VM runner reports version 3.11 or newer. "
+                "Smoke Test #2 guards against environment drift where "
+                "the CI image silently upgrades or downgrades the "
+                "interpreter mid-project, which would shift the "
+                "installed library versions and could change "
+                "numerical results."
+            )
+            st.caption(
+                "No figures are rendered for the smoke tests — the "
+                "tests themselves are too small to warrant illustration."
+            )
+
+        # --------------------------------------------------
+        # Pipeline Tests sub-tab — 5 tests, 1 SVG each.
+        # --------------------------------------------------
+        with tab_pipeline:
+            st.markdown(
+                "Pipeline tests exercise the actual Python functions "
+                "inside the `riskml/` package. Each pipeline test "
+                "hands the function synthetic (but realistic) input "
+                "data, calls the function, and asserts the output is "
+                "shaped, named, and numerically scaled as expected. "
+                "Five tests live in this category, each exercising one "
+                "extracted function from the riskml package."
+            )
+            st.divider()
+
+            # === Pipeline Test #1 ===
+            st.markdown(
+                "##### Pipeline Test #1 — Storage Round-Trip Local Filesystem Fallback"
+            )
+            st.caption("Storage Local Fallback function")
+            render_figure(
+                "tests/pipeline/1_test_storage_local_fallback"
+                "/3_round_trip_flow.svg"
+            )
+            st.markdown(
+                "Pipeline Test #1 verifies that the storage function "
+                "correctly falls back to local-filesystem reads when "
+                "no Azure Blob Storage connection string is set in the "
+                "environment — the exact configuration that both the "
+                "laptop and the GitHub Actions runner use. The pytest "
+                "`tmp_path` fixture provides a hermetic temporary "
+                "directory unique to this test, so no shared state "
+                "can leak in or out. *Anyone refactoring the Azure "
+                "cloud path could silently break the local-fallback "
+                "branch, and Pipeline Test #1 catches that the moment "
+                "the break happens.*"
+            )
+            st.divider()
+
+            # === Pipeline Test #2 ===
+            st.markdown(
+                "##### Pipeline Test #2 — Price Panel Extraction from yfinance MultiIndex"
+            )
+            st.caption("Extract Price Panel MultiIndex function")
+            render_figure(
+                "tests/pipeline/2_test_extract_price_panel_multiindex"
+                "/2_raw_dataframe_with_multiindex.svg"
+            )
+            st.markdown(
+                "Pipeline Test #2 verifies that the price-panel "
+                "extraction function correctly peels apart yfinance's "
+                "two-level MultiIndex column structure (price-type at "
+                "the outer level, ticker at the inner level) into a "
+                "flat ticker-by-date panel. The test feeds in a "
+                "realistic five-business-day input with both Adjusted "
+                "Close and Volume columns for SPY and QQQ, then "
+                "asserts the output contains only the two "
+                "adjusted-close columns with no missing values. *If "
+                "anyone broke the level-zero selection inside the "
+                "function, the panel would arrive with Volume "
+                "columns leaked in or with the ticker level still "
+                "nested.*"
+            )
+            st.divider()
+
+            # === Pipeline Test #3 ===
+            st.markdown(
+                "##### Pipeline Test #3 — Momentum Features Shape, Naming, and Warmup"
+            )
+            st.caption("Compute Momentum Features function")
+            render_figure(
+                "tests/pipeline/3_test_compute_momentum_features"
+                "/3_momentum_output_structure.svg"
+            )
+            st.markdown(
+                "Pipeline Test #3 verifies that the momentum-features "
+                "function produces deterministic outputs (seed 692) "
+                "with the DAG-aligned `MOM__<ticker>__cumret__<N>d` "
+                "naming convention, the right shape across both "
+                "rolling windows (five-day and twenty-one-day), and "
+                "finite values past the warmup period. The first four "
+                "rows must be `NaN` because the five-day window "
+                "cannot fill them; rows twenty-one onward must be "
+                "entirely non-`NaN`. *Drift in the column-naming "
+                "convention would silently break every downstream DAG "
+                "prefix-gating operation in NB04.*"
+            )
+            st.divider()
+
+            # === Pipeline Test #4 ===
+            st.markdown(
+                "##### Pipeline Test #4 — Defensive Contract Empty Input Rejection"
+            )
+            st.caption("Compute Momentum Features Rejects Empty function")
+            render_figure(
+                "tests/pipeline/4_test_compute_momentum_features_rejects_empty"
+                "/3_defensive_vs_silent.svg"
+            )
+            st.markdown(
+                "Pipeline Test #4 verifies that the momentum-features "
+                "function raises a `ValueError` with the substring "
+                "`Empty` in the error message when given an empty "
+                "DataFrame, rather than silently returning an empty "
+                "result. Defensive engineering rule: a silent return "
+                "on garbage input is the kind of bug that surfaces a "
+                "hundred lines downstream, far from the bug's origin. "
+                "*Pipeline Test #4 makes silent failure structurally "
+                "impossible — the function must speak up at the moment "
+                "of the offense.*"
+            )
+            st.divider()
+
+            # === Pipeline Test #5 ===
+            st.markdown(
+                "##### Pipeline Test #5 — Realized Volatility Annualization Sanity Check"
+            )
+            st.caption("Compute Realized Volatility function")
+            render_figure(
+                "tests/pipeline/5_test_compute_realized_volatility"
+                "/3_annualization_sanity_check.svg"
+            )
+            st.markdown(
+                "Pipeline Test #5 verifies that the realized-volatility "
+                "function produces correctly-shaped outputs with the "
+                "DAG-aligned `VOL__<ticker>__rvol__<N>d` naming, and "
+                "that annualization is correct: with daily sigma "
+                "approximately 0.01, the annualized output must fall "
+                "in the 0.10 to 0.25 range (the expected √252 "
+                "scaling). *If anyone forgets the annualization "
+                "factor, the output lands near 0.01 instead of 0.159 "
+                "and Pipeline Test #5 fails on the next push.*"
+            )
+
+        # --------------------------------------------------
+        # Invariant Tests sub-tab — 1 shared helper + 7 leads.
+        # --------------------------------------------------
+        with tab_invariants:
+            st.markdown(
+                "Invariant tests do not exercise executable code. "
+                "Invariant tests lock in the project-wide constants "
+                "and architectural assertions documented in the M6 "
+                "capstone report. Each invariant test reads either a "
+                "committed notebook source file (as JSON) or a "
+                "committed CSV artifact, then asserts that a specific "
+                "constant appears with a specific value. Seven tests "
+                "live in this category."
+            )
+            st.divider()
+
+            # === Shared helper introduction (rendered once at the top) ===
+            st.markdown(
+                "##### How the invariant tests read notebook source code"
+            )
+            st.caption("Read Notebook Source helper function")
+            render_figure(
+                "tests/invariants/1_test_random_seed_is_locked_at_692_across_all_notebooks"
+                "/1_read_notebook_source_helper.svg"
+            )
+            st.markdown(
+                "Six of the seven invariant tests share a common "
+                "helper function. The helper opens a Jupyter notebook "
+                "(which is internally JSON), concatenates every "
+                "code-cell source into one long string, then returns "
+                "that string for the test to search. Each invariant "
+                "test is, therefore, a regression guard around one "
+                "specific sentence in the capstone report — if the "
+                "report says \"random seed 692\" anywhere, an "
+                "invariant test enforces the claim; if the report "
+                "says \"nine nodes and seven edges,\" an invariant "
+                "test enforces the claim."
+            )
+            st.divider()
+
+            # === Invariant Test #1 ===
+            st.markdown(
+                "##### Invariant Test #1 — Random Seed Locked at 692 Across All Notebooks"
+            )
+            st.caption("Random Seed Is Locked At 692 Across All Notebooks function")
+            render_figure(
+                "tests/invariants/1_test_random_seed_is_locked_at_692_across_all_notebooks"
+                "/2_test_random_seed_regex_anatomy_and_loop.svg"
+            )
+            st.markdown(
+                "Invariant Test #1 verifies that every notebook from "
+                "NB01 through NB06 declares `RANDOM_SEED = 692` and "
+                "nothing else. Invariant Test #1 compiles a regex "
+                "pattern that captures the integer to the right of "
+                "the equals sign, loops across all six notebooks, "
+                "and asserts every captured value equals the literal "
+                "string `'692'`. *Reproducibility is the anchor of "
+                "the entire study — a different seed in any notebook "
+                "would invalidate every empirical claim downstream.*"
+            )
+            st.divider()
+
+            # === Invariant Test #2 ===
+            st.markdown(
+                "##### Invariant Test #2 — Five Core DAG Edges Encoded in NB04"
+            )
+            st.caption("Causal Edges Dict Encodes Five Core Directed Edges function")
+            render_figure(
+                "tests/invariants/2_test_causal_edges_dict_encodes_five_core_directed_edges"
+                "/2_test_causal_edges_dag_architecture.svg"
+            )
+            st.markdown(
+                "Invariant Test #2 verifies that NB04's `CAUSAL_EDGES` "
+                "dictionary literally contains all five core "
+                "information-flow edges of the manual DAG: "
+                "Sentiment→Momentum, Momentum→Returns, "
+                "Value→Returns, Volatility→Risk, and Risk→Allocation. "
+                "Invariant Test #2 searches the notebook source for "
+                "each edge literal as a substring. *If a future edit "
+                "silently removed one of these edges, the DAG figure "
+                "would drift from the report's Table 4 caption, and "
+                "Invariant Test #2 catches the drift before the next "
+                "commit hits `main`.*"
+            )
+            st.divider()
+
+            # === Invariant Test #3 ===
+            st.markdown(
+                "##### Invariant Test #3 — Nine-Node, Seven-Edge DAG Figure Architecture"
+            )
+            st.caption("DAG Figure Has Nine Nodes And Seven Directed Edges function")
+            render_figure(
+                "tests/invariants/3_test_dag_figure_has_nine_nodes_and_seven_directed_edges"
+                "/2_test_dag_figure_complete_architecture.svg"
+            )
+            st.markdown(
+                "Invariant Test #3 verifies that the DAG figure in "
+                "NB04 declares all nine nodes (Sentiment, Momentum, "
+                "Returns, Value, Volatility, Risk, Allocation, Macro, "
+                "Regime) and all seven directed edges (the five core "
+                "edges from Invariant Test #2 plus Macro→Risk and "
+                "Regime→Risk). The capstone report and the figure "
+                "caption explicitly claim these counts. *Any silent "
+                "drift between the figure code and the report's prose "
+                "claim would surface immediately in Invariant Test #3, "
+                "not after the dashboard reaches production.*"
+            )
+            st.divider()
+
+            # === Invariant Test #4 ===
+            st.markdown(
+                "##### Invariant Test #4 — Risk-Stage Gating Allow-List and Forbid-List"
+            )
+            st.caption("Risk Stage Gating Lists Match Report Specification function")
+            render_figure(
+                "tests/invariants/4_test_risk_stage_gating_lists_match_report_specification"
+                "/3_risk_stage_belt_and_suspenders.svg"
+            )
+            st.markdown(
+                "Invariant Test #4 verifies that NB04's risk model "
+                "accepts only the `VOL__`, `MACRO__`, and `REGIME__` "
+                "prefixes (the allow-list) and explicitly forbids "
+                "`MOM__`, `VAL__`, `ML__`, and `SENT__` (the "
+                "forbid-list). Invariant Test #4 asserts both Python "
+                "list literals exist in the notebook source with "
+                "exactly those members. *This is the central causal "
+                "claim of the entire project — if a future "
+                "feature-engineering edit slipped a `MOM__` feature "
+                "past the gate, the H1 hypothesis result would be "
+                "invalidated, and Invariant Test #4 catches the slip "
+                "immediately.*"
+            )
+            st.divider()
+
+            # === Invariant Test #5 ===
+            st.markdown(
+                "##### Invariant Test #5 — 74 Features Retained After Risk-Stage Gating"
+            )
+            st.caption("Risk Stage Feature Count Equals 74 function")
+            render_figure(
+                "tests/invariants/5_test_risk_stage_feature_count_equals_74"
+                "/1_gating_summary_csv_structure.svg"
+            )
+            st.markdown(
+                "Invariant Test #5 verifies that the committed "
+                "gating-summary CSV at "
+                "`reports/tables/notebook04_dag_gating_summary.csv` "
+                "lists exactly 74 features with "
+                "`allowed_for_risk == True`. Invariant Test #5 reads "
+                "the CSV, coerces the boolean column to a clean "
+                "`True`/`False` representation regardless of dtype "
+                "quirks, then sums the trues. *The 74-feature count "
+                "is a frozen empirical constant of the capstone — a "
+                "silent change here would mean either the gating "
+                "logic or the feature inventory has drifted out of "
+                "sync with the report.*"
+            )
+            st.divider()
+
+            # === Invariant Test #6 ===
+            st.markdown(
+                "##### Invariant Test #6 — Asset Class Map XLV Regression Guard"
+            )
+            st.caption("Asset Class Map Assigns Sector Equity Tickers Correctly function")
+            render_figure(
+                "tests/invariants/6_test_asset_class_map_assigns_sector_equity_tickers_correctly"
+                "/4_asset_class_xlv_regression_guard.svg"
+            )
+            st.markdown(
+                "Invariant Test #6 verifies that all four "
+                "sector-equity tickers (XLF, XLK, XLE, and XLV) map "
+                "to `SECTOR_EQUITY` in NB04's `ASSET_CLASS_MAP` "
+                "dictionary. XLV was discovered UNMAPPED early in "
+                "the project, which silently broke sector-level "
+                "aggregation downstream until the bug was caught "
+                "manually. *Invariant Test #6 is the regression guard "
+                "against the XLV bug ever returning — if anyone "
+                "removes XLV from the map again, the next push fails.*"
+            )
+            st.divider()
+
+            # === Invariant Test #7 ===
+            st.markdown(
+                "##### Invariant Test #7 — Fourteen-ETF Universe Locked in NB01"
+            )
+            st.caption("Ticker Universe Contains Fourteen Required ETFs function")
+            render_figure(
+                "tests/invariants/7_test_ticker_universe_contains_fourteen_required_etfs"
+                "/2_ticker_universe_organized_by_asset_class.svg"
+            )
+            st.markdown(
+                "Invariant Test #7 verifies that NB01's `TICKERS` "
+                "list contains exactly the 14 ETFs spanning U.S. "
+                "large-cap equity (SPY, QQQ), small-cap equity "
+                "(IWM), international developed equity (EFA), "
+                "emerging-market equity (EEM), sector equity (XLK, "
+                "XLF, XLE, XLV), Treasuries (TLT), investment-grade "
+                "credit (LQD), high-yield credit (HYG), gold (GLD), "
+                "and broad commodities (DBC). *A silent change to "
+                "the TICKERS list would alter every empirical claim "
+                "downstream — the 2,798-trading-day panel, the "
+                "458,662 sentiment articles, the 152-feature "
+                "engineered matrix, and every backtest result.*"
+            )
 
     # -----------------------------------------------------------------
     # 7C Docker
     # Source: AI-drafted connective prose; reviewed and approved by Steve.
     # -----------------------------------------------------------------
     with tab_7c:
-        st.subheader("Containerization — Local Verification Complete")
+        st.subheader("Containerization")
         st.markdown(
-            "**Phase 2 of the CD plan delivered a working Docker container** "
-            "for this dashboard, verified locally on May 1, 2026."
+            "**The dashboard ships as a Docker container** — a portable, "
+            "reproducible execution environment that runs identically on "
+            "any Linux host with a Docker engine."
         )
         st.markdown(
-            "**Dockerfile design decisions** (numbered for capstone defense):\n"
-            "1. Single-stage build — multi-stage shrink reserved as Phase 5 "
-            "polish.\n"
-            "2. **`python:3.11-slim`** base image — Debian-based, glibc-compatible, "
-            "supports the full scientific Python wheel ecosystem.\n"
-            "3. **Non-root runtime user** (`appuser`, UID 1001) — passes basic "
-            "security review.\n"
-            "4. **HEALTHCHECK** against Streamlit's `/_stcore/health` endpoint "
-            "for local validation.\n"
-            "5. **Layer ordering optimized for cache reuse** — manifest copied "
-            "before code so dependency-only edits don't invalidate the slow "
-            "pip install layer.\n"
-            "6. **`pip install .`** (not editable, not `[dev]`) — installs the "
-            "package as a frozen production artifact."
+            "**Dockerfile design decisions:**\n"
+            "1. **Single-stage build.**\n"
+            "2. **`python:3.11-slim` base image** — Debian-based, "
+            "glibc-compatible.\n"
+            "3. **Non-root runtime user** (`appuser`, UID 1001).\n"
+            "4. **HEALTHCHECK** against Streamlit's `/_stcore/health` "
+            "endpoint.\n"
+            "5. **Layer ordering optimized for cache reuse** — manifest "
+            "copied before source so dependency-only edits skip the "
+            "pip-install layer.\n"
+            "6. **`pip install .`** — installs the package as a frozen "
+            "production artifact."
         )
         st.markdown(
-            "**Verification results:**\n"
-            "- Image SHA: `e19a0368e58f` (Phase 2.5 rebuild, 02 May 2026)\n"
-            "- Image size: 1.89 GB (typical for scientific Python; multi-stage "
-            "shrink path identified for Phase 5)\n"
-            "- Container status verified: `Up (healthy)` — proof the HEALTHCHECK "
-            "is operational\n"
-            "- Runtime user verified: `whoami` returns `appuser` — proof the "
-            "non-root hardening is operational\n"
-            "- All eight dashboard pages render correctly inside the Docker "
-            "container at `localhost:8501`. This confirms that the same "
-            "packaged application now verified locally can be promoted to "
-            "Azure Container Apps in Phase 3."
+            "The image is approximately 1.9 GB, typical for scientific "
+            "Python. The same image runs in the production Azure "
+            "Container App described in §7D."
         )
 
     # -----------------------------------------------------------------
     # 7D Azure Plan
-    # Source: AI-drafted connective prose; reviewed and approved by Steve.
     # -----------------------------------------------------------------
     with tab_7d:
-        st.subheader("Azure Container Apps — Planned Next")
+        st.subheader("Azure Container Apps — Live Production Deployment")
         st.markdown(
-            "**Phase 3 of the CD plan provisions Azure resources** for permanent "
-            "cloud deployment. As of this dashboard build, **Azure resources are "
-            "planned but not yet provisioned**; the Streamlit Community Cloud "
-            "deployment is the current interim public-hosting target."
+            "The dashboard runs in production on Azure Container Apps. "
+            "Five Azure resources in a single resource group provide the "
+            "cloud infrastructure; a federated OpenID Connect Service "
+            "Principal authenticates the GitHub Actions runner for "
+            "automated deployments; atomic rollback to any prior "
+            "revision is verified end-to-end."
         )
-        st.markdown(
-            "**Phase 3 target architecture:**\n"
-            "- **Azure Container Registry** (`riskmlacr`, eastus region) — "
-            "private registry for the dashboard image.\n"
-            "- **Azure Container Apps environment** (`riskml-env`, eastus) — "
-            "the serverless container runtime.\n"
-            "- **Azure Container App** (`riskml-dashboard`, eastus) — the "
-            "running dashboard pulled from ACR.\n"
-            "- **Service Principal** with scoped permissions for GitHub Actions "
-            "to authenticate against ACR and ACA."
+        st.success(
+            "**Public production URL:**  \n"
+            "https://riskml-dashboard.agreeablewave-c95c8817.eastus.azurecontainerapps.io"
         )
+        st.markdown("### Azure Resource Inventory")
         st.markdown(
-            "**Cost guardrail:** $20/month budget alert at 50% / 80% / 100% "
-            "thresholds, established in Phase 0."
+            "Five resources in resource group `rg-riskml-capstone`, "
+            "region `eastus`:\n"
+            "- **Azure Container Registry** (`riskmlarchuleta`) — private "
+            "registry. Holds the dashboard image; admin disabled; AcrPush "
+            "rights scoped to the Service Principal.\n"
+            "- **Azure Container Apps environment** (`riskml-env`) — "
+            "regional shell providing shared VNet, ingress controller, "
+            "and Log Analytics binding.\n"
+            "- **Azure Container App** (`riskml-dashboard`) — the running "
+            "dashboard. CPU 0.5 vCPU, memory 1.0 GiB, scale-to-zero "
+            "(min 0, max 1 replica), public HTTPS ingress on port 8501, "
+            "system-assigned managed identity for ACR authentication.\n"
+            "- **Log Analytics workspace** (`workspace-rgriskmlcapstoneZqNO`) "
+            "— lifecycle bound to the Container Apps environment.\n"
+            "- **Action group** (`riskml-budget-alerts`) — routes "
+            "budget-alert emails at 50%, 80%, and 100% thresholds "
+            "against the $20/month budget."
+        )
+        st.markdown("### Continuous Deployment Pipeline")
+        st.markdown(
+            "Every push to the `main` branch triggers an automated "
+            "end-to-end deploy via GitHub Actions:\n"
+            "1. **Federated OpenID Connect authentication** — the "
+            "GitHub Actions runner mints an OIDC token; Azure Active "
+            "Directory verifies the token's subject claim against the "
+            "federated credential on Service Principal "
+            "`sp-riskml-capstone-cd`. No client secret, no long-lived "
+            "credential.\n"
+            "2. **`docker build` + `docker push`** to the Container "
+            "Registry, tagged with the git short-SHA plus `latest`.\n"
+            "3. **`az containerapp update`** flips the Container App "
+            "to the new image, atomically creating a new immutable "
+            "revision.\n"
+            "4. **Verification** asserts "
+            "`provisioningState == Succeeded`; otherwise the workflow "
+            "fails."
+        )
+        st.success(
+            "The Service Principal is scoped to exactly two resources — "
+            "`AcrPush` on the Container Registry, `Contributor` on the "
+            "Container App. If the GitHub credentials were ever to leak, "
+            "the blast radius is precisely two resources, with no "
+            "ability to escalate, lateral-move, or read other data in "
+            "the subscription."
+        )
+        st.markdown("### Atomic Rollback")
+        st.markdown(
+            "The CD pipeline's atomic-rollback capability is verified "
+            "end-to-end:\n"
+            "- All revisions are preserved; any can be reactivated in "
+            "**6.8 seconds** via `az containerapp revision activate` — "
+            "no image rebuild, no source-code touch, pure control-plane "
+            "atomic flip.\n"
+            "- A subsequent `git revert HEAD` + `git push` closes the "
+            "loop, landing the fix through the same CD pipeline and "
+            "creating a new revision."
+        )
+        st.markdown("### Cost Posture")
+        st.markdown(
+            "**Steady-state burn rate: approximately $5.10/month** — "
+            "driven entirely by the Container Registry Basic SKU flat "
+            "fee. The Container App bills only when actively serving "
+            "requests; with scale-to-zero configured, idle hours cost "
+            "zero. A typical CD run adds approximately five cents in "
+            "incremental compute. A $20/month budget alert monitors "
+            "this and emails at the 50%, 80%, and 100% thresholds; "
+            "no alert has ever fired."
         )
         st.info(
-            "**Why Azure Container Apps and not Azure Kubernetes Service?** "
-            "ACA abstracts Kubernetes for single-container workloads; AKS would "
-            "be the right choice for multi-service production systems. ACA "
-            "delivers the same containerized portability without the operational "
-            "overhead, which is appropriate for a single-dashboard capstone "
-            "deployment under a $20/month budget alert."
+            "ACA abstracts Kubernetes for single-container workloads; "
+            "AKS would be the right choice for multi-service production "
+            "systems. ACA delivers the same containerized portability "
+            "without the operational overhead."
         )
-
 
 # =====================================================================
 # §8 Artifact Manifest
@@ -1433,8 +1848,7 @@ elif page == "§7 Engineering & Deployment":
 elif page == "§8 Artifact Manifest":
     st.title("§8 Artifact Manifest")
     st.markdown(
-        "Every CSV and PNG the dashboard reads, with a present/absent flag. "
-        "Useful for verifying a fresh clone has all required artifacts."
+        "Every artifact the dashboard reads, with a present/absent flag."
     )
 
     expected_artifacts = [
@@ -1454,20 +1868,35 @@ elif page == "§8 Artifact Manifest":
         ("NB06 — figures", "notebook06_regime_portfolio_comparison.png"),
         ("NB06 — figures", "notebook06_stress_drawdown.png"),
         ("NB06 — figures", "notebook06_factor_exposure_entropy.png"),
-        # NB07 custom DAG figure (Phase 1 Day 2).
+        # NB07 custom DAG figure.
         ("NB07 — figures", "notebook07_dag_clean.png"),
-        # Phase 2.5 Tier 1 harvested figures.
-        ("Phase 2.5 — figures", "pipeline_two_tracks.png"),
-        ("Phase 2.5 — figures", "dag_gate_inventory.png"),
-        ("Phase 2.5 — figures", "baseline_causal_twins.png"),
-        ("Phase 2.5 — figures", "etf_universe_returns.png"),
-        ("Phase 2.5 — figures", "vixcls_timeseries.png"),
-        ("Phase 2.5 — figures", "feature_missingness_top30.png"),
-        # Phase 2.5 Tier 2 referenced existing figures.
-        ("Phase 2.5 — figures", "notebook02_feature_counts_by_dag.png"),
-        ("Phase 2.5 — figures", "notebook02_vol_feature_vs_target_SPY.png"),
-        ("Phase 2.5 — figures", "notebook03_acf_diagnostics.png"),
-        ("Phase 2.5 — figures", "notebook03_distribution_diagnostics.png"),
+        # Dashboard-specific harvested figures.
+        ("Dashboard — figures", "pipeline_two_tracks.png"),
+        ("Dashboard — figures", "dag_gate_inventory.png"),
+        ("Dashboard — figures", "baseline_causal_twins.png"),
+        ("Dashboard — figures", "etf_universe_returns.png"),
+        ("Dashboard — figures", "vixcls_timeseries.png"),
+        ("Dashboard — figures", "feature_missingness_top30.png"),
+        # NB02 and NB03 figures referenced by the dashboard.
+        ("NB02 — figures", "notebook02_feature_counts_by_dag.png"),
+        ("NB02 — figures", "notebook02_vol_feature_vs_target_SPY.png"),
+        ("NB03 — figures", "notebook03_acf_diagnostics.png"),
+        ("NB03 — figures", "notebook03_distribution_diagnostics.png"),
+        # Pipeline test diagrams.
+        ("Tests — pipeline", "tests/pipeline/1_test_storage_local_fallback/3_round_trip_flow.svg"),
+        ("Tests — pipeline", "tests/pipeline/2_test_extract_price_panel_multiindex/2_raw_dataframe_with_multiindex.svg"),
+        ("Tests — pipeline", "tests/pipeline/3_test_compute_momentum_features/3_momentum_output_structure.svg"),
+        ("Tests — pipeline", "tests/pipeline/4_test_compute_momentum_features_rejects_empty/3_defensive_vs_silent.svg"),
+        ("Tests — pipeline", "tests/pipeline/5_test_compute_realized_volatility/3_annualization_sanity_check.svg"),
+        # Invariant test diagrams.
+        ("Tests — invariants", "tests/invariants/1_test_random_seed_is_locked_at_692_across_all_notebooks/1_read_notebook_source_helper.svg"),
+        ("Tests — invariants", "tests/invariants/1_test_random_seed_is_locked_at_692_across_all_notebooks/2_test_random_seed_regex_anatomy_and_loop.svg"),
+        ("Tests — invariants", "tests/invariants/2_test_causal_edges_dict_encodes_five_core_directed_edges/2_test_causal_edges_dag_architecture.svg"),
+        ("Tests — invariants", "tests/invariants/3_test_dag_figure_has_nine_nodes_and_seven_directed_edges/2_test_dag_figure_complete_architecture.svg"),
+        ("Tests — invariants", "tests/invariants/4_test_risk_stage_gating_lists_match_report_specification/3_risk_stage_belt_and_suspenders.svg"),
+        ("Tests — invariants", "tests/invariants/5_test_risk_stage_feature_count_equals_74/1_gating_summary_csv_structure.svg"),
+        ("Tests — invariants", "tests/invariants/6_test_asset_class_map_assigns_sector_equity_tickers_correctly/4_asset_class_xlv_regression_guard.svg"),
+        ("Tests — invariants", "tests/invariants/7_test_ticker_universe_contains_fourteen_required_etfs/2_ticker_universe_organized_by_asset_class.svg"),
     ]
 
     rows = []
