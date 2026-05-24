@@ -1,0 +1,60 @@
+# RiskML Capstone -- line-ending and binary-attribute policy
+# Goal: enforce LF on all text files across the pipeline.
+# All deployment targets (GitHub Actions Ubuntu, Docker linux/amd64,
+# Azure Container Apps) are Linux. LF is the only correct ending.
+
+# Default: auto-detect text vs binary, then enforce LF on text
+* text=auto eol=lf
+
+# Python source
+*.py            text eol=lf
+*.ipynb         text eol=lf
+
+# Shell and PowerShell
+*.sh            text eol=lf
+*.ps1           text eol=lf
+
+# Configuration
+*.yml           text eol=lf
+*.yaml          text eol=lf
+*.toml          text eol=lf
+*.cfg           text eol=lf
+*.ini           text eol=lf
+*.json          text eol=lf
+
+# Documentation and prose
+*.md            text eol=lf
+*.txt           text eol=lf
+*.rst           text eol=lf
+
+# Web assets and SVG diagrams
+*.html          text eol=lf
+*.css           text eol=lf
+*.js            text eol=lf
+*.svg           text eol=lf
+
+# Tabular text data
+*.csv           text eol=lf
+*.tsv           text eol=lf
+
+# Container and git tooling
+Dockerfile      text eol=lf
+.gitignore      text eol=lf
+.gitattributes  text eol=lf
+.dockerignore   text eol=lf
+
+# Binary files -- no line-ending conversion under any circumstance
+*.png           binary
+*.jpg           binary
+*.jpeg          binary
+*.gif           binary
+*.ico           binary
+*.pdf           binary
+*.parquet       binary
+*.docx          binary
+*.xlsx          binary
+*.pptx          binary
+*.zip           binary
+*.tar           binary
+*.gz            binary
+*.whl           binary
