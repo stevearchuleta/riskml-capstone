@@ -145,7 +145,25 @@ PAGES = [
 page = st.sidebar.radio("Navigate", PAGES)
 
 st.sidebar.divider()
+
 st.sidebar.markdown("Repo: [`riskml-capstone` ↗](https://github.com/stevearchuleta/riskml-capstone)")
+# ================================================================
+# FINAL REPORT PDF DOWNLOAD - ACTIVE BUTTON OR PENDING PLACEHOLDER
+# ================================================================
+pdf_path = REPO_ROOT / "reports" / "riskml_capstone_final.pdf"
+if pdf_path.exists():
+    with open(pdf_path, "rb") as f:
+        st.sidebar.download_button(
+            label="📄 Download Report",
+            data=f.read(),
+            file_name="riskml_capstone_final.pdf",
+            mime="application/pdf",
+            width="stretch",
+        )
+else:
+    st.sidebar.caption("📄 Final Report PDF")
+
+
 st.sidebar.caption(
     "Read-only dashboard. All numbers derive from saved artifacts produced "
     "by notebooks NB01 through NB06."
