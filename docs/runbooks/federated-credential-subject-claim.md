@@ -1,4 +1,4 @@
-# Federated-Credential Subject Claim ? Runbook
+# Federated-Credential Subject Claim — Runbook
 
 ## Context
 
@@ -15,8 +15,8 @@ pattern on Service Principal `sp-riskml-capstone-cd` (appId
 That single pre-registered pattern is the entire trust boundary.
 If the incoming token's subject claim matches the registered
 pattern exactly, Azure issues an access token and the deploy
-proceeds. If the subject claim does not match ? even by one
-character ? every CLI call in `cd.yml` fails with `AADSTS70021`
+proceeds. If the subject claim does not match — even by one
+character — every CLI call in `cd.yml` fails with `AADSTS70021`
 or a similar authentication error, and no image build, no ACR
 push, no `az containerapp update`, and no revision flip happens.
 
@@ -87,14 +87,14 @@ credentials simultaneously, each with a different subject
 pattern. This study registered exactly one credential
 (`github-main-branch`) and explicitly skipped the Environment
 pattern (a Phase 5 polish candidate). To add a second credential
-? for example, to allow PR-triggered staging deploys ? a second
+— for example, to allow PR-triggered staging deploys — a second
 `federated-credential.json` file with the PR-scoped subject
 would be submitted via `az ad app federated-credential create`.
 
 ## Common drift patterns and how each one breaks
 
 The string is rigidly structured and Azure AD does not validate
-it at registration time ? Azure accepts whatever string the
+it at registration time — Azure accepts whatever string the
 create command submits. Validation happens at runtime when Azure
 compares an incoming token's claim against the registered
 pattern. The surface failure mode (`AADSTS70021: No matching
