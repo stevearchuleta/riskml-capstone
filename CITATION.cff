@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you reference this study, please cite it as below."
+title: "Causal-Aware, Machine-Learning-Driven, Factor-Informed Risk Forecasting: A Python Pipeline Integrating NLP, Directed Factor Constraints, and Portfolio Analytics"
+abstract: >-
+  A reproducible Python and Azure pipeline that evaluates whether a small,
+  manually specified Directed Acyclic Graph (DAG), used as a lightweight
+  information-flow governance layer over a machine-learning risk-forecasting
+  pipeline, improves out-of-sample forecast accuracy, portfolio risk control,
+  and interpretability relative to unconstrained baseline models across a
+  14-ETF universe.
+type: software
+authors:
+  - family-names: Archuleta
+    given-names: Steven
+    affiliation: "WorldQuant University (USA)"
+  - family-names: Nilsen
+    given-names: Andrew
+    affiliation: "WorldQuant University (Indonesia)"
+date-released: "2026-06-01"
+version: "1.0.0"
+license: Apache-2.0
+repository-code: "https://github.com/stevearchuleta/riskml-capstone"
+url: "https://riskml-dashboard.agreeablewave-c95c8817.eastus.azurecontainerapps.io"
+keywords:
+  - causal inference
+  - risk forecasting
+  - directed acyclic graph
+  - machine learning
+  - factor-informed modeling
+  - NLP sentiment
+  - portfolio analytics
+  - ablation study
