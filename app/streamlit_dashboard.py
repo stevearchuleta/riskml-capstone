@@ -124,6 +124,7 @@ st.sidebar.markdown(
     "Master of Science<br>"
     "in<br>"
     "Financial Engineering<br>"
+    "<br>"
     "Steven Archuleta (USA)<br>"
     "Andrew Nilsen (Indonesia)"
     "</div>",
