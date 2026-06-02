@@ -270,3 +270,6 @@ folder_structure.txt
 # Federated credential parameter files (working JSON for az ad app federated-credential create)
 federated-credential*.json
 app/style_preview.py
+
+# Allow the golden-v0 manifest (provenance record) while keeping artifact bytes out
+!artifacts/golden-v0/golden-v0.manifest.json

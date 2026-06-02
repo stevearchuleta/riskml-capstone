@@ -1,0 +1,3864 @@
+{
+  "approval_reason": "initial-golden-freeze",
+  "artifact_count": 65,
+  "artifact_root": "C:/Users/steve/Documents/01_ACADEMIA/WQU/MScFE_690_Capstone_Project/riskml-capstone/artifacts/golden-v0",
+  "artifacts": [
+    {
+      "content_sha256": "467b1be35c155f465eb02f5a42e70753e2d0f1be949e9a63d48ecd655b6ec4e2",
+      "dataframe_contract": {
+        "columns": [
+          "SPY",
+          "QQQ",
+          "IWM",
+          "EFA",
+          "EEM",
+          "XLK",
+          "XLF",
+          "XLE",
+          "XLV",
+          "TLT",
+          "LQD",
+          "HYG",
+          "GLD",
+          "DBC"
+        ],
+        "dtypes": {
+          "DBC": "float64",
+          "EEM": "float64",
+          "EFA": "float64",
+          "GLD": "float64",
+          "HYG": "float64",
+          "IWM": "float64",
+          "LQD": "float64",
+          "QQQ": "float64",
+          "SPY": "float64",
+          "TLT": "float64",
+          "XLE": "float64",
+          "XLF": "float64",
+          "XLK": "float64",
+          "XLV": "float64"
+        },
+        "index_class": "DatetimeIndex",
+        "index_dtype": "datetime64[ns]",
+        "index_duplicate_count": 0,
+        "index_end": "2026-02-19 00:00:00",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "Date"
+        ],
+        "index_start": "2015-01-05 00:00:00",
+        "null_counts": {
+          "DBC": 0,
+          "EEM": 0,
+          "EFA": 0,
+          "GLD": 0,
+          "HYG": 0,
+          "IWM": 0,
+          "LQD": 0,
+          "QQQ": 0,
+          "SPY": 0,
+          "TLT": 0,
+          "XLE": 0,
+          "XLF": 0,
+          "XLK": 0,
+          "XLV": 0
+        },
+        "shape": [
+          2798,
+          14
+        ]
+      },
+      "file_modified_utc": "2026-03-18T20:54:46.087634+00:00",
+      "file_sha256": "d7ddf0d18ab56672065f1e4d2a526eeb79d22e8b2460d93e51359e37583cec9c",
+      "file_size_bytes": 403575,
+      "nan_mask_sha256": "3713a0e938ccdeb32e3e833e39ce4ec4f08dc451fa5af8451792e4a80c27487e",
+      "path": "data/processed/etf_returns.parquet",
+      "schema_sha256": "f709f5b7ffd7ef5d2b5db9671ea12aed632eba0f29924f6302993cbf47a9d3a5",
+      "suffix": ".parquet"
+    },
+    {
+      "content_sha256": "6aceb1b2c006733b0265b4277988902f023534655bf27af6dbd23cad030739eb",
+      "dataframe_contract": {
+        "columns": [
+          "MOM__SPY__cum_ret__5d",
+          "MOM__QQQ__cum_ret__5d",
+          "MOM__IWM__cum_ret__5d",
+          "MOM__EFA__cum_ret__5d",
+          "MOM__EEM__cum_ret__5d",
+          "MOM__XLK__cum_ret__5d",
+          "MOM__XLF__cum_ret__5d",
+          "MOM__XLE__cum_ret__5d",
+          "MOM__XLV__cum_ret__5d",
+          "MOM__TLT__cum_ret__5d",
+          "MOM__LQD__cum_ret__5d",
+          "MOM__HYG__cum_ret__5d",
+          "MOM__GLD__cum_ret__5d",
+          "MOM__DBC__cum_ret__5d",
+          "MOM__SPY__cum_ret__10d",
+          "MOM__QQQ__cum_ret__10d",
+          "MOM__IWM__cum_ret__10d",
+          "MOM__EFA__cum_ret__10d",
+          "MOM__EEM__cum_ret__10d",
+          "MOM__XLK__cum_ret__10d",
+          "MOM__XLF__cum_ret__10d",
+          "MOM__XLE__cum_ret__10d",
+          "MOM__XLV__cum_ret__10d",
+          "MOM__TLT__cum_ret__10d",
+          "MOM__LQD__cum_ret__10d",
+          "MOM__HYG__cum_ret__10d",
+          "MOM__GLD__cum_ret__10d",
+          "MOM__DBC__cum_ret__10d",
+          "MOM__SPY__cum_ret__21d",
+          "MOM__QQQ__cum_ret__21d",
+          "MOM__IWM__cum_ret__21d",
+          "MOM__EFA__cum_ret__21d",
+          "MOM__EEM__cum_ret__21d",
+          "MOM__XLK__cum_ret__21d",
+          "MOM__XLF__cum_ret__21d",
+          "MOM__XLE__cum_ret__21d",
+          "MOM__XLV__cum_ret__21d",
+          "MOM__TLT__cum_ret__21d",
+          "MOM__LQD__cum_ret__21d",
+          "MOM__HYG__cum_ret__21d",
+          "MOM__GLD__cum_ret__21d",
+          "MOM__DBC__cum_ret__21d",
+          "MOM__SPY__cum_ret__63d",
+          "MOM__QQQ__cum_ret__63d",
+          "MOM__IWM__cum_ret__63d",
+          "MOM__EFA__cum_ret__63d",
+          "MOM__EEM__cum_ret__63d",
+          "MOM__XLK__cum_ret__63d",
+          "MOM__XLF__cum_ret__63d",
+          "MOM__XLE__cum_ret__63d",
+          "MOM__XLV__cum_ret__63d",
+          "MOM__TLT__cum_ret__63d",
+          "MOM__LQD__cum_ret__63d",
+          "MOM__HYG__cum_ret__63d",
+          "MOM__GLD__cum_ret__63d",
+          "MOM__DBC__cum_ret__63d",
+          "VOL__SPY__rvol__10d",
+          "VOL__QQQ__rvol__10d",
+          "VOL__IWM__rvol__10d",
+          "VOL__EFA__rvol__10d",
+          "VOL__EEM__rvol__10d",
+          "VOL__XLK__rvol__10d",
+          "VOL__XLF__rvol__10d",
+          "VOL__XLE__rvol__10d",
+          "VOL__XLV__rvol__10d",
+          "VOL__TLT__rvol__10d",
+          "VOL__LQD__rvol__10d",
+          "VOL__HYG__rvol__10d",
+          "VOL__GLD__rvol__10d",
+          "VOL__DBC__rvol__10d",
+          "VOL__SPY__rvol__21d",
+          "VOL__QQQ__rvol__21d",
+          "VOL__IWM__rvol__21d",
+          "VOL__EFA__rvol__21d",
+          "VOL__EEM__rvol__21d",
+          "VOL__XLK__rvol__21d",
+          "VOL__XLF__rvol__21d",
+          "VOL__XLE__rvol__21d",
+          "VOL__XLV__rvol__21d",
+          "VOL__TLT__rvol__21d",
+          "VOL__LQD__rvol__21d",
+          "VOL__HYG__rvol__21d",
+          "VOL__GLD__rvol__21d",
+          "VOL__DBC__rvol__21d",
+          "VOL__SPY__rvol__63d",
+          "VOL__QQQ__rvol__63d",
+          "VOL__IWM__rvol__63d",
+          "VOL__EFA__rvol__63d",
+          "VOL__EEM__rvol__63d",
+          "VOL__XLK__rvol__63d",
+          "VOL__XLF__rvol__63d",
+          "VOL__XLE__rvol__63d",
+          "VOL__XLV__rvol__63d",
+          "VOL__TLT__rvol__63d",
+          "VOL__LQD__rvol__63d",
+          "VOL__HYG__rvol__63d",
+          "VOL__GLD__rvol__63d",
+          "VOL__DBC__rvol__63d",
+          "VOL__SPY__ewma_vol__span21",
+          "VOL__QQQ__ewma_vol__span21",
+          "VOL__IWM__ewma_vol__span21",
+          "VOL__EFA__ewma_vol__span21",
+          "VOL__EEM__ewma_vol__span21",
+          "VOL__XLK__ewma_vol__span21",
+          "VOL__XLF__ewma_vol__span21",
+          "VOL__XLE__ewma_vol__span21",
+          "VOL__XLV__ewma_vol__span21",
+          "VOL__TLT__ewma_vol__span21",
+          "VOL__LQD__ewma_vol__span21",
+          "VOL__HYG__ewma_vol__span21",
+          "VOL__GLD__ewma_vol__span21",
+          "VOL__DBC__ewma_vol__span21",
+          "VOL__SPY__ewma_vol__span63",
+          "VOL__QQQ__ewma_vol__span63",
+          "VOL__IWM__ewma_vol__span63",
+          "VOL__EFA__ewma_vol__span63",
+          "VOL__EEM__ewma_vol__span63",
+          "VOL__XLK__ewma_vol__span63",
+          "VOL__XLF__ewma_vol__span63",
+          "VOL__XLE__ewma_vol__span63",
+          "VOL__XLV__ewma_vol__span63",
+          "VOL__TLT__ewma_vol__span63",
+          "VOL__LQD__ewma_vol__span63",
+          "VOL__HYG__ewma_vol__span63",
+          "VOL__GLD__ewma_vol__span63",
+          "VOL__DBC__ewma_vol__span63",
+          "VAL__SPY__hml_beta__63d",
+          "VAL__QQQ__hml_beta__63d",
+          "VAL__IWM__hml_beta__63d",
+          "VAL__EFA__hml_beta__63d",
+          "VAL__EEM__hml_beta__63d",
+          "VAL__XLK__hml_beta__63d",
+          "VAL__XLF__hml_beta__63d",
+          "VAL__XLE__hml_beta__63d",
+          "VAL__XLV__hml_beta__63d",
+          "VAL__TLT__hml_beta__63d",
+          "VAL__LQD__hml_beta__63d",
+          "VAL__HYG__hml_beta__63d",
+          "VAL__GLD__hml_beta__63d",
+          "VAL__DBC__hml_beta__63d",
+          "VAL__ff_mkt_rf",
+          "VAL__ff_smb",
+          "VAL__ff_hml",
+          "VAL__ff_rf",
+          "ML__pca_ret_pc1__252d",
+          "ML__pca_ret_pc2__252d",
+          "ML__pca_ret_pc3__252d",
+          "SENT__sentiment_market",
+          "MACRO__dtb3",
+          "MACRO__vixcls",
+          "MACRO__t10y2y",
+          "REGIME__vix_high"
+        ],
+        "dtypes": {
+          "MACRO__dtb3": "float64",
+          "MACRO__t10y2y": "float64",
+          "MACRO__vixcls": "float64",
+          "ML__pca_ret_pc1__252d": "float64",
+          "ML__pca_ret_pc2__252d": "float64",
+          "ML__pca_ret_pc3__252d": "float64",
+          "MOM__DBC__cum_ret__10d": "float64",
+          "MOM__DBC__cum_ret__21d": "float64",
+          "MOM__DBC__cum_ret__5d": "float64",
+          "MOM__DBC__cum_ret__63d": "float64",
+          "MOM__EEM__cum_ret__10d": "float64",
+          "MOM__EEM__cum_ret__21d": "float64",
+          "MOM__EEM__cum_ret__5d": "float64",
+          "MOM__EEM__cum_ret__63d": "float64",
+          "MOM__EFA__cum_ret__10d": "float64",
+          "MOM__EFA__cum_ret__21d": "float64",
+          "MOM__EFA__cum_ret__5d": "float64",
+          "MOM__EFA__cum_ret__63d": "float64",
+          "MOM__GLD__cum_ret__10d": "float64",
+          "MOM__GLD__cum_ret__21d": "float64",
+          "MOM__GLD__cum_ret__5d": "float64",
+          "MOM__GLD__cum_ret__63d": "float64",
+          "MOM__HYG__cum_ret__10d": "float64",
+          "MOM__HYG__cum_ret__21d": "float64",
+          "MOM__HYG__cum_ret__5d": "float64",
+          "MOM__HYG__cum_ret__63d": "float64",
+          "MOM__IWM__cum_ret__10d": "float64",
+          "MOM__IWM__cum_ret__21d": "float64",
+          "MOM__IWM__cum_ret__5d": "float64",
+          "MOM__IWM__cum_ret__63d": "float64",
+          "MOM__LQD__cum_ret__10d": "float64",
+          "MOM__LQD__cum_ret__21d": "float64",
+          "MOM__LQD__cum_ret__5d": "float64",
+          "MOM__LQD__cum_ret__63d": "float64",
+          "MOM__QQQ__cum_ret__10d": "float64",
+          "MOM__QQQ__cum_ret__21d": "float64",
+          "MOM__QQQ__cum_ret__5d": "float64",
+          "MOM__QQQ__cum_ret__63d": "float64",
+          "MOM__SPY__cum_ret__10d": "float64",
+          "MOM__SPY__cum_ret__21d": "float64",
+          "MOM__SPY__cum_ret__5d": "float64",
+          "MOM__SPY__cum_ret__63d": "float64",
+          "MOM__TLT__cum_ret__10d": "float64",
+          "MOM__TLT__cum_ret__21d": "float64",
+          "MOM__TLT__cum_ret__5d": "float64",
+          "MOM__TLT__cum_ret__63d": "float64",
+          "MOM__XLE__cum_ret__10d": "float64",
+          "MOM__XLE__cum_ret__21d": "float64",
+          "MOM__XLE__cum_ret__5d": "float64",
+          "MOM__XLE__cum_ret__63d": "float64",
+          "MOM__XLF__cum_ret__10d": "float64",
+          "MOM__XLF__cum_ret__21d": "float64",
+          "MOM__XLF__cum_ret__5d": "float64",
+          "MOM__XLF__cum_ret__63d": "float64",
+          "MOM__XLK__cum_ret__10d": "float64",
+          "MOM__XLK__cum_ret__21d": "float64",
+          "MOM__XLK__cum_ret__5d": "float64",
+          "MOM__XLK__cum_ret__63d": "float64",
+          "MOM__XLV__cum_ret__10d": "float64",
+          "MOM__XLV__cum_ret__21d": "float64",
+          "MOM__XLV__cum_ret__5d": "float64",
+          "MOM__XLV__cum_ret__63d": "float64",
+          "REGIME__vix_high": "float64",
+          "SENT__sentiment_market": "float64",
+          "VAL__DBC__hml_beta__63d": "float64",
+          "VAL__EEM__hml_beta__63d": "float64",
+          "VAL__EFA__hml_beta__63d": "float64",
+          "VAL__GLD__hml_beta__63d": "float64",
+          "VAL__HYG__hml_beta__63d": "float64",
+          "VAL__IWM__hml_beta__63d": "float64",
+          "VAL__LQD__hml_beta__63d": "float64",
+          "VAL__QQQ__hml_beta__63d": "float64",
+          "VAL__SPY__hml_beta__63d": "float64",
+          "VAL__TLT__hml_beta__63d": "float64",
+          "VAL__XLE__hml_beta__63d": "float64",
+          "VAL__XLF__hml_beta__63d": "float64",
+          "VAL__XLK__hml_beta__63d": "float64",
+          "VAL__XLV__hml_beta__63d": "float64",
+          "VAL__ff_hml": "float64",
+          "VAL__ff_mkt_rf": "float64",
+          "VAL__ff_rf": "float64",
+          "VAL__ff_smb": "float64",
+          "VOL__DBC__ewma_vol__span21": "float64",
+          "VOL__DBC__ewma_vol__span63": "float64",
+          "VOL__DBC__rvol__10d": "float64",
+          "VOL__DBC__rvol__21d": "float64",
+          "VOL__DBC__rvol__63d": "float64",
+          "VOL__EEM__ewma_vol__span21": "float64",
+          "VOL__EEM__ewma_vol__span63": "float64",
+          "VOL__EEM__rvol__10d": "float64",
+          "VOL__EEM__rvol__21d": "float64",
+          "VOL__EEM__rvol__63d": "float64",
+          "VOL__EFA__ewma_vol__span21": "float64",
+          "VOL__EFA__ewma_vol__span63": "float64",
+          "VOL__EFA__rvol__10d": "float64",
+          "VOL__EFA__rvol__21d": "float64",
+          "VOL__EFA__rvol__63d": "float64",
+          "VOL__GLD__ewma_vol__span21": "float64",
+          "VOL__GLD__ewma_vol__span63": "float64",
+          "VOL__GLD__rvol__10d": "float64",
+          "VOL__GLD__rvol__21d": "float64",
+          "VOL__GLD__rvol__63d": "float64",
+          "VOL__HYG__ewma_vol__span21": "float64",
+          "VOL__HYG__ewma_vol__span63": "float64",
+          "VOL__HYG__rvol__10d": "float64",
+          "VOL__HYG__rvol__21d": "float64",
+          "VOL__HYG__rvol__63d": "float64",
+          "VOL__IWM__ewma_vol__span21": "float64",
+          "VOL__IWM__ewma_vol__span63": "float64",
+          "VOL__IWM__rvol__10d": "float64",
+          "VOL__IWM__rvol__21d": "float64",
+          "VOL__IWM__rvol__63d": "float64",
+          "VOL__LQD__ewma_vol__span21": "float64",
+          "VOL__LQD__ewma_vol__span63": "float64",
+          "VOL__LQD__rvol__10d": "float64",
+          "VOL__LQD__rvol__21d": "float64",
+          "VOL__LQD__rvol__63d": "float64",
+          "VOL__QQQ__ewma_vol__span21": "float64",
+          "VOL__QQQ__ewma_vol__span63": "float64",
+          "VOL__QQQ__rvol__10d": "float64",
+          "VOL__QQQ__rvol__21d": "float64",
+          "VOL__QQQ__rvol__63d": "float64",
+          "VOL__SPY__ewma_vol__span21": "float64",
+          "VOL__SPY__ewma_vol__span63": "float64",
+          "VOL__SPY__rvol__10d": "float64",
+          "VOL__SPY__rvol__21d": "float64",
+          "VOL__SPY__rvol__63d": "float64",
+          "VOL__TLT__ewma_vol__span21": "float64",
+          "VOL__TLT__ewma_vol__span63": "float64",
+          "VOL__TLT__rvol__10d": "float64",
+          "VOL__TLT__rvol__21d": "float64",
+          "VOL__TLT__rvol__63d": "float64",
+          "VOL__XLE__ewma_vol__span21": "float64",
+          "VOL__XLE__ewma_vol__span63": "float64",
+          "VOL__XLE__rvol__10d": "float64",
+          "VOL__XLE__rvol__21d": "float64",
+          "VOL__XLE__rvol__63d": "float64",
+          "VOL__XLF__ewma_vol__span21": "float64",
+          "VOL__XLF__ewma_vol__span63": "float64",
+          "VOL__XLF__rvol__10d": "float64",
+          "VOL__XLF__rvol__21d": "float64",
+          "VOL__XLF__rvol__63d": "float64",
+          "VOL__XLK__ewma_vol__span21": "float64",
+          "VOL__XLK__ewma_vol__span63": "float64",
+          "VOL__XLK__rvol__10d": "float64",
+          "VOL__XLK__rvol__21d": "float64",
+          "VOL__XLK__rvol__63d": "float64",
+          "VOL__XLV__ewma_vol__span21": "float64",
+          "VOL__XLV__ewma_vol__span63": "float64",
+          "VOL__XLV__rvol__10d": "float64",
+          "VOL__XLV__rvol__21d": "float64",
+          "VOL__XLV__rvol__63d": "float64"
+        },
+        "index_class": "DatetimeIndex",
+        "index_dtype": "datetime64[ns]",
+        "index_duplicate_count": 0,
+        "index_end": "2026-02-19 00:00:00",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "Date"
+        ],
+        "index_start": "2015-01-05 00:00:00",
+        "null_counts": {
+          "MACRO__dtb3": 21,
+          "MACRO__t10y2y": 20,
+          "MACRO__vixcls": 1,
+          "ML__pca_ret_pc1__252d": 251,
+          "ML__pca_ret_pc2__252d": 251,
+          "ML__pca_ret_pc3__252d": 251,
+          "MOM__DBC__cum_ret__10d": 9,
+          "MOM__DBC__cum_ret__21d": 20,
+          "MOM__DBC__cum_ret__5d": 4,
+          "MOM__DBC__cum_ret__63d": 62,
+          "MOM__EEM__cum_ret__10d": 9,
+          "MOM__EEM__cum_ret__21d": 20,
+          "MOM__EEM__cum_ret__5d": 4,
+          "MOM__EEM__cum_ret__63d": 62,
+          "MOM__EFA__cum_ret__10d": 9,
+          "MOM__EFA__cum_ret__21d": 20,
+          "MOM__EFA__cum_ret__5d": 4,
+          "MOM__EFA__cum_ret__63d": 62,
+          "MOM__GLD__cum_ret__10d": 9,
+          "MOM__GLD__cum_ret__21d": 20,
+          "MOM__GLD__cum_ret__5d": 4,
+          "MOM__GLD__cum_ret__63d": 62,
+          "MOM__HYG__cum_ret__10d": 9,
+          "MOM__HYG__cum_ret__21d": 20,
+          "MOM__HYG__cum_ret__5d": 4,
+          "MOM__HYG__cum_ret__63d": 62,
+          "MOM__IWM__cum_ret__10d": 9,
+          "MOM__IWM__cum_ret__21d": 20,
+          "MOM__IWM__cum_ret__5d": 4,
+          "MOM__IWM__cum_ret__63d": 62,
+          "MOM__LQD__cum_ret__10d": 9,
+          "MOM__LQD__cum_ret__21d": 20,
+          "MOM__LQD__cum_ret__5d": 4,
+          "MOM__LQD__cum_ret__63d": 62,
+          "MOM__QQQ__cum_ret__10d": 9,
+          "MOM__QQQ__cum_ret__21d": 20,
+          "MOM__QQQ__cum_ret__5d": 4,
+          "MOM__QQQ__cum_ret__63d": 62,
+          "MOM__SPY__cum_ret__10d": 9,
+          "MOM__SPY__cum_ret__21d": 20,
+          "MOM__SPY__cum_ret__5d": 4,
+          "MOM__SPY__cum_ret__63d": 62,
+          "MOM__TLT__cum_ret__10d": 9,
+          "MOM__TLT__cum_ret__21d": 20,
+          "MOM__TLT__cum_ret__5d": 4,
+          "MOM__TLT__cum_ret__63d": 62,
+          "MOM__XLE__cum_ret__10d": 9,
+          "MOM__XLE__cum_ret__21d": 20,
+          "MOM__XLE__cum_ret__5d": 4,
+          "MOM__XLE__cum_ret__63d": 62,
+          "MOM__XLF__cum_ret__10d": 9,
+          "MOM__XLF__cum_ret__21d": 20,
+          "MOM__XLF__cum_ret__5d": 4,
+          "MOM__XLF__cum_ret__63d": 62,
+          "MOM__XLK__cum_ret__10d": 9,
+          "MOM__XLK__cum_ret__21d": 20,
+          "MOM__XLK__cum_ret__5d": 4,
+          "MOM__XLK__cum_ret__63d": 62,
+          "MOM__XLV__cum_ret__10d": 9,
+          "MOM__XLV__cum_ret__21d": 20,
+          "MOM__XLV__cum_ret__5d": 4,
+          "MOM__XLV__cum_ret__63d": 62,
+          "REGIME__vix_high": 0,
+          "SENT__sentiment_market": 1258,
+          "VAL__DBC__hml_beta__63d": 95,
+          "VAL__EEM__hml_beta__63d": 95,
+          "VAL__EFA__hml_beta__63d": 95,
+          "VAL__GLD__hml_beta__63d": 95,
+          "VAL__HYG__hml_beta__63d": 95,
+          "VAL__IWM__hml_beta__63d": 95,
+          "VAL__LQD__hml_beta__63d": 95,
+          "VAL__QQQ__hml_beta__63d": 95,
+          "VAL__SPY__hml_beta__63d": 95,
+          "VAL__TLT__hml_beta__63d": 95,
+          "VAL__XLE__hml_beta__63d": 95,
+          "VAL__XLF__hml_beta__63d": 95,
+          "VAL__XLK__hml_beta__63d": 95,
+          "VAL__XLV__hml_beta__63d": 95,
+          "VAL__ff_hml": 33,
+          "VAL__ff_mkt_rf": 33,
+          "VAL__ff_rf": 33,
+          "VAL__ff_smb": 33,
+          "VOL__DBC__ewma_vol__span21": 20,
+          "VOL__DBC__ewma_vol__span63": 62,
+          "VOL__DBC__rvol__10d": 9,
+          "VOL__DBC__rvol__21d": 20,
+          "VOL__DBC__rvol__63d": 62,
+          "VOL__EEM__ewma_vol__span21": 20,
+          "VOL__EEM__ewma_vol__span63": 62,
+          "VOL__EEM__rvol__10d": 9,
+          "VOL__EEM__rvol__21d": 20,
+          "VOL__EEM__rvol__63d": 62,
+          "VOL__EFA__ewma_vol__span21": 20,
+          "VOL__EFA__ewma_vol__span63": 62,
+          "VOL__EFA__rvol__10d": 9,
+          "VOL__EFA__rvol__21d": 20,
+          "VOL__EFA__rvol__63d": 62,
+          "VOL__GLD__ewma_vol__span21": 20,
+          "VOL__GLD__ewma_vol__span63": 62,
+          "VOL__GLD__rvol__10d": 9,
+          "VOL__GLD__rvol__21d": 20,
+          "VOL__GLD__rvol__63d": 62,
+          "VOL__HYG__ewma_vol__span21": 20,
+          "VOL__HYG__ewma_vol__span63": 62,
+          "VOL__HYG__rvol__10d": 9,
+          "VOL__HYG__rvol__21d": 20,
+          "VOL__HYG__rvol__63d": 62,
+          "VOL__IWM__ewma_vol__span21": 20,
+          "VOL__IWM__ewma_vol__span63": 62,
+          "VOL__IWM__rvol__10d": 9,
+          "VOL__IWM__rvol__21d": 20,
+          "VOL__IWM__rvol__63d": 62,
+          "VOL__LQD__ewma_vol__span21": 20,
+          "VOL__LQD__ewma_vol__span63": 62,
+          "VOL__LQD__rvol__10d": 9,
+          "VOL__LQD__rvol__21d": 20,
+          "VOL__LQD__rvol__63d": 62,
+          "VOL__QQQ__ewma_vol__span21": 20,
+          "VOL__QQQ__ewma_vol__span63": 62,
+          "VOL__QQQ__rvol__10d": 9,
+          "VOL__QQQ__rvol__21d": 20,
+          "VOL__QQQ__rvol__63d": 62,
+          "VOL__SPY__ewma_vol__span21": 20,
+          "VOL__SPY__ewma_vol__span63": 62,
+          "VOL__SPY__rvol__10d": 9,
+          "VOL__SPY__rvol__21d": 20,
+          "VOL__SPY__rvol__63d": 62,
+          "VOL__TLT__ewma_vol__span21": 20,
+          "VOL__TLT__ewma_vol__span63": 62,
+          "VOL__TLT__rvol__10d": 9,
+          "VOL__TLT__rvol__21d": 20,
+          "VOL__TLT__rvol__63d": 62,
+          "VOL__XLE__ewma_vol__span21": 20,
+          "VOL__XLE__ewma_vol__span63": 62,
+          "VOL__XLE__rvol__10d": 9,
+          "VOL__XLE__rvol__21d": 20,
+          "VOL__XLE__rvol__63d": 62,
+          "VOL__XLF__ewma_vol__span21": 20,
+          "VOL__XLF__ewma_vol__span63": 62,
+          "VOL__XLF__rvol__10d": 9,
+          "VOL__XLF__rvol__21d": 20,
+          "VOL__XLF__rvol__63d": 62,
+          "VOL__XLK__ewma_vol__span21": 20,
+          "VOL__XLK__ewma_vol__span63": 62,
+          "VOL__XLK__rvol__10d": 9,
+          "VOL__XLK__rvol__21d": 20,
+          "VOL__XLK__rvol__63d": 62,
+          "VOL__XLV__ewma_vol__span21": 20,
+          "VOL__XLV__ewma_vol__span63": 62,
+          "VOL__XLV__rvol__10d": 9,
+          "VOL__XLV__rvol__21d": 20,
+          "VOL__XLV__rvol__63d": 62
+        },
+        "shape": [
+          2798,
+          152
+        ]
+      },
+      "file_modified_utc": "2026-03-20T22:59:30.838041+00:00",
+      "file_sha256": "718d529217e234f86efec6d5f672d4c406723c9864da06917424f130a73cbb58",
+      "file_size_bytes": 3924468,
+      "nan_mask_sha256": "609979dc01929b64cda308cb35294c2805595c3bc9d36b952825fba16a917acc",
+      "path": "data/processed/features.parquet",
+      "schema_sha256": "a3e953b6033157ac6f04288cc9d4722a5d833c369861290d22f2da27ffb44a78",
+      "suffix": ".parquet"
+    },
+    {
+      "content_sha256": "e021aaaa8d7b4cc9ab0f45c840e239fe3af986f2baefc11748193c6b099763b7",
+      "dataframe_contract": {
+        "columns": [
+          "SPY",
+          "QQQ",
+          "IWM",
+          "EFA",
+          "EEM",
+          "XLK",
+          "XLF",
+          "XLE",
+          "XLV",
+          "TLT",
+          "LQD",
+          "HYG",
+          "GLD",
+          "DBC",
+          "Mkt-RF",
+          "SMB",
+          "HML",
+          "RF",
+          "DTB3",
+          "VIXCLS",
+          "T10Y2Y",
+          "Sentiment_Market"
+        ],
+        "dtypes": {
+          "DBC": "float64",
+          "DTB3": "float64",
+          "EEM": "float64",
+          "EFA": "float64",
+          "GLD": "float64",
+          "HML": "float64",
+          "HYG": "float64",
+          "IWM": "float64",
+          "LQD": "float64",
+          "Mkt-RF": "float64",
+          "QQQ": "float64",
+          "RF": "float64",
+          "SMB": "float64",
+          "SPY": "float64",
+          "Sentiment_Market": "float64",
+          "T10Y2Y": "float64",
+          "TLT": "float64",
+          "VIXCLS": "float64",
+          "XLE": "float64",
+          "XLF": "float64",
+          "XLK": "float64",
+          "XLV": "float64"
+        },
+        "index_class": "DatetimeIndex",
+        "index_dtype": "datetime64[ns]",
+        "index_duplicate_count": 0,
+        "index_end": "2026-02-19 00:00:00",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "Date"
+        ],
+        "index_start": "2015-01-05 00:00:00",
+        "null_counts": {
+          "DBC": 0,
+          "DTB3": 21,
+          "EEM": 0,
+          "EFA": 0,
+          "GLD": 0,
+          "HML": 33,
+          "HYG": 0,
+          "IWM": 0,
+          "LQD": 0,
+          "Mkt-RF": 33,
+          "QQQ": 0,
+          "RF": 33,
+          "SMB": 33,
+          "SPY": 0,
+          "Sentiment_Market": 1258,
+          "T10Y2Y": 20,
+          "TLT": 0,
+          "VIXCLS": 1,
+          "XLE": 0,
+          "XLF": 0,
+          "XLK": 0,
+          "XLV": 0
+        },
+        "shape": [
+          2798,
+          22
+        ]
+      },
+      "file_modified_utc": "2026-03-18T23:12:46.731663+00:00",
+      "file_sha256": "93956650630731f8cab135c01bb14214b47a83bb869a388c53d86033d2155bbf",
+      "file_size_bytes": 458421,
+      "nan_mask_sha256": "3f4b93d43fd55f9bafe702bb58e6da48c2fb3d4a204cfff732f4ec70190568bf",
+      "path": "data/processed/master_panel.parquet",
+      "schema_sha256": "3f6d8d02af9d839a42f290fd8caa52c6b880b4f18ec64ebcc255d535761ee41e",
+      "suffix": ".parquet"
+    },
+    {
+      "content_sha256": "eb4e0906e19b905304ae096a7d664019b5b50b5de00dfd95238ab1c850adf6e6",
+      "dataframe_contract": {
+        "columns": [
+          "date",
+          "ticker",
+          "model",
+          "y_true",
+          "y_pred"
+        ],
+        "dtypes": {
+          "date": "object",
+          "model": "object",
+          "ticker": "object",
+          "y_pred": "float64",
+          "y_true": "float64"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "13999",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "date": 0,
+          "model": 0,
+          "ticker": 0,
+          "y_pred": 0,
+          "y_true": 0
+        },
+        "shape": [
+          14000,
+          5
+        ]
+      },
+      "file_modified_utc": "2026-04-14T23:51:52.894946+00:00",
+      "file_sha256": "aa94b90cb78c37750dcda8753a97593a4ebbba8b7d341450879ea7243561103a",
+      "file_size_bytes": 947518,
+      "nan_mask_sha256": "b9a7fb7430c8408fea3eb62b958df314f943bc7eacb550c3af97b46ba7a8bedf",
+      "path": "data/processed/notebook04_causal_predictions_long.csv",
+      "schema_sha256": "22ae32ab31925d27f2d9507d0a14c07aea98b90ef76cac64fd81dd6e17696327",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "1ef095caa2ed75330da7d5732e991bb19b6aacb3a9012ec5d64990d466d27381",
+      "dataframe_contract": {
+        "columns": [
+          "Sentiment_Market"
+        ],
+        "dtypes": {
+          "Sentiment_Market": "float64"
+        },
+        "index_class": "DatetimeIndex",
+        "index_dtype": "datetime64[ns]",
+        "index_duplicate_count": 0,
+        "index_end": "2026-02-19 00:00:00",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "Date"
+        ],
+        "index_start": "2015-01-05 00:00:00",
+        "null_counts": {
+          "Sentiment_Market": 1258
+        },
+        "shape": [
+          2798,
+          1
+        ]
+      },
+      "file_modified_utc": "2026-03-18T23:12:46.733662+00:00",
+      "file_sha256": "8d6604420eb23efd5e798f40fddb9d7f1f958de64c53b0edc246673eab82575b",
+      "file_size_bytes": 41369,
+      "nan_mask_sha256": "9ae6fb5e8f1bb10f92c25afa4ae1c0626a4a61319fa0d0ec5c257fb978f81964",
+      "path": "data/processed/sentiment_daily.parquet",
+      "schema_sha256": "9c276e1c62c943a74da6f6fed3ff81447c57d134145d02403c065a4670ed7c3e",
+      "suffix": ".parquet"
+    },
+    {
+      "content_sha256": "ac2a2b60d7af2cf296953ff6596c359c2923f8d7793194900cece9359a40ca47",
+      "dataframe_contract": {
+        "columns": [
+          "TARGET__SPY__fwd_rvol__20d",
+          "TARGET__QQQ__fwd_rvol__20d",
+          "TARGET__IWM__fwd_rvol__20d",
+          "TARGET__EFA__fwd_rvol__20d",
+          "TARGET__EEM__fwd_rvol__20d",
+          "TARGET__XLK__fwd_rvol__20d",
+          "TARGET__XLF__fwd_rvol__20d",
+          "TARGET__XLE__fwd_rvol__20d",
+          "TARGET__XLV__fwd_rvol__20d",
+          "TARGET__TLT__fwd_rvol__20d",
+          "TARGET__LQD__fwd_rvol__20d",
+          "TARGET__HYG__fwd_rvol__20d",
+          "TARGET__GLD__fwd_rvol__20d",
+          "TARGET__DBC__fwd_rvol__20d"
+        ],
+        "dtypes": {
+          "TARGET__DBC__fwd_rvol__20d": "float64",
+          "TARGET__EEM__fwd_rvol__20d": "float64",
+          "TARGET__EFA__fwd_rvol__20d": "float64",
+          "TARGET__GLD__fwd_rvol__20d": "float64",
+          "TARGET__HYG__fwd_rvol__20d": "float64",
+          "TARGET__IWM__fwd_rvol__20d": "float64",
+          "TARGET__LQD__fwd_rvol__20d": "float64",
+          "TARGET__QQQ__fwd_rvol__20d": "float64",
+          "TARGET__SPY__fwd_rvol__20d": "float64",
+          "TARGET__TLT__fwd_rvol__20d": "float64",
+          "TARGET__XLE__fwd_rvol__20d": "float64",
+          "TARGET__XLF__fwd_rvol__20d": "float64",
+          "TARGET__XLK__fwd_rvol__20d": "float64",
+          "TARGET__XLV__fwd_rvol__20d": "float64"
+        },
+        "index_class": "DatetimeIndex",
+        "index_dtype": "datetime64[ns]",
+        "index_duplicate_count": 0,
+        "index_end": "2026-02-19 00:00:00",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "Date"
+        ],
+        "index_start": "2015-01-05 00:00:00",
+        "null_counts": {
+          "TARGET__DBC__fwd_rvol__20d": 20,
+          "TARGET__EEM__fwd_rvol__20d": 20,
+          "TARGET__EFA__fwd_rvol__20d": 20,
+          "TARGET__GLD__fwd_rvol__20d": 20,
+          "TARGET__HYG__fwd_rvol__20d": 20,
+          "TARGET__IWM__fwd_rvol__20d": 20,
+          "TARGET__LQD__fwd_rvol__20d": 20,
+          "TARGET__QQQ__fwd_rvol__20d": 20,
+          "TARGET__SPY__fwd_rvol__20d": 20,
+          "TARGET__TLT__fwd_rvol__20d": 20,
+          "TARGET__XLE__fwd_rvol__20d": 20,
+          "TARGET__XLF__fwd_rvol__20d": 20,
+          "TARGET__XLK__fwd_rvol__20d": 20,
+          "TARGET__XLV__fwd_rvol__20d": 20
+        },
+        "shape": [
+          2798,
+          14
+        ]
+      },
+      "file_modified_utc": "2026-03-20T22:59:30.843568+00:00",
+      "file_sha256": "a0c0db4b515757bae79e0611bc3dc429d7dae6607e55dbb6aa92bf36b16ed56c",
+      "file_size_bytes": 405906,
+      "nan_mask_sha256": "31369f01d1b4c0569c6ed7dc6c0176dded616a12d11301aca074ecc8a211efd6",
+      "path": "data/processed/target_fwd_vol.parquet",
+      "schema_sha256": "b43010cdaae762cf3736b697123651c99b4315207454037f7c9eab89c8615b64",
+      "suffix": ".parquet"
+    },
+    {
+      "file_modified_utc": "2026-02-27T23:22:56+00:00",
+      "file_sha256": "297160e89095aec5fcd99afd2613105a6fc6f6e2075cc08ed6475ea8521052d6",
+      "file_size_bytes": 786440,
+      "path": "reports/models/notebook03_xgb_baseline.json",
+      "suffix": ".json"
+    },
+    {
+      "file_modified_utc": "2026-03-11T22:22:08.627938+00:00",
+      "file_sha256": "995d6e96887b95519222f631de59cf9a13d5e109e52f792e1bd137b2d270f046",
+      "file_size_bytes": 768320,
+      "path": "reports/models/notebook04_xgb_causal_GLD.json",
+      "suffix": ".json"
+    },
+    {
+      "file_modified_utc": "2026-03-11T22:22:08.633905+00:00",
+      "file_sha256": "748d1dc15e30c144464b35d47d2c26efc4b6f391ed7cbe89bed56b6b2859e3b0",
+      "file_size_bytes": 766704,
+      "path": "reports/models/notebook04_xgb_causal_SPY.json",
+      "suffix": ".json"
+    },
+    {
+      "file_modified_utc": "2026-03-11T22:22:08.638464+00:00",
+      "file_sha256": "e62e68173d67c9c33bf2fe04d4b96e3252878282f4ae53d50c002a819a4b4b9b",
+      "file_size_bytes": 771555,
+      "path": "reports/models/notebook04_xgb_causal_TLT.json",
+      "suffix": ".json"
+    },
+    {
+      "content_sha256": "20d484aa13cce21d463583444a656bb634597f876cbd2e19eb5e62faa3666060",
+      "dataframe_contract": {
+        "columns": [
+          "total_trading_days",
+          "non_null_days",
+          "pct_non_null",
+          "first_non_null_date",
+          "last_non_null_date",
+          "pre_2020_nan_days",
+          "post_2020_nan_days",
+          "test_partition_days",
+          "test_partition_nonnull",
+          "test_partition_pct",
+          "session_note"
+        ],
+        "dtypes": {
+          "first_non_null_date": "object",
+          "last_non_null_date": "object",
+          "non_null_days": "int64",
+          "pct_non_null": "float64",
+          "post_2020_nan_days": "int64",
+          "pre_2020_nan_days": "int64",
+          "session_note": "object",
+          "test_partition_days": "int64",
+          "test_partition_nonnull": "int64",
+          "test_partition_pct": "float64",
+          "total_trading_days": "int64"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "0",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "first_non_null_date": 0,
+          "last_non_null_date": 0,
+          "non_null_days": 0,
+          "pct_non_null": 0,
+          "post_2020_nan_days": 0,
+          "pre_2020_nan_days": 0,
+          "session_note": 0,
+          "test_partition_days": 0,
+          "test_partition_nonnull": 0,
+          "test_partition_pct": 0,
+          "total_trading_days": 0
+        },
+        "shape": [
+          1,
+          11
+        ]
+      },
+      "file_modified_utc": "2026-03-20T08:50:24.725199+00:00",
+      "file_sha256": "ce8137c0f192bd3d1ffd71f171658b3eaf2ca0f7cf6fe24463aae4ba9fa021dd",
+      "file_size_bytes": 388,
+      "nan_mask_sha256": "bad1dfc222a9c8b235bbfb9863a15764305a71615215b9f544df8c622b4890a7",
+      "path": "reports/tables/notebook01_sentiment_coverage_summary.csv",
+      "schema_sha256": "126be49204d0fa7b1278a3da3d40fc978b68681c43dd894f75b1f9ca12d51ab2",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "9de6c16adc2e3f0ee00f6365cef16469de98ad2e7d5e11dede5b30c58017e1e8",
+      "dataframe_contract": {
+        "columns": [
+          "window_start",
+          "window_end",
+          "depth",
+          "n_articles",
+          "hit_limit_flag",
+          "min_timestamp",
+          "max_timestamp"
+        ],
+        "dtypes": {
+          "depth": "int64",
+          "hit_limit_flag": "bool",
+          "max_timestamp": "object",
+          "min_timestamp": "object",
+          "n_articles": "int64",
+          "window_end": "object",
+          "window_start": "object"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "638",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "depth": 0,
+          "hit_limit_flag": 0,
+          "max_timestamp": 2,
+          "min_timestamp": 2,
+          "n_articles": 0,
+          "window_end": 0,
+          "window_start": 0
+        },
+        "shape": [
+          639,
+          7
+        ]
+      },
+      "file_modified_utc": "2026-03-18T20:54:46.492174+00:00",
+      "file_sha256": "043aac3b19dc23ec3c6fc659be2c941788669a462f9cd70afa5d2f5783aee42d",
+      "file_size_bytes": 55573,
+      "nan_mask_sha256": "f53f7e07d30a519537263c24e57e4d665e267049b03fc5c404af39cf1b712f13",
+      "path": "reports/tables/notebook01_sentiment_fetch_audit.csv",
+      "schema_sha256": "0a6a2236d87c656adf0678acf79cf5c2059df3e5dcc40459ae31cb4f10d03d65",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "2d49cf5429dd9e63e2b4f966a9bbb2335855cc96f1b96415cb2967a447c9d2bc",
+      "dataframe_contract": {
+        "columns": [
+          "Unnamed: 0",
+          "MOM__SPY__cum_ret__21d",
+          "VOL__SPY__rvol__21d",
+          "VOL__SPY__ewma_vol__span63",
+          "VAL__SPY__hml_beta__63d",
+          "SENT__sentiment_market",
+          "MACRO__vixcls",
+          "MACRO__t10y2y",
+          "MACRO__dtb3",
+          "REGIME__vix_high",
+          "TARGET__SPY__fwd_rvol__20d"
+        ],
+        "dtypes": {
+          "MACRO__dtb3": "float64",
+          "MACRO__t10y2y": "float64",
+          "MACRO__vixcls": "float64",
+          "MOM__SPY__cum_ret__21d": "float64",
+          "REGIME__vix_high": "float64",
+          "SENT__sentiment_market": "float64",
+          "TARGET__SPY__fwd_rvol__20d": "float64",
+          "Unnamed: 0": "object",
+          "VAL__SPY__hml_beta__63d": "float64",
+          "VOL__SPY__ewma_vol__span63": "float64",
+          "VOL__SPY__rvol__21d": "float64"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "9",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "MACRO__dtb3": 0,
+          "MACRO__t10y2y": 0,
+          "MACRO__vixcls": 0,
+          "MOM__SPY__cum_ret__21d": 0,
+          "REGIME__vix_high": 0,
+          "SENT__sentiment_market": 0,
+          "TARGET__SPY__fwd_rvol__20d": 0,
+          "Unnamed: 0": 0,
+          "VAL__SPY__hml_beta__63d": 0,
+          "VOL__SPY__ewma_vol__span63": 0,
+          "VOL__SPY__rvol__21d": 0
+        },
+        "shape": [
+          10,
+          11
+        ]
+      },
+      "file_modified_utc": "2026-03-20T22:59:30.860086+00:00",
+      "file_sha256": "0a5e4ab9860411c2645e63c2557d34eef1aede649c254707d7149394a5a72086",
+      "file_size_bytes": 2264,
+      "nan_mask_sha256": "262d38f0d2bdd4cd3ac854703c19bc7a7134e5199dfb940b14be677337e1d213",
+      "path": "reports/tables/notebook02_correlation_matrix_SPY.csv",
+      "schema_sha256": "dd9df4de40d0aa1f8b482b8050a8c97d4a47f3d3f825f11ca1471a1446fb60b6",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "db16c5a438d8134f555dc4c443ca3cf413fecf5a76af08a271cf3addb7673a58",
+      "dataframe_contract": {
+        "columns": [
+          "policy",
+          "complete_row_count",
+          "complete_fraction",
+          "first_complete_date",
+          "last_complete_date"
+        ],
+        "dtypes": {
+          "complete_fraction": "float64",
+          "complete_row_count": "int64",
+          "first_complete_date": "object",
+          "last_complete_date": "object",
+          "policy": "object"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "0",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "complete_fraction": 0,
+          "complete_row_count": 0,
+          "first_complete_date": 0,
+          "last_complete_date": 0,
+          "policy": 0
+        },
+        "shape": [
+          1,
+          5
+        ]
+      },
+      "file_modified_utc": "2026-03-20T22:59:30.861085+00:00",
+      "file_sha256": "4208cd0c8a1d467605d623dcc6c3c35cd7bd99a43880716ea47a3a7d0b06ce6a",
+      "file_size_bytes": 177,
+      "nan_mask_sha256": "35b87308f9a7ef33805f13551f271e1a6bb0127be3e4873b8041237daa141c9e",
+      "path": "reports/tables/notebook02_effective_complete_case_window.csv",
+      "schema_sha256": "26b6b3fd5ab69175bf37c4b0ec43a9faa0bcfc7a78e152410cb70fc1449499c0",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "db39f41cea9c9e514348b6b61306a07647d4ba2f452f827bc136f38be7d76df6",
+      "dataframe_contract": {
+        "columns": [
+          "feature_column",
+          "dag_node",
+          "feature_family",
+          "ticker",
+          "window",
+          "inputs",
+          "formula",
+          "leakage_policy"
+        ],
+        "dtypes": {
+          "dag_node": "object",
+          "feature_column": "object",
+          "feature_family": "object",
+          "formula": "object",
+          "inputs": "object",
+          "leakage_policy": "object",
+          "ticker": "object",
+          "window": "object"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "165",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "dag_node": 0,
+          "feature_column": 0,
+          "feature_family": 0,
+          "formula": 0,
+          "inputs": 0,
+          "leakage_policy": 0,
+          "ticker": 12,
+          "window": 0
+        },
+        "shape": [
+          166,
+          8
+        ]
+      },
+      "file_modified_utc": "2026-03-26T23:49:34.760173+00:00",
+      "file_sha256": "bf6ed38a1a933953722157270b204e67677911e9af9b81316ecbc81ebfcac97e",
+      "file_size_bytes": 22324,
+      "nan_mask_sha256": "f35b16cc2ccce6daf252219ac149625a6a53260ce3a69f322293c8f392103c36",
+      "path": "reports/tables/notebook02_feature_contract.csv",
+      "schema_sha256": "5e2320e6c4879b1cc483a11d2c252a6f933c2145d858c043fa2f7c851b275d9b",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "3dcc86c3d7db85c03390c03998b3616ddc98229b3991576634f3e3b407b461ff",
+      "dataframe_contract": {
+        "columns": [
+          "Unnamed: 0",
+          "feature_count"
+        ],
+        "dtypes": {
+          "Unnamed: 0": "object",
+          "feature_count": "int64"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "6",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "Unnamed: 0": 0,
+          "feature_count": 0
+        },
+        "shape": [
+          7,
+          2
+        ]
+      },
+      "file_modified_utc": "2026-02-27T21:22:36+00:00",
+      "file_sha256": "ccd6b9e1c1a63530ab77957d96e72c9cefe4b411496c21d535bde00b054c3a00",
+      "file_size_bytes": 73,
+      "nan_mask_sha256": "f55f9bd4eea3526779eca3049cc5b7f418ebc161b4b8d516881f784baeab8297",
+      "path": "reports/tables/notebook02_feature_counts_by_dag.csv",
+      "schema_sha256": "99bd35aee9a83e97fa7bc818de68b762f0295ef587b88fdb8a0d3dab813cede0",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "c7372859de324b99698fbd5e2af1f65eba0abb8e9fe89aeadd93d3ac97b29c8a",
+      "dataframe_contract": {
+        "columns": [
+          "missing_date"
+        ],
+        "dtypes": {
+          "missing_date": "object"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "32",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "missing_date": 0
+        },
+        "shape": [
+          33,
+          1
+        ]
+      },
+      "file_modified_utc": "2026-03-20T22:59:30.862085+00:00",
+      "file_sha256": "a9d12301fa3f35316b667e1dd8a3ab8a4ca2ed49b600b0600f90bc86d25e41dd",
+      "file_size_bytes": 410,
+      "nan_mask_sha256": "c3bcd4cbb32e1fd964870756818fd63b2f3d2f42adc9367abc8e2241da915953",
+      "path": "reports/tables/notebook02_ff_factors_missing_dates.csv",
+      "schema_sha256": "78bfb66b63f8d9848f914240395eac8c006bcd3b69e633244ab3b4b5e0d3a1d6",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "5e2856c74f855a213aeb7ec702a355304338567807bc68f9e99fee318428fd61",
+      "dataframe_contract": {
+        "columns": [
+          "label",
+          "row_count",
+          "col_count",
+          "missing_rows",
+          "missing_fraction",
+          "first_missing_date",
+          "last_missing_date"
+        ],
+        "dtypes": {
+          "col_count": "int64",
+          "first_missing_date": "object",
+          "label": "object",
+          "last_missing_date": "object",
+          "missing_fraction": "float64",
+          "missing_rows": "int64",
+          "row_count": "int64"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "3",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "col_count": 0,
+          "first_missing_date": 1,
+          "label": 0,
+          "last_missing_date": 1,
+          "missing_fraction": 0,
+          "missing_rows": 0,
+          "row_count": 0
+        },
+        "shape": [
+          4,
+          7
+        ]
+      },
+      "file_modified_utc": "2026-03-20T22:59:30.863086+00:00",
+      "file_sha256": "71dcdb18d34456679898ae4ed351ade1a17e0e21d0d059f461bc2c47814028c0",
+      "file_size_bytes": 324,
+      "nan_mask_sha256": "41861dc667216bbe1e934a0e6ea647d496a2e75f8aff4a8066c2d0bf5a8d4849",
+      "path": "reports/tables/notebook02_input_coverage_summary.csv",
+      "schema_sha256": "e0ca8bdbcd4d9b068b6b0ceaf4062bd7a228401ff2dbebcc097544757302f3a0",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "1b125eda1972d3b75c583b8fb3abc064a4b805393cf4ce39dc046b0391da6119",
+      "dataframe_contract": {
+        "columns": [
+          "missing_date"
+        ],
+        "dtypes": {
+          "missing_date": "object"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "20",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "missing_date": 0
+        },
+        "shape": [
+          21,
+          1
+        ]
+      },
+      "file_modified_utc": "2026-02-27T21:22:36+00:00",
+      "file_sha256": "4f7870f192b78a568bc8524e6da1c35d628ffc090c62c3443d3a1a979560b40e",
+      "file_size_bytes": 266,
+      "nan_mask_sha256": "92e37567d35aa804cc02b20f6faedb81331a1aae42bfc1e6bff47641b4be56ae",
+      "path": "reports/tables/notebook02_macro_missing_dates.csv",
+      "schema_sha256": "6620e4c51174ecf77f2564f3bc87d22d7148129b10342df64c8eeaf8b7049d39",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "7002eaa35061ae776d439c87b1b9bbdcc9b716dcf930c9aa8d90ab527dfec4ff",
+      "dataframe_contract": {
+        "columns": [
+          "ticker"
+        ],
+        "dtypes": {
+          "ticker": "object"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "13",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "ticker": 0
+        },
+        "shape": [
+          14,
+          1
+        ]
+      },
+      "file_modified_utc": "2026-02-27T21:22:36+00:00",
+      "file_sha256": "bc8421cd076ac7117484a6b66d53635e433ab4fc52209d4ceea7b7ee2fe5817b",
+      "file_size_bytes": 78,
+      "nan_mask_sha256": "645ed781af4bc3bfbea9e3d0d152b27b44f2500153571945026a3950674399a0",
+      "path": "reports/tables/notebook02_ticker_list.csv",
+      "schema_sha256": "6e40586415d6c850e9c62c2a7b9da9e4ee831f927978034513d0b158028c0b87",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "cce71e025f1c50c5944f0728f017bd27cf75f5036fd5ac832131ad40b960e078",
+      "dataframe_contract": {
+        "columns": [
+          "Unnamed: 0",
+          "missing_fraction"
+        ],
+        "dtypes": {
+          "Unnamed: 0": "object",
+          "missing_fraction": "float64"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "29",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "Unnamed: 0": 0,
+          "missing_fraction": 0
+        },
+        "shape": [
+          30,
+          2
+        ]
+      },
+      "file_modified_utc": "2026-03-20T22:59:30.864087+00:00",
+      "file_sha256": "d17f39c9f0e4b4968e6a77a4671f35bc8e3a53306d8bbbf772b57b14989e793c",
+      "file_size_bytes": 1359,
+      "nan_mask_sha256": "994eb984019ec08145f645f4d844b235205bed47097b95148bbae61f0106e2b4",
+      "path": "reports/tables/notebook02_top_missingness_features.csv",
+      "schema_sha256": "c2c95c59ba0fb3f295301c4c02548a24f37a384b5bd26d0855ff366d73f63732",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "7d5b6cca574e6af23f3d85beeae6f6f014008e84a145d903008f8a31e6b35675",
+      "dataframe_contract": {
+        "columns": [
+          "series_type",
+          "ticker",
+          "adf_stat",
+          "p_value",
+          "used_lag",
+          "n_obs",
+          "crit_1pct",
+          "crit_5pct",
+          "crit_10pct",
+          "stationary_at_5pct"
+        ],
+        "dtypes": {
+          "adf_stat": "float64",
+          "crit_10pct": "float64",
+          "crit_1pct": "float64",
+          "crit_5pct": "float64",
+          "n_obs": "int64",
+          "p_value": "float64",
+          "series_type": "object",
+          "stationary_at_5pct": "bool",
+          "ticker": "object",
+          "used_lag": "int64"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "27",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "adf_stat": 0,
+          "crit_10pct": 0,
+          "crit_1pct": 0,
+          "crit_5pct": 0,
+          "n_obs": 0,
+          "p_value": 0,
+          "series_type": 0,
+          "stationary_at_5pct": 0,
+          "ticker": 0,
+          "used_lag": 0
+        },
+        "shape": [
+          28,
+          10
+        ]
+      },
+      "file_modified_utc": "2026-03-25T19:38:59.596458+00:00",
+      "file_sha256": "192e4fa8ac54e0b757870f8dcea88d564da25f4b558c86dc0b8874f52a7ad3b4",
+      "file_size_bytes": 3855,
+      "nan_mask_sha256": "640434928b53b1fcd05daadc2ffd3dbab73f0cc292057f80c2a5afd1470c1362",
+      "path": "reports/tables/notebook03_adf_stationarity_results.csv",
+      "schema_sha256": "7f9b4640d0e495fa689adb51864db3317a21a020536dc3df65af94a837d0000d",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "4b4729e5773b793ae4ed820c73fe35c03446fc1bc8e143180471a2bd149b2b25",
+      "dataframe_contract": {
+        "columns": [
+          "date",
+          "ticker",
+          "model",
+          "y_true",
+          "y_pred"
+        ],
+        "dtypes": {
+          "date": "object",
+          "model": "object",
+          "ticker": "object",
+          "y_pred": "float64",
+          "y_true": "float64"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "27999",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "date": 0,
+          "model": 0,
+          "ticker": 0,
+          "y_pred": 0,
+          "y_true": 0
+        },
+        "shape": [
+          28000,
+          5
+        ]
+      },
+      "file_modified_utc": "2026-03-25T19:38:59.616019+00:00",
+      "file_sha256": "777bfa45abf97c7aa87a8bc4351af06031a9ac37ed6416affa40c49c0b988523",
+      "file_size_bytes": 1799620,
+      "nan_mask_sha256": "44bf7afda8c37ee75e2380092e60206dae78cf6df9966160a0ca32020c052b6f",
+      "path": "reports/tables/notebook03_baseline_predictions_long.csv",
+      "schema_sha256": "8d6b5d8a7a76e0490e982c1b50f8a7651c24228384c4ac90c4a2520a0396f2a3",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "cf305d9f87b490e84a42353a5fffcdcc1c474f294378eb5ed9aeb579af6e4dc0",
+      "dataframe_contract": {
+        "columns": [
+          "model",
+          "ticker",
+          "rmse",
+          "mae",
+          "n_obs"
+        ],
+        "dtypes": {
+          "mae": "float64",
+          "model": "object",
+          "n_obs": "int64",
+          "rmse": "float64",
+          "ticker": "object"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "59",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "mae": 0,
+          "model": 0,
+          "n_obs": 0,
+          "rmse": 0,
+          "ticker": 0
+        },
+        "shape": [
+          60,
+          5
+        ]
+      },
+      "file_modified_utc": "2026-03-25T19:38:59.618020+00:00",
+      "file_sha256": "01c915d2672865881c67a4cfbd5ba4c56063677e95062b7e5816bdbe31f2f1d3",
+      "file_size_bytes": 3535,
+      "nan_mask_sha256": "dda9fc3c1b6866dd09cf3d4cc5d8eaa675e47c0791c10fdba285a15180ace666",
+      "path": "reports/tables/notebook03_baseline_rmse_mae.csv",
+      "schema_sha256": "b5251fcae082b70b2bc80a1cc79478cf51cd81991c58fb2b505d08b574c319f8",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "001bcee8813503d94680df91ea7ca9b03c3588c0f5800bc3148d1e8b62f72d12",
+      "dataframe_contract": {
+        "columns": [
+          "Ticker",
+          "SPY",
+          "QQQ",
+          "IWM",
+          "EFA",
+          "EEM",
+          "XLK",
+          "XLF",
+          "XLE",
+          "XLV",
+          "TLT",
+          "LQD",
+          "HYG",
+          "GLD",
+          "DBC"
+        ],
+        "dtypes": {
+          "DBC": "float64",
+          "EEM": "float64",
+          "EFA": "float64",
+          "GLD": "float64",
+          "HYG": "float64",
+          "IWM": "float64",
+          "LQD": "float64",
+          "QQQ": "float64",
+          "SPY": "float64",
+          "TLT": "float64",
+          "Ticker": "object",
+          "XLE": "float64",
+          "XLF": "float64",
+          "XLK": "float64",
+          "XLV": "float64"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "13",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "DBC": 0,
+          "EEM": 0,
+          "EFA": 0,
+          "GLD": 0,
+          "HYG": 0,
+          "IWM": 0,
+          "LQD": 0,
+          "QQQ": 0,
+          "SPY": 0,
+          "TLT": 0,
+          "Ticker": 0,
+          "XLE": 0,
+          "XLF": 0,
+          "XLK": 0,
+          "XLV": 0
+        },
+        "shape": [
+          14,
+          15
+        ]
+      },
+      "file_modified_utc": "2026-03-25T16:20:56.948274+00:00",
+      "file_sha256": "ae816a1ff675c84fc0ec25d9fa7864967037b34499e3cbae8d895b43d7c432de",
+      "file_size_bytes": 3712,
+      "nan_mask_sha256": "040f2cc38ce0403c1d74890d03696995b8816819d9a035589206cf95add9a59c",
+      "path": "reports/tables/notebook03_correlation_matrix.csv",
+      "schema_sha256": "2daab2c76b7504432ef27750b8a6ff8995822f66a55853483fbe0b253f3b20b3",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "2224037acbcb5820bb641dda09a9ab84324da7e6e145db90f00d9f338d95b677",
+      "dataframe_contract": {
+        "columns": [
+          "ticker",
+          "n_obs",
+          "mean",
+          "std_ddof1",
+          "skewness",
+          "excess_kurtosis",
+          "tail_count_abs_gt_3sigma",
+          "tail_rate_abs_gt_3sigma"
+        ],
+        "dtypes": {
+          "excess_kurtosis": "float64",
+          "mean": "float64",
+          "n_obs": "int64",
+          "skewness": "float64",
+          "std_ddof1": "float64",
+          "tail_count_abs_gt_3sigma": "int64",
+          "tail_rate_abs_gt_3sigma": "float64",
+          "ticker": "object"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "2",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "excess_kurtosis": 0,
+          "mean": 0,
+          "n_obs": 0,
+          "skewness": 0,
+          "std_ddof1": 0,
+          "tail_count_abs_gt_3sigma": 0,
+          "tail_rate_abs_gt_3sigma": 0,
+          "ticker": 0
+        },
+        "shape": [
+          3,
+          8
+        ]
+      },
+      "file_modified_utc": "2026-02-27T22:36:46+00:00",
+      "file_sha256": "1f3977d960244a92ae2bef4e6c10d45000d72bc42ebac7d88bd7e53d38d9e8fa",
+      "file_size_bytes": 448,
+      "nan_mask_sha256": "241e3e7ed23901636d6fc359b0ad2a306252663314fb0bb769e5b49aedb91dfa",
+      "path": "reports/tables/notebook03_distribution_summary.csv",
+      "schema_sha256": "c3cb3c20bcd78560806a41aa96e14048223a6d86503e568b47b98719a4d96a7f",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "5d395ec9076d98b320bc932a533b83a361c355da79408455f44ab2c76f8b2f26",
+      "dataframe_contract": {
+        "columns": [
+          "effective_start_date",
+          "effective_end_date",
+          "effective_row_count",
+          "effective_feature_count_ex_sentiment",
+          "effective_target_count",
+          "effective_features_mean_non_null_fraction",
+          "effective_targets_mean_non_null_fraction"
+        ],
+        "dtypes": {
+          "effective_end_date": "object",
+          "effective_feature_count_ex_sentiment": "int64",
+          "effective_features_mean_non_null_fraction": "float64",
+          "effective_row_count": "int64",
+          "effective_start_date": "object",
+          "effective_target_count": "int64",
+          "effective_targets_mean_non_null_fraction": "float64"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "0",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "effective_end_date": 0,
+          "effective_feature_count_ex_sentiment": 0,
+          "effective_features_mean_non_null_fraction": 0,
+          "effective_row_count": 0,
+          "effective_start_date": 0,
+          "effective_target_count": 0,
+          "effective_targets_mean_non_null_fraction": 0
+        },
+        "shape": [
+          1,
+          7
+        ]
+      },
+      "file_modified_utc": "2026-02-27T22:36:40+00:00",
+      "file_sha256": "3f9fc0169f640b11895929f810ff951c26e79b0a3c7a9deb934aac3a94ebaedf",
+      "file_size_bytes": 245,
+      "nan_mask_sha256": "bb759380f16bbcfc06239aee38a4a5bc350d6642683c81fdd5fb21c5435125b3",
+      "path": "reports/tables/notebook03_effective_window_summary.csv",
+      "schema_sha256": "6bffbe4de57569ac0915189c160ad0497482b81f6b98987647df50fbcb06289d",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "a6fb24cac104625ea53371a12b01c44eeb7f085f24154c7711d1dd7580b73b39",
+      "dataframe_contract": {
+        "columns": [
+          "model",
+          "ticker",
+          "rmse",
+          "mae",
+          "n_obs"
+        ],
+        "dtypes": {
+          "mae": "float64",
+          "model": "object",
+          "n_obs": "int64",
+          "rmse": "float64",
+          "ticker": "object"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "14",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "mae": 0,
+          "model": 0,
+          "n_obs": 0,
+          "rmse": 0,
+          "ticker": 0
+        },
+        "shape": [
+          15,
+          5
+        ]
+      },
+      "file_modified_utc": "2026-03-21T17:11:06.172158+00:00",
+      "file_sha256": "d90a79b12b49ac5d2027100c77cea2bdf0516e918e6305cf43783b5d9b740e2c",
+      "file_size_bytes": 864,
+      "nan_mask_sha256": "81dadf330906c1117d6303319eba15c2648774c0470c751c6c391e3829d91ca9",
+      "path": "reports/tables/notebook03_ewma_rmse_mae.csv",
+      "schema_sha256": "798d53af1d2dc5095d44762ca3643b5bbd392214aa3daa915e3718f233148793",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "c78cc901c1a7b4a504110bf59c5db7ca02b60f1e471fc44c4f400c59b91d9ff7",
+      "dataframe_contract": {
+        "columns": [
+          "date",
+          "ticker",
+          "model",
+          "y_true",
+          "y_pred"
+        ],
+        "dtypes": {
+          "date": "object",
+          "model": "object",
+          "ticker": "object",
+          "y_pred": "float64",
+          "y_true": "float64"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "8399",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "date": 0,
+          "model": 0,
+          "ticker": 0,
+          "y_pred": 0,
+          "y_true": 0
+        },
+        "shape": [
+          8400,
+          5
+        ]
+      },
+      "file_modified_utc": "2026-03-25T01:55:06.392090+00:00",
+      "file_sha256": "87b8fc72dda33e89bd83c715d73d4db7f6b57b159323607944da552719c6a3fe",
+      "file_size_bytes": 633769,
+      "nan_mask_sha256": "6d448bb2006a0e2d2a640bab71541ad61c0f6e39c73e36e3d995225a2e74d159",
+      "path": "reports/tables/notebook03_h3_matched_predictions_long.csv",
+      "schema_sha256": "625496dc770abba9d4d5512c11ada63247f9d8469f692be01da025057fc420a2",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "cdef978966e04615d255eaca3636eec6c98d8f41a14c7960a83934818be19aa3",
+      "dataframe_contract": {
+        "columns": [
+          "model",
+          "ticker",
+          "rmse",
+          "mae",
+          "n_obs"
+        ],
+        "dtypes": {
+          "mae": "float64",
+          "model": "object",
+          "n_obs": "int64",
+          "rmse": "float64",
+          "ticker": "object"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "29",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "mae": 0,
+          "model": 0,
+          "n_obs": 0,
+          "rmse": 0,
+          "ticker": 0
+        },
+        "shape": [
+          30,
+          5
+        ]
+      },
+      "file_modified_utc": "2026-03-25T01:55:06.393088+00:00",
+      "file_sha256": "963b3b3e509ea850df7237b22a85aa6b80e4e5acab8b98d0cd825d271abbff9e",
+      "file_size_bytes": 2133,
+      "nan_mask_sha256": "3d11b47aea3ceaafc706b85c1f239a7f31542115e233c1356cd405cc55cc20ec",
+      "path": "reports/tables/notebook03_h3_matched_rmse_mae.csv",
+      "schema_sha256": "0119c161dde4d8f1f7160799319b1274727b8fe9f749e8c5fc163e793e20f396",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "ae70ff50106a848f15f2784bfa1e5e4e0aa4c4c02d860380a7da1a7813f9ace7",
+      "dataframe_contract": {
+        "columns": [
+          "h3_start_date",
+          "h3_end_date",
+          "h3_row_count",
+          "h3_feature_count_with_sentiment",
+          "h3_target_count",
+          "h3_features_mean_non_null"
+        ],
+        "dtypes": {
+          "h3_end_date": "object",
+          "h3_feature_count_with_sentiment": "int64",
+          "h3_features_mean_non_null": "float64",
+          "h3_row_count": "int64",
+          "h3_start_date": "object",
+          "h3_target_count": "int64"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "0",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "h3_end_date": 0,
+          "h3_feature_count_with_sentiment": 0,
+          "h3_features_mean_non_null": 0,
+          "h3_row_count": 0,
+          "h3_start_date": 0,
+          "h3_target_count": 0
+        },
+        "shape": [
+          1,
+          6
+        ]
+      },
+      "file_modified_utc": "2026-03-25T01:55:06.394088+00:00",
+      "file_sha256": "7f593c7c21a63ecc902b417a153a9f68ad0d095220c7082df1b1f1cdb82dc97e",
+      "file_size_bytes": 153,
+      "nan_mask_sha256": "69360da29958704760db1091960db19e8aef37525e0594aa11a2167af35d08d4",
+      "path": "reports/tables/notebook03_h3_matched_window_summary.csv",
+      "schema_sha256": "dd92395058d2280d441e52c479547865bea6cd4948b2023e262e921fcbb9f41a",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "a540641ac6050b41d66d1ef98853c12cf64c0f639ffea053963b4a2d95b7c81b",
+      "dataframe_contract": {
+        "columns": [
+          "n_estimators",
+          "max_depth",
+          "learning_rate",
+          "subsample",
+          "colsample_bytree",
+          "reg_lambda",
+          "tree_method",
+          "avg_rmse_rep_tickers",
+          "rep_tickers"
+        ],
+        "dtypes": {
+          "avg_rmse_rep_tickers": "float64",
+          "colsample_bytree": "float64",
+          "learning_rate": "float64",
+          "max_depth": "int64",
+          "n_estimators": "int64",
+          "reg_lambda": "float64",
+          "rep_tickers": "object",
+          "subsample": "float64",
+          "tree_method": "object"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "5",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "avg_rmse_rep_tickers": 0,
+          "colsample_bytree": 0,
+          "learning_rate": 0,
+          "max_depth": 0,
+          "n_estimators": 0,
+          "reg_lambda": 0,
+          "rep_tickers": 0,
+          "subsample": 0,
+          "tree_method": 0
+        },
+        "shape": [
+          6,
+          9
+        ]
+      },
+      "file_modified_utc": "2026-03-25T01:55:06.395086+00:00",
+      "file_sha256": "0bdc26da0ad989c8b902aa2d06dc793ed68a1cfb23c97dcc1a4a7ce5c6cdbf43",
+      "file_size_bytes": 527,
+      "nan_mask_sha256": "6e2257f106dd4f41a3f21c641140fd672fbc1b47c37c0cc1b45ecb20763c2372",
+      "path": "reports/tables/notebook03_h3_xgb_tuning_results.csv",
+      "schema_sha256": "067cab1b100b1b098f8d7f010bdda3b28477d0c30e581904e13504181b42b382",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "788fcb7a8f66ea113cd42ad8946b3754280e83bdcb389806eb55ffc11498d6f6",
+      "dataframe_contract": {
+        "columns": [
+          "series_type",
+          "ticker",
+          "lag",
+          "lb_stat",
+          "lb_pvalue",
+          "reject_no_autocorr_at_5pct"
+        ],
+        "dtypes": {
+          "lag": "int64",
+          "lb_pvalue": "float64",
+          "lb_stat": "float64",
+          "reject_no_autocorr_at_5pct": "bool",
+          "series_type": "object",
+          "ticker": "object"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "55",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "lag": 0,
+          "lb_pvalue": 0,
+          "lb_stat": 0,
+          "reject_no_autocorr_at_5pct": 0,
+          "series_type": 0,
+          "ticker": 0
+        },
+        "shape": [
+          56,
+          6
+        ]
+      },
+      "file_modified_utc": "2026-03-25T19:38:59.619021+00:00",
+      "file_sha256": "8fa455667b075af62c55ee9c055fe56ac1b9eb1259b62c2fccbc70ed8711800f",
+      "file_size_bytes": 3440,
+      "nan_mask_sha256": "b35cf8c42bd31214b96aac119d5fe81a306b7f220c64579d5b835820a95d9ea8",
+      "path": "reports/tables/notebook03_ljung_box_results.csv",
+      "schema_sha256": "9c8484d896a31ae5d3571d06e0bc56b3945e317726a60782b7c721d5fa87916c",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "b8f1492426034bc419ebe92c718bee3328a9ef471ac46e0084c830cba7ceb000",
+      "dataframe_contract": {
+        "columns": [
+          "rank",
+          "model",
+          "ticker",
+          "feature",
+          "importance_mean",
+          "importance_std",
+          "n_repeats",
+          "scoring"
+        ],
+        "dtypes": {
+          "feature": "object",
+          "importance_mean": "float64",
+          "importance_std": "float64",
+          "model": "object",
+          "n_repeats": "int64",
+          "rank": "int64",
+          "scoring": "object",
+          "ticker": "object"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "150",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "feature": 0,
+          "importance_mean": 0,
+          "importance_std": 0,
+          "model": 0,
+          "n_repeats": 0,
+          "rank": 0,
+          "scoring": 0,
+          "ticker": 0
+        },
+        "shape": [
+          151,
+          8
+        ]
+      },
+      "file_modified_utc": "2026-05-12T23:13:49.005422+00:00",
+      "file_sha256": "e9f88473cd746bad4d2ec23d67e1336574caa5ba0575eff81126b39ac3c763a2",
+      "file_size_bytes": 17659,
+      "nan_mask_sha256": "4f6331063d287d6f6b78b5f0217e5fe928b0ee41770470a18c4ff4d0fb167b14",
+      "path": "reports/tables/notebook03_mlp_baseline_feature_importance.csv",
+      "schema_sha256": "a9faf1f1812e7b25caaa8de4a9f22d8a84ae3304798ea0abd5b6839e553e866d",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "188b5dba1bf31a6922fc1de3b4511ff8b60e072a532c9847abceeb34bd22d63f",
+      "dataframe_contract": {
+        "columns": [
+          "stylized_fact",
+          "evidence_summary",
+          "modeling_implication",
+          "primary_artifact"
+        ],
+        "dtypes": {
+          "evidence_summary": "object",
+          "modeling_implication": "object",
+          "primary_artifact": "object",
+          "stylized_fact": "object"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "5",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "evidence_summary": 0,
+          "modeling_implication": 0,
+          "primary_artifact": 0,
+          "stylized_fact": 0
+        },
+        "shape": [
+          6,
+          4
+        ]
+      },
+      "file_modified_utc": "2026-03-25T16:20:57.514996+00:00",
+      "file_sha256": "2a380455e691b72ca4e958a0a80ad8d39b5050c5138f2700074a420ceb0d270b",
+      "file_size_bytes": 1701,
+      "nan_mask_sha256": "6bc8d83736232b020a29eb3eb394ef0e95588174a7daa765b4c59376a03f38b2",
+      "path": "reports/tables/notebook03_stylized_facts_summary.csv",
+      "schema_sha256": "dcd8a9099793747b06b7088f6437e7d3ed4f61927be203493ec786e8f1f90f6c",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "55a63b195ea76d46ce0c5469c8c1b46e78ea10296db9eaa240ec6bab2c485d40",
+      "dataframe_contract": {
+        "columns": [
+          "feature",
+          "gain"
+        ],
+        "dtypes": {
+          "feature": "object",
+          "gain": "float64"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "150",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "feature": 0,
+          "gain": 0
+        },
+        "shape": [
+          151,
+          2
+        ]
+      },
+      "file_modified_utc": "2026-03-25T16:20:57.776544+00:00",
+      "file_sha256": "f86609936dd4ee7cb7bed37c413bea50c6f280aac0d876b1a1c462bc6e73513a",
+      "file_size_bytes": 6667,
+      "nan_mask_sha256": "2c9735501688f0c260aef50c3ddd46ff505d07edcffb710e8720ce0e22757dbe",
+      "path": "reports/tables/notebook03_xgb_feature_importance.csv",
+      "schema_sha256": "47eeb7441a62831f35cf2c99f9c37145035fa3ddd66f0692c1d3fdaad39865b7",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "8b5184b8eb1fee20dc71bc880e25dbe830922a553b9c291282797c4088ad8187",
+      "dataframe_contract": {
+        "columns": [
+          "avg_rmse_rep_tickers",
+          "rep_tickers",
+          "n_estimators",
+          "max_depth",
+          "learning_rate",
+          "subsample",
+          "colsample_bytree",
+          "reg_lambda",
+          "tree_method",
+          "wall_seconds"
+        ],
+        "dtypes": {
+          "avg_rmse_rep_tickers": "float64",
+          "colsample_bytree": "float64",
+          "learning_rate": "float64",
+          "max_depth": "int64",
+          "n_estimators": "int64",
+          "reg_lambda": "float64",
+          "rep_tickers": "object",
+          "subsample": "float64",
+          "tree_method": "object",
+          "wall_seconds": "float64"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "5",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "avg_rmse_rep_tickers": 0,
+          "colsample_bytree": 0,
+          "learning_rate": 0,
+          "max_depth": 0,
+          "n_estimators": 0,
+          "reg_lambda": 0,
+          "rep_tickers": 0,
+          "subsample": 0,
+          "tree_method": 0,
+          "wall_seconds": 0
+        },
+        "shape": [
+          6,
+          10
+        ]
+      },
+      "file_modified_utc": "2026-03-25T19:38:59.623020+00:00",
+      "file_sha256": "ef4710e2917e41d5160fc77c07c59eeab6b673bfb86b77dbcc6b0d2232427166",
+      "file_size_bytes": 568,
+      "nan_mask_sha256": "f3d510d3b0f16a76a44a726349e1be1e013369ba50e3c2c3859bed3d8797928b",
+      "path": "reports/tables/notebook03_xgb_tuning_results.csv",
+      "schema_sha256": "0a9cb1a87e4a52d002b870be96dc7e130b3374c5ccb49e8da0ba255b212e3928",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "46dff3ef7aa157809ec8cc0bd57b5b4093996d3fdf659848f8991cbf03771406",
+      "dataframe_contract": {
+        "columns": [
+          "artifact_type",
+          "artifact_path",
+          "exists_now",
+          "file_size_bytes"
+        ],
+        "dtypes": {
+          "artifact_path": "object",
+          "artifact_type": "object",
+          "exists_now": "bool",
+          "file_size_bytes": "int64"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "17",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "artifact_path": 0,
+          "artifact_type": 0,
+          "exists_now": 0,
+          "file_size_bytes": 0
+        },
+        "shape": [
+          18,
+          4
+        ]
+      },
+      "file_modified_utc": "2026-04-14T23:51:52.908998+00:00",
+      "file_sha256": "ad36112a6e0ebdbec0c69d405039feba199812285ce77699f5c6b4388b4aa05e",
+      "file_size_bytes": 1769,
+      "nan_mask_sha256": "846effbaa146f32a5417ccc44d082cf6762224c6e9c7b34534302c2410d7876d",
+      "path": "reports/tables/notebook04_artifact_manifest.csv",
+      "schema_sha256": "f1572b1c9b5d6e7c909f99e2dee8d091bddc637f219c42a0c3b5660f395b1b6f",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "a99fab0bc47c58c8ab0c7b099d9f82de5aa7503b407983b31ca16891a7e9108c",
+      "dataframe_contract": {
+        "columns": [
+          "asset_class",
+          "ticker_count",
+          "mean_causal_minus_xgboost_rmse",
+          "mean_causal_minus_ewma_rmse",
+          "mean_causal_minus_xgboost_mae",
+          "mean_causal_minus_ewma_mae",
+          "rmse_wins_vs_xgboost",
+          "rmse_wins_vs_ewma"
+        ],
+        "dtypes": {
+          "asset_class": "object",
+          "mean_causal_minus_ewma_mae": "float64",
+          "mean_causal_minus_ewma_rmse": "float64",
+          "mean_causal_minus_xgboost_mae": "float64",
+          "mean_causal_minus_xgboost_rmse": "float64",
+          "rmse_wins_vs_ewma": "int64",
+          "rmse_wins_vs_xgboost": "int64",
+          "ticker_count": "int64"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "4",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "asset_class": 0,
+          "mean_causal_minus_ewma_mae": 0,
+          "mean_causal_minus_ewma_rmse": 0,
+          "mean_causal_minus_xgboost_mae": 0,
+          "mean_causal_minus_xgboost_rmse": 0,
+          "rmse_wins_vs_ewma": 0,
+          "rmse_wins_vs_xgboost": 0,
+          "ticker_count": 0
+        },
+        "shape": [
+          5,
+          8
+        ]
+      },
+      "file_modified_utc": "2026-04-14T23:51:52.913002+00:00",
+      "file_sha256": "d78cb7ca3fb9e0109152842338d7202f17588cd315613a3b0803bcae1962ec5a",
+      "file_size_bytes": 717,
+      "nan_mask_sha256": "ab0ec04f936534b6409f9e6d8586cd4372b59a97a1481099ed58c0a4e7003fa8",
+      "path": "reports/tables/notebook04_asset_class_comparison.csv",
+      "schema_sha256": "3f9d9a03a91a66bbcc3c2c2188de3ad8248c50f2a80939815fcd1c833ff0975d",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "43a15091005126acbfd0243dd0d75e83340f965900942f6db113eb253f15e5e8",
+      "dataframe_contract": {
+        "columns": [
+          "ticker",
+          "model_variant",
+          "feature",
+          "dag_prefix",
+          "gain",
+          "gain_share",
+          "rank_within_ticker",
+          "model_path"
+        ],
+        "dtypes": {
+          "dag_prefix": "object",
+          "feature": "object",
+          "gain": "float64",
+          "gain_share": "float64",
+          "model_path": "object",
+          "model_variant": "object",
+          "rank_within_ticker": "int64",
+          "ticker": "object"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "221",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "dag_prefix": 0,
+          "feature": 0,
+          "gain": 0,
+          "gain_share": 0,
+          "model_path": 0,
+          "model_variant": 0,
+          "rank_within_ticker": 0,
+          "ticker": 0
+        },
+        "shape": [
+          222,
+          8
+        ]
+      },
+      "file_modified_utc": "2026-03-11T22:22:08.640465+00:00",
+      "file_sha256": "7224b24f123a5eab08214e7e8580d271586b65079b93e4feb77856531241c6a2",
+      "file_size_bytes": 37008,
+      "nan_mask_sha256": "367b6fcfd2d8bb6fdd6ce692a23d7cce730ecfde1b95bec0a39a1ac3c1723a4d",
+      "path": "reports/tables/notebook04_causal_feature_importance.csv",
+      "schema_sha256": "31c99ac2654173e9ad23aade70f2808107299dfb8ba38571fc73dadf6d96b3e0",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "eb4e0906e19b905304ae096a7d664019b5b50b5de00dfd95238ab1c850adf6e6",
+      "dataframe_contract": {
+        "columns": [
+          "date",
+          "ticker",
+          "model",
+          "y_true",
+          "y_pred"
+        ],
+        "dtypes": {
+          "date": "object",
+          "model": "object",
+          "ticker": "object",
+          "y_pred": "float64",
+          "y_true": "float64"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "13999",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "date": 0,
+          "model": 0,
+          "ticker": 0,
+          "y_pred": 0,
+          "y_true": 0
+        },
+        "shape": [
+          14000,
+          5
+        ]
+      },
+      "file_modified_utc": "2026-04-14T23:51:52.927529+00:00",
+      "file_sha256": "aa94b90cb78c37750dcda8753a97593a4ebbba8b7d341450879ea7243561103a",
+      "file_size_bytes": 947518,
+      "nan_mask_sha256": "b9a7fb7430c8408fea3eb62b958df314f943bc7eacb550c3af97b46ba7a8bedf",
+      "path": "reports/tables/notebook04_causal_predictions_long.csv",
+      "schema_sha256": "22ae32ab31925d27f2d9507d0a14c07aea98b90ef76cac64fd81dd6e17696327",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "533b2bfdfc211c960fcf35d89eb59748d545b922e924854958f7c904e42e9958",
+      "dataframe_contract": {
+        "columns": [
+          "model",
+          "ticker",
+          "rmse",
+          "mae",
+          "n_obs",
+          "feature_count"
+        ],
+        "dtypes": {
+          "feature_count": "float64",
+          "mae": "float64",
+          "model": "object",
+          "n_obs": "int64",
+          "rmse": "float64",
+          "ticker": "object"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "29",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "feature_count": 15,
+          "mae": 0,
+          "model": 0,
+          "n_obs": 0,
+          "rmse": 0,
+          "ticker": 0
+        },
+        "shape": [
+          30,
+          6
+        ]
+      },
+      "file_modified_utc": "2026-04-14T23:51:52.929520+00:00",
+      "file_sha256": "973aa2b23a001053ef65e083bbcf8c0321d88d6a3bb94aea1e4b630a5e56902a",
+      "file_size_bytes": 2029,
+      "nan_mask_sha256": "f75af9d2886b95e0f953b0f4430a3ed67dd8f652be2d44b1d856e0a32c380ee6",
+      "path": "reports/tables/notebook04_causal_rmse_mae.csv",
+      "schema_sha256": "70816059189e895b8a271aa5d5af5377a7328a7d1e498b12fc46bdacbee020cd",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "2bba662a036a281a0fb7eff2dd0c6440776d566bfed2b5c530624f4eebd12489",
+      "dataframe_contract": {
+        "columns": [
+          "model",
+          "ticker",
+          "causal_rmse",
+          "causal_mae",
+          "causal_n_obs",
+          "feature_count",
+          "xgboost_rmse",
+          "xgboost_mae",
+          "xgboost_n_obs",
+          "causal_minus_xgboost_rmse",
+          "causal_minus_xgboost_mae",
+          "rmse_improves_vs_xgboost",
+          "mae_improves_vs_xgboost",
+          "ewma_rmse",
+          "ewma_mae",
+          "ewma_n_obs",
+          "causal_minus_ewma_rmse",
+          "causal_minus_ewma_mae",
+          "rmse_improves_vs_ewma",
+          "mae_improves_vs_ewma"
+        ],
+        "dtypes": {
+          "causal_mae": "float64",
+          "causal_minus_ewma_mae": "float64",
+          "causal_minus_ewma_rmse": "float64",
+          "causal_minus_xgboost_mae": "float64",
+          "causal_minus_xgboost_rmse": "float64",
+          "causal_n_obs": "int64",
+          "causal_rmse": "float64",
+          "ewma_mae": "float64",
+          "ewma_n_obs": "int64",
+          "ewma_rmse": "float64",
+          "feature_count": "int64",
+          "mae_improves_vs_ewma": "bool",
+          "mae_improves_vs_xgboost": "bool",
+          "model": "object",
+          "rmse_improves_vs_ewma": "bool",
+          "rmse_improves_vs_xgboost": "bool",
+          "ticker": "object",
+          "xgboost_mae": "float64",
+          "xgboost_n_obs": "int64",
+          "xgboost_rmse": "float64"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "14",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "causal_mae": 0,
+          "causal_minus_ewma_mae": 0,
+          "causal_minus_ewma_rmse": 0,
+          "causal_minus_xgboost_mae": 0,
+          "causal_minus_xgboost_rmse": 0,
+          "causal_n_obs": 0,
+          "causal_rmse": 0,
+          "ewma_mae": 0,
+          "ewma_n_obs": 0,
+          "ewma_rmse": 0,
+          "feature_count": 0,
+          "mae_improves_vs_ewma": 0,
+          "mae_improves_vs_xgboost": 0,
+          "model": 0,
+          "rmse_improves_vs_ewma": 0,
+          "rmse_improves_vs_xgboost": 0,
+          "ticker": 0,
+          "xgboost_mae": 0,
+          "xgboost_n_obs": 0,
+          "xgboost_rmse": 0
+        },
+        "shape": [
+          15,
+          20
+        ]
+      },
+      "file_modified_utc": "2026-03-25T22:06:02.717528+00:00",
+      "file_sha256": "43a462ec75ceff75b6537a87f5e93464d9ce683670ee1e8c599439380200af01",
+      "file_size_bytes": 4237,
+      "nan_mask_sha256": "21b6edf8c7f94571f8c28391623f9c1cf7eec563fb3990dd1b17d75cbe3c3b57",
+      "path": "reports/tables/notebook04_causal_vs_baseline_rmse_mae.csv",
+      "schema_sha256": "117c09424ece36d884ed893d0dd79b78073e9e823f923bb4e6a30d1dff4c847c",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "8f5f13ae72f7305c9c782955ca5c721a399ca825395a29779de57e62f20cbeb8",
+      "dataframe_contract": {
+        "columns": [
+          "feature",
+          "dag_prefix",
+          "allowed_for_risk"
+        ],
+        "dtypes": {
+          "allowed_for_risk": "bool",
+          "dag_prefix": "object",
+          "feature": "object"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "150",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "allowed_for_risk": 0,
+          "dag_prefix": 0,
+          "feature": 0
+        },
+        "shape": [
+          151,
+          3
+        ]
+      },
+      "file_modified_utc": "2026-04-10T20:26:23.035752+00:00",
+      "file_sha256": "fbd7782da8f437ad0b4b9d12001154dfd665598bfbf1c7528ce25cb84dad2304",
+      "file_size_bytes": 5009,
+      "nan_mask_sha256": "28ee943dcaf6ad6d4c9a9bf76e34fd35fc434d76a028f83210557adfaf010cc0",
+      "path": "reports/tables/notebook04_dag_gating_summary.csv",
+      "schema_sha256": "955153fd362811a3e47aff07e2a0604a78a5df989e1ccb0df7fa877b0356ec72",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "5d395ec9076d98b320bc932a533b83a361c355da79408455f44ab2c76f8b2f26",
+      "dataframe_contract": {
+        "columns": [
+          "effective_start_date",
+          "effective_end_date",
+          "effective_row_count",
+          "effective_feature_count_ex_sentiment",
+          "effective_target_count",
+          "effective_features_mean_non_null_fraction",
+          "effective_targets_mean_non_null_fraction"
+        ],
+        "dtypes": {
+          "effective_end_date": "object",
+          "effective_feature_count_ex_sentiment": "int64",
+          "effective_features_mean_non_null_fraction": "float64",
+          "effective_row_count": "int64",
+          "effective_start_date": "object",
+          "effective_target_count": "int64",
+          "effective_targets_mean_non_null_fraction": "float64"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "0",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "effective_end_date": 0,
+          "effective_feature_count_ex_sentiment": 0,
+          "effective_features_mean_non_null_fraction": 0,
+          "effective_row_count": 0,
+          "effective_start_date": 0,
+          "effective_target_count": 0,
+          "effective_targets_mean_non_null_fraction": 0
+        },
+        "shape": [
+          1,
+          7
+        ]
+      },
+      "file_modified_utc": "2026-03-11T21:27:00.366829+00:00",
+      "file_sha256": "1585210f59d44c12d2a521f5e42d9cce43c6554ad3db033c351e96e4155d3793",
+      "file_size_bytes": 247,
+      "nan_mask_sha256": "bb759380f16bbcfc06239aee38a4a5bc350d6642683c81fdd5fb21c5435125b3",
+      "path": "reports/tables/notebook04_effective_window_summary.csv",
+      "schema_sha256": "6bffbe4de57569ac0915189c160ad0497482b81f6b98987647df50fbcb06289d",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "4d200418799fd31a806b22f28e8d2c2380558b71a46d7ebb4f78797e20d23eb9",
+      "dataframe_contract": {
+        "columns": [
+          "ticker",
+          "entropy__BASELINE_UNCONSTRAINED",
+          "entropy__CAUSAL_CONSTRAINED",
+          "normalized_entropy__BASELINE_UNCONSTRAINED",
+          "normalized_entropy__CAUSAL_CONSTRAINED",
+          "non_zero_feature_count__BASELINE_UNCONSTRAINED",
+          "non_zero_feature_count__CAUSAL_CONSTRAINED",
+          "top_1_gain_share__BASELINE_UNCONSTRAINED",
+          "top_1_gain_share__CAUSAL_CONSTRAINED",
+          "top_5_gain_share__BASELINE_UNCONSTRAINED",
+          "top_5_gain_share__CAUSAL_CONSTRAINED",
+          "entropy_delta_causal_minus_unconstrained",
+          "normalized_entropy_delta_causal_minus_unconstrained"
+        ],
+        "dtypes": {
+          "entropy__BASELINE_UNCONSTRAINED": "float64",
+          "entropy__CAUSAL_CONSTRAINED": "float64",
+          "entropy_delta_causal_minus_unconstrained": "float64",
+          "non_zero_feature_count__BASELINE_UNCONSTRAINED": "float64",
+          "non_zero_feature_count__CAUSAL_CONSTRAINED": "float64",
+          "normalized_entropy__BASELINE_UNCONSTRAINED": "float64",
+          "normalized_entropy__CAUSAL_CONSTRAINED": "float64",
+          "normalized_entropy_delta_causal_minus_unconstrained": "float64",
+          "ticker": "object",
+          "top_1_gain_share__BASELINE_UNCONSTRAINED": "float64",
+          "top_1_gain_share__CAUSAL_CONSTRAINED": "float64",
+          "top_5_gain_share__BASELINE_UNCONSTRAINED": "float64",
+          "top_5_gain_share__CAUSAL_CONSTRAINED": "float64"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "2",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "entropy__BASELINE_UNCONSTRAINED": 0,
+          "entropy__CAUSAL_CONSTRAINED": 0,
+          "entropy_delta_causal_minus_unconstrained": 0,
+          "non_zero_feature_count__BASELINE_UNCONSTRAINED": 0,
+          "non_zero_feature_count__CAUSAL_CONSTRAINED": 0,
+          "normalized_entropy__BASELINE_UNCONSTRAINED": 0,
+          "normalized_entropy__CAUSAL_CONSTRAINED": 0,
+          "normalized_entropy_delta_causal_minus_unconstrained": 0,
+          "ticker": 0,
+          "top_1_gain_share__BASELINE_UNCONSTRAINED": 0,
+          "top_1_gain_share__CAUSAL_CONSTRAINED": 0,
+          "top_5_gain_share__BASELINE_UNCONSTRAINED": 0,
+          "top_5_gain_share__CAUSAL_CONSTRAINED": 0
+        },
+        "shape": [
+          3,
+          13
+        ]
+      },
+      "file_modified_utc": "2026-03-11T22:22:08.641465+00:00",
+      "file_sha256": "0cdcd0dbb25937f6d00969674282a870c349a88317fa3fab9b66cdbe7b32e878",
+      "file_size_bytes": 1117,
+      "nan_mask_sha256": "0be154bb40d9c3eb069fa0c9461c6c6568a34638e1b3e2eed9227e68922fca63",
+      "path": "reports/tables/notebook04_entropy_comparison.csv",
+      "schema_sha256": "6e9062e261d87b2152ba467bc1df603e0a24cf36c07672e241fc4eadcd03eb2e",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "b88ffd5b132047266368e9bd5efda25ff013554f2c5b5d982dc6fa4a98650c6e",
+      "dataframe_contract": {
+        "columns": [
+          "ticker",
+          "model_family",
+          "dag_prefix",
+          "gain_share"
+        ],
+        "dtypes": {
+          "dag_prefix": "object",
+          "gain_share": "float64",
+          "model_family": "object",
+          "ticker": "object"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "25",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "dag_prefix": 0,
+          "gain_share": 0,
+          "model_family": 0,
+          "ticker": 0
+        },
+        "shape": [
+          26,
+          4
+        ]
+      },
+      "file_modified_utc": "2026-03-11T22:22:08.642466+00:00",
+      "file_sha256": "f3fe2ffe4653f71330800d30b2d3f473062796bfbe229f52e5e1dbdc67799169",
+      "file_size_bytes": 1385,
+      "nan_mask_sha256": "798f15c62d8f13358f677bc26cdd88979c6155d8c13df33d72ec0298c8c7aaa8",
+      "path": "reports/tables/notebook04_prefix_gain_share.csv",
+      "schema_sha256": "5ff08cf70d8addd1b4a6eb95dbeca4cce84d9b771d5da7eed5466646e9980a27",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "8e70a3cd2c88e73bd92707ecaf94e17d51f8e5df4a42d55060ef0ef19ad43dfc",
+      "dataframe_contract": {
+        "columns": [
+          "split",
+          "start_date",
+          "end_date",
+          "row_count"
+        ],
+        "dtypes": {
+          "end_date": "object",
+          "row_count": "int64",
+          "split": "object",
+          "start_date": "object"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "2",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "end_date": 0,
+          "row_count": 0,
+          "split": 0,
+          "start_date": 0
+        },
+        "shape": [
+          3,
+          4
+        ]
+      },
+      "file_modified_utc": "2026-03-11T21:27:00.367834+00:00",
+      "file_sha256": "5474c6639fe47ea27c533cd4d4d759f19e3a4d7d2ac4458e8b3075797da3956b",
+      "file_size_bytes": 141,
+      "nan_mask_sha256": "21564d18e79dbb12808b6c9753eee78b1f8d04b0d7c9f5207d5fde51042ddffc",
+      "path": "reports/tables/notebook04_split_summary.csv",
+      "schema_sha256": "1a972e20dfebcb9e9d0ad2cb68a3f33416601012edbde864618176698bc5da13",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "311adee9433df9adce9f3bffed7a777d90632d3dc0802419a57bdcd246b1d3e9",
+      "dataframe_contract": {
+        "columns": [
+          "ticker",
+          "model_variant",
+          "feature",
+          "dag_prefix",
+          "gain",
+          "gain_share",
+          "rank_within_ticker",
+          "model_path",
+          "model_family"
+        ],
+        "dtypes": {
+          "dag_prefix": "object",
+          "feature": "object",
+          "gain": "float64",
+          "gain_share": "float64",
+          "model_family": "object",
+          "model_path": "object",
+          "model_variant": "object",
+          "rank_within_ticker": "int64",
+          "ticker": "object"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "19",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "dag_prefix": 0,
+          "feature": 0,
+          "gain": 0,
+          "gain_share": 0,
+          "model_family": 0,
+          "model_path": 10,
+          "model_variant": 0,
+          "rank_within_ticker": 0,
+          "ticker": 0
+        },
+        "shape": [
+          20,
+          9
+        ]
+      },
+      "file_modified_utc": "2026-03-11T22:22:08.642466+00:00",
+      "file_sha256": "3d8eab88d16ef75f526b7d91d08ebc81c2ef8e11f571daa17551661d35cc9653",
+      "file_size_bytes": 3205,
+      "nan_mask_sha256": "4c227588a1360c83118df901b0a0bde2129cddd39b5240ea26987ce7b0a0e9ca",
+      "path": "reports/tables/notebook04_top_feature_comparison.csv",
+      "schema_sha256": "0bad3988fa563646cd5ff0f723434496c2f757f9418983badeda895008d9c6a0",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "600e5c10061b6f5f81128cc3bfaabc67ee81bbd67cd405740db4fa49aa0f4526",
+      "dataframe_contract": {
+        "columns": [
+          "artifact_type",
+          "artifact_path",
+          "exists_now"
+        ],
+        "dtypes": {
+          "artifact_path": "object",
+          "artifact_type": "object",
+          "exists_now": "bool"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "10",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "artifact_path": 0,
+          "artifact_type": 0,
+          "exists_now": 0
+        },
+        "shape": [
+          11,
+          3
+        ]
+      },
+      "file_modified_utc": "2026-04-01T15:53:52.951818+00:00",
+      "file_sha256": "5af4983ca27bd8b1a1479ebb84bc19e5726e4e33b152bc0abf021122fa4bcd78",
+      "file_size_bytes": 1018,
+      "nan_mask_sha256": "65ec1cb0e0576bd3009de787a925e95f390dc0880b500dc5468607164a7fd524",
+      "path": "reports/tables/notebook05_artifact_manifest.csv",
+      "schema_sha256": "09f669020a65a18eff4487f835b4af29a2cc0407940c01254bdac9378ff1ca07",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "73ee9949d677aed52a305e10a8794078fa582f6abb1cb3ac35d9b6c399a4252b",
+      "dataframe_contract": {
+        "columns": [
+          "model",
+          "raw_min_forecast",
+          "negative_count",
+          "nonpositive_count",
+          "below_floor_count",
+          "n_total_forecasts",
+          "forecast_floor_used",
+          "sanitized_min_forecast",
+          "mean_sanitized_forecast"
+        ],
+        "dtypes": {
+          "below_floor_count": "int64",
+          "forecast_floor_used": "float64",
+          "mean_sanitized_forecast": "float64",
+          "model": "object",
+          "n_total_forecasts": "int64",
+          "negative_count": "int64",
+          "nonpositive_count": "int64",
+          "raw_min_forecast": "float64",
+          "sanitized_min_forecast": "float64"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "6",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "below_floor_count": 0,
+          "forecast_floor_used": 0,
+          "mean_sanitized_forecast": 0,
+          "model": 0,
+          "n_total_forecasts": 0,
+          "negative_count": 0,
+          "nonpositive_count": 0,
+          "raw_min_forecast": 0,
+          "sanitized_min_forecast": 0
+        },
+        "shape": [
+          7,
+          9
+        ]
+      },
+      "file_modified_utc": "2026-03-28T18:42:34.094183+00:00",
+      "file_sha256": "acaaae192211605944d365612d8d9f21b2d235345c5f317ec494b014f5dc3bee",
+      "file_size_bytes": 737,
+      "nan_mask_sha256": "8c40053cf9b97f0ea3466647db0528de9dc15dbd36f30832604985e8a0a22f64",
+      "path": "reports/tables/notebook05_forecast_sanitization_summary.csv",
+      "schema_sha256": "dcbb4c137ce31ecbd05180eea61961276e5cef7c67182e6fc15a89acd9c11bf6",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "dccbe96f31ddbb58d7113140e72557eae5c51273d1d4db5bd58a8e6e6b2b3029",
+      "dataframe_contract": {
+        "columns": [
+          "model",
+          "year_month",
+          "monthly_return",
+          "n_days"
+        ],
+        "dtypes": {
+          "model": "object",
+          "monthly_return": "float64",
+          "n_days": "int64",
+          "year_month": "object"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "174",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "model": 0,
+          "monthly_return": 0,
+          "n_days": 0,
+          "year_month": 0
+        },
+        "shape": [
+          175,
+          4
+        ]
+      },
+      "file_modified_utc": "2026-03-28T20:49:40.137937+00:00",
+      "file_sha256": "41d9980c33b20dc3705850330b1271e872180ebe0212a69ae02e8992f0443dcb",
+      "file_size_bytes": 7791,
+      "nan_mask_sha256": "0d229ca5ab875f8124113959982ac3d71070b70733c3c9d11a31b1078629249f",
+      "path": "reports/tables/notebook05_monthly_returns.csv",
+      "schema_sha256": "1c9f8d2ac8d177fd3c699c94f5fe0a02af8c633c5d3927fd4290963905896345",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "364741e2dfca03faf5b951fd4f0d62691f8d954ce6d36dc128f356d7f1e6926d",
+      "dataframe_contract": {
+        "columns": [
+          "model",
+          "model_family",
+          "source_group",
+          "uses_dag_constraint",
+          "start_date",
+          "end_date",
+          "n_daily_obs",
+          "annualized_return",
+          "annualized_volatility",
+          "sharpe_ratio",
+          "max_drawdown",
+          "calmar_ratio",
+          "final_equity",
+          "total_transaction_cost",
+          "mean_cash_weight_start",
+          "mean_risky_weight_sum_start"
+        ],
+        "dtypes": {
+          "annualized_return": "float64",
+          "annualized_volatility": "float64",
+          "calmar_ratio": "float64",
+          "end_date": "object",
+          "final_equity": "float64",
+          "max_drawdown": "float64",
+          "mean_cash_weight_start": "float64",
+          "mean_risky_weight_sum_start": "float64",
+          "model": "object",
+          "model_family": "object",
+          "n_daily_obs": "int64",
+          "sharpe_ratio": "float64",
+          "source_group": "object",
+          "start_date": "object",
+          "total_transaction_cost": "float64",
+          "uses_dag_constraint": "bool"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "6",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "annualized_return": 0,
+          "annualized_volatility": 0,
+          "calmar_ratio": 0,
+          "end_date": 0,
+          "final_equity": 0,
+          "max_drawdown": 0,
+          "mean_cash_weight_start": 0,
+          "mean_risky_weight_sum_start": 0,
+          "model": 0,
+          "model_family": 0,
+          "n_daily_obs": 0,
+          "sharpe_ratio": 0,
+          "source_group": 0,
+          "start_date": 0,
+          "total_transaction_cost": 0,
+          "uses_dag_constraint": 0
+        },
+        "shape": [
+          7,
+          16
+        ]
+      },
+      "file_modified_utc": "2026-03-28T20:26:49.230331+00:00",
+      "file_sha256": "88462d90c8d7082235c9e21e76b2ba19068b2a61b58392b1b658e8e147da9ea0",
+      "file_size_bytes": 1930,
+      "nan_mask_sha256": "d3ac34b903ace078e1422f58d8fdb4820f01e16adea89f8270518eb8cf431596",
+      "path": "reports/tables/notebook05_portfolio_performance.csv",
+      "schema_sha256": "ada2283414f620ada9f1d581ddcb501ce1c7febb96b43b572c5167f5313f0aa6",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "d723946ba5a84a8b78786b9f5d8d6054bbc1e490317596d960ce843a680bde67",
+      "dataframe_contract": {
+        "columns": [
+          "date",
+          "model",
+          "rebalance_number",
+          "decision_date",
+          "effective_start_date",
+          "segment_end_date",
+          "rebalance_flag",
+          "gross_portfolio_return",
+          "transaction_cost",
+          "net_portfolio_return",
+          "cash_weight_start",
+          "risky_weight_sum_start",
+          "turnover",
+          "portfolio_scaler",
+          "ex_ante_portfolio_vol",
+          "target_portfolio_vol",
+          "equity_curve",
+          "running_peak",
+          "drawdown",
+          "portfolio_log_return",
+          "realized_vol_21d"
+        ],
+        "dtypes": {
+          "cash_weight_start": "float64",
+          "date": "object",
+          "decision_date": "object",
+          "drawdown": "float64",
+          "effective_start_date": "object",
+          "equity_curve": "float64",
+          "ex_ante_portfolio_vol": "float64",
+          "gross_portfolio_return": "float64",
+          "model": "object",
+          "net_portfolio_return": "float64",
+          "portfolio_log_return": "float64",
+          "portfolio_scaler": "float64",
+          "realized_vol_21d": "float64",
+          "rebalance_flag": "int64",
+          "rebalance_number": "int64",
+          "risky_weight_sum_start": "float64",
+          "running_peak": "float64",
+          "segment_end_date": "object",
+          "target_portfolio_vol": "float64",
+          "transaction_cost": "float64",
+          "turnover": "float64"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "3492",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "cash_weight_start": 0,
+          "date": 0,
+          "decision_date": 0,
+          "drawdown": 0,
+          "effective_start_date": 0,
+          "equity_curve": 0,
+          "ex_ante_portfolio_vol": 0,
+          "gross_portfolio_return": 0,
+          "model": 0,
+          "net_portfolio_return": 0,
+          "portfolio_log_return": 0,
+          "portfolio_scaler": 0,
+          "realized_vol_21d": 140,
+          "rebalance_flag": 0,
+          "rebalance_number": 0,
+          "risky_weight_sum_start": 0,
+          "running_peak": 0,
+          "segment_end_date": 0,
+          "target_portfolio_vol": 0,
+          "transaction_cost": 0,
+          "turnover": 0
+        },
+        "shape": [
+          3493,
+          21
+        ]
+      },
+      "file_modified_utc": "2026-03-28T20:04:45.946457+00:00",
+      "file_sha256": "ce8d5f71d38a6752fd2bf184e64957627e6609f9972cd0e9292399bbaae62672",
+      "file_size_bytes": 966008,
+      "nan_mask_sha256": "40a08576cb905b29d367155509d5710a62d15639493e0ee945eec264fb30c811",
+      "path": "reports/tables/notebook05_portfolio_returns_daily.csv",
+      "schema_sha256": "0de52e51a53f7ecdd8fcafa04d79ec8ae6e9822b6986203d0745ae416924f6b6",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "a88da8929b36a60a571f7764067de0bb056157eb40ca07cf0960551cc33029ba",
+      "dataframe_contract": {
+        "columns": [
+          "model",
+          "rebalance_number",
+          "decision_date",
+          "effective_start_date",
+          "segment_end_date",
+          "ticker",
+          "forecast_vol",
+          "pre_trade_weight",
+          "raw_weight",
+          "capped_weight",
+          "final_weight",
+          "cash_weight",
+          "risky_weight_sum",
+          "portfolio_scaler",
+          "ex_ante_vol_before_scale",
+          "ex_ante_vol_after_scale",
+          "turnover",
+          "transaction_cost"
+        ],
+        "dtypes": {
+          "capped_weight": "float64",
+          "cash_weight": "float64",
+          "decision_date": "object",
+          "effective_start_date": "object",
+          "ex_ante_vol_after_scale": "float64",
+          "ex_ante_vol_before_scale": "float64",
+          "final_weight": "float64",
+          "forecast_vol": "float64",
+          "model": "object",
+          "portfolio_scaler": "float64",
+          "pre_trade_weight": "float64",
+          "raw_weight": "float64",
+          "rebalance_number": "int64",
+          "risky_weight_sum": "float64",
+          "segment_end_date": "object",
+          "ticker": "object",
+          "transaction_cost": "float64",
+          "turnover": "float64"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "2351",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "capped_weight": 0,
+          "cash_weight": 0,
+          "decision_date": 0,
+          "effective_start_date": 0,
+          "ex_ante_vol_after_scale": 0,
+          "ex_ante_vol_before_scale": 0,
+          "final_weight": 0,
+          "forecast_vol": 0,
+          "model": 0,
+          "portfolio_scaler": 0,
+          "pre_trade_weight": 0,
+          "raw_weight": 0,
+          "rebalance_number": 0,
+          "risky_weight_sum": 0,
+          "segment_end_date": 0,
+          "ticker": 0,
+          "transaction_cost": 0,
+          "turnover": 0
+        },
+        "shape": [
+          2352,
+          18
+        ]
+      },
+      "file_modified_utc": "2026-03-28T20:04:45.951471+00:00",
+      "file_sha256": "9b41533a18f1fe65d67c0dbe1a41dda50fe565e02089ed1575ad10ccca0668f0",
+      "file_size_bytes": 639034,
+      "nan_mask_sha256": "86c79760f590ff8b62ded502e5f1456f69542cc1c4ea6f2985469ff5343c668e",
+      "path": "reports/tables/notebook05_portfolio_weights.csv",
+      "schema_sha256": "02ca0a9298e54b1b79464e187d2b94da7dc9c8ed51230e27834d9d619076f8f5",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "5f534cdd86254c607c9ec8021df4716f0e1479b5c9c4933dee4daf8d25ce1fb0",
+      "dataframe_contract": {
+        "columns": [
+          "model",
+          "target_vol",
+          "mean_realized_vol_21d",
+          "median_realized_vol_21d",
+          "min_realized_vol_21d",
+          "max_realized_vol_21d",
+          "mean_abs_deviation_from_target",
+          "rmse_vs_target_vol",
+          "pct_days_within_8_to_12_pct_band",
+          "mean_ex_ante_portfolio_vol"
+        ],
+        "dtypes": {
+          "max_realized_vol_21d": "float64",
+          "mean_abs_deviation_from_target": "float64",
+          "mean_ex_ante_portfolio_vol": "float64",
+          "mean_realized_vol_21d": "float64",
+          "median_realized_vol_21d": "float64",
+          "min_realized_vol_21d": "float64",
+          "model": "object",
+          "pct_days_within_8_to_12_pct_band": "float64",
+          "rmse_vs_target_vol": "float64",
+          "target_vol": "float64"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "6",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "max_realized_vol_21d": 0,
+          "mean_abs_deviation_from_target": 0,
+          "mean_ex_ante_portfolio_vol": 0,
+          "mean_realized_vol_21d": 0,
+          "median_realized_vol_21d": 0,
+          "min_realized_vol_21d": 0,
+          "model": 0,
+          "pct_days_within_8_to_12_pct_band": 0,
+          "rmse_vs_target_vol": 0,
+          "target_vol": 0
+        },
+        "shape": [
+          7,
+          10
+        ]
+      },
+      "file_modified_utc": "2026-03-28T20:49:40.141475+00:00",
+      "file_sha256": "d670647b05d33069272480c8b38361ebb73921908adf042a67ecee03f07cc78c",
+      "file_size_bytes": 1457,
+      "nan_mask_sha256": "2e0fa0cd829c3f7a1602b6c63365053d7cd5b59bb58f6ad1d59b0b8a6144fa6c",
+      "path": "reports/tables/notebook05_risk_targeting_stability.csv",
+      "schema_sha256": "ec5c2b1d3ce64520cfbf1b0af46a27b06db9540cb234c18dd722200ba23085a7",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "1a3cdda50e9d9bf6a00a29e0a5e7fb6179a439221b7e361938972b4cb9763fe5",
+      "dataframe_contract": {
+        "columns": [
+          "model",
+          "n_rebalances",
+          "mean_turnover",
+          "median_turnover",
+          "max_turnover",
+          "total_turnover",
+          "total_transaction_cost",
+          "mean_transaction_cost"
+        ],
+        "dtypes": {
+          "max_turnover": "float64",
+          "mean_transaction_cost": "float64",
+          "mean_turnover": "float64",
+          "median_turnover": "float64",
+          "model": "object",
+          "n_rebalances": "int64",
+          "total_transaction_cost": "float64",
+          "total_turnover": "float64"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "6",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "max_turnover": 0,
+          "mean_transaction_cost": 0,
+          "mean_turnover": 0,
+          "median_turnover": 0,
+          "model": 0,
+          "n_rebalances": 0,
+          "total_transaction_cost": 0,
+          "total_turnover": 0
+        },
+        "shape": [
+          7,
+          8
+        ]
+      },
+      "file_modified_utc": "2026-03-28T20:49:40.145479+00:00",
+      "file_sha256": "33da27fc30b3505000f02f79461d49560ab1059124a36c270d685077cccef1f6",
+      "file_size_bytes": 1057,
+      "nan_mask_sha256": "3b5c1f6ac07a4aa50bcaaa7582b606e03a4344a94d1d883991cb79ff9f94ef2a",
+      "path": "reports/tables/notebook05_turnover_summary.csv",
+      "schema_sha256": "814bc0c2e97dbdc7eebdb34b14e2a99249f8fc34ac781408aa437974171f88c9",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "7b83c22d91acc95946e026a3b89b62728f509d16d865d9b9f115b02aa74fd9d9",
+      "dataframe_contract": {
+        "columns": [
+          "stage_number",
+          "stage_label",
+          "model_label",
+          "status",
+          "rmse",
+          "mae",
+          "sharpe",
+          "max_drawdown",
+          "calmar",
+          "feature_importance_entropy",
+          "factor_exposure_entropy",
+          "notes"
+        ],
+        "dtypes": {
+          "calmar": "float64",
+          "factor_exposure_entropy": "float64",
+          "feature_importance_entropy": "float64",
+          "mae": "float64",
+          "max_drawdown": "float64",
+          "model_label": "object",
+          "notes": "object",
+          "rmse": "float64",
+          "sharpe": "float64",
+          "stage_label": "object",
+          "stage_number": "int64",
+          "status": "object"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "3",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "calmar": 2,
+          "factor_exposure_entropy": 2,
+          "feature_importance_entropy": 2,
+          "mae": 1,
+          "max_drawdown": 2,
+          "model_label": 0,
+          "notes": 0,
+          "rmse": 1,
+          "sharpe": 2,
+          "stage_label": 0,
+          "stage_number": 0,
+          "status": 0
+        },
+        "shape": [
+          4,
+          12
+        ]
+      },
+      "file_modified_utc": "2026-04-01T23:13:52.555939+00:00",
+      "file_sha256": "d45e85e23ecf52e6748b6560a159af481c47116f8ee4f0d368fbf9d5d1946ac1",
+      "file_size_bytes": 983,
+      "nan_mask_sha256": "d45f2c01318de7e803131a5a73437eddb3c1f9d7e699382e24512b2d40725570",
+      "path": "reports/tables/notebook06_ablation_table.csv",
+      "schema_sha256": "83dff1abca2994a0fb81f6454efe77a42e1f8efd04ffcb8e160753efd27a87de",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "af1ecf4fc9bf0b547de73c1f748688a9e30febf63c1f20bc3aed8a0cc1fd03b7",
+      "dataframe_contract": {
+        "columns": [
+          "artifact_type",
+          "artifact_path",
+          "exists_now"
+        ],
+        "dtypes": {
+          "artifact_path": "object",
+          "artifact_type": "object",
+          "exists_now": "bool"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "11",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "artifact_path": 0,
+          "artifact_type": 0,
+          "exists_now": 0
+        },
+        "shape": [
+          12,
+          3
+        ]
+      },
+      "file_modified_utc": "2026-03-17T19:13:35.969649+00:00",
+      "file_sha256": "a4c1b535bdcc722eb331fe7eff55122219bb143f18bbde293903f5efca79999e",
+      "file_size_bytes": 1106,
+      "nan_mask_sha256": "e2f9b04948dd2d70706bb6ea2e19caa11fb18e1f55ff3f46e99b3f1a70b13de7",
+      "path": "reports/tables/notebook06_artifact_manifest.csv",
+      "schema_sha256": "903797ea932a6a1c079c230483ba73ca404394095bd7f674d9c40d85eacd7a5a",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "1994f6270e7493ff65ad9b7804615c43adac1689238c6d2969aa63af937adf7a",
+      "dataframe_contract": {
+        "columns": [
+          "model",
+          "rmse",
+          "mae",
+          "sharpe",
+          "max_drawdown",
+          "calmar"
+        ],
+        "dtypes": {
+          "calmar": "float64",
+          "mae": "float64",
+          "max_drawdown": "float64",
+          "model": "object",
+          "rmse": "float64",
+          "sharpe": "float64"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "2",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "calmar": 0,
+          "mae": 0,
+          "max_drawdown": 0,
+          "model": 0,
+          "rmse": 0,
+          "sharpe": 0
+        },
+        "shape": [
+          3,
+          6
+        ]
+      },
+      "file_modified_utc": "2026-04-01T21:26:12.269701+00:00",
+      "file_sha256": "261875728b1835ec5f9611c95c73448a9264162a69a60223e3861b119023aa08",
+      "file_size_bytes": 369,
+      "nan_mask_sha256": "b3293a8586704027991402387ff3649d1040e1547784088bbb4332653a7abfc1",
+      "path": "reports/tables/notebook06_benchmark_comparison.csv",
+      "schema_sha256": "4de80136c5a983b6b1d36614b0b90eb41b83c12f906fd6e97ba4075ab8ee9160",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "5a794397f04e5c3d110cf7550a1afe6fcd8c11f00641b2f278d61eee54875a43",
+      "dataframe_contract": {
+        "columns": [
+          "model_a",
+          "model_b",
+          "loss_name",
+          "n_daily_obs",
+          "hac_lags",
+          "mean_loss_diff_a_minus_b",
+          "dm_statistic",
+          "p_value_two_sided",
+          "winner_by_lower_mean_loss"
+        ],
+        "dtypes": {
+          "dm_statistic": "float64",
+          "hac_lags": "int64",
+          "loss_name": "object",
+          "mean_loss_diff_a_minus_b": "float64",
+          "model_a": "object",
+          "model_b": "object",
+          "n_daily_obs": "int64",
+          "p_value_two_sided": "float64",
+          "winner_by_lower_mean_loss": "object"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "3",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "dm_statistic": 0,
+          "hac_lags": 0,
+          "loss_name": 0,
+          "mean_loss_diff_a_minus_b": 0,
+          "model_a": 0,
+          "model_b": 0,
+          "n_daily_obs": 0,
+          "p_value_two_sided": 0,
+          "winner_by_lower_mean_loss": 0
+        },
+        "shape": [
+          4,
+          9
+        ]
+      },
+      "file_modified_utc": "2026-04-02T00:10:18.463980+00:00",
+      "file_sha256": "dc48ce34b939cfbffaf329daef01585a07eca56ea4b43f12b503a3c487dbb25c",
+      "file_size_bytes": 574,
+      "nan_mask_sha256": "a7dca158f752732b1fcf31ee4aa440baa938d387faa8eece89fbb245685215f6",
+      "path": "reports/tables/notebook06_dm_test_results.csv",
+      "schema_sha256": "c0554ceeedc01757c090b5500dd28e62438d28f5ee6dd637b1d76cbe28c16121",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "760a1e3ac8db89e79007bfdd3e6419dc55f3da27238f7ae9cd985c70a06289f1",
+      "dataframe_contract": {
+        "columns": [
+          "model",
+          "rebalance_number",
+          "decision_date",
+          "effective_start_date",
+          "segment_end_date",
+          "n_obs_total_segment",
+          "n_obs_regression",
+          "min_obs_pass",
+          "alpha",
+          "beta_mkt_rf",
+          "beta_smb",
+          "beta_hml",
+          "factor_exposure_entropy",
+          "factor_exposure_entropy_normalized",
+          "r_squared"
+        ],
+        "dtypes": {
+          "alpha": "float64",
+          "beta_hml": "float64",
+          "beta_mkt_rf": "float64",
+          "beta_smb": "float64",
+          "decision_date": "object",
+          "effective_start_date": "object",
+          "factor_exposure_entropy": "float64",
+          "factor_exposure_entropy_normalized": "float64",
+          "min_obs_pass": "bool",
+          "model": "object",
+          "n_obs_regression": "int64",
+          "n_obs_total_segment": "int64",
+          "r_squared": "float64",
+          "rebalance_number": "int64",
+          "segment_end_date": "object"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "71",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "alpha": 0,
+          "beta_hml": 0,
+          "beta_mkt_rf": 0,
+          "beta_smb": 0,
+          "decision_date": 0,
+          "effective_start_date": 0,
+          "factor_exposure_entropy": 0,
+          "factor_exposure_entropy_normalized": 0,
+          "min_obs_pass": 0,
+          "model": 0,
+          "n_obs_regression": 0,
+          "n_obs_total_segment": 0,
+          "r_squared": 0,
+          "rebalance_number": 0,
+          "segment_end_date": 0
+        },
+        "shape": [
+          72,
+          15
+        ]
+      },
+      "file_modified_utc": "2026-04-01T23:13:52.556912+00:00",
+      "file_sha256": "9661d36fd5af3a9872eba5ff4db781e5017deff8935f41f4566d29084e954c35",
+      "file_size_bytes": 14356,
+      "nan_mask_sha256": "54d74a445e98925e5b72cafaedd5c0d22270990a04bc1e7ccae8a090d14e6d6d",
+      "path": "reports/tables/notebook06_factor_exposure_entropy.csv",
+      "schema_sha256": "2d5b7fef01605eb25027edefb8291c8464c6c96451b57f604a940505edcc2023",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "e78583c394fd8b54fb3f5ef88cc6f92ba6bd71e0f9d118a2db90e1d71061ca34",
+      "dataframe_contract": {
+        "columns": [
+          "model",
+          "regime_label",
+          "rmse",
+          "mae",
+          "n_tickers",
+          "n_obs",
+          "n_dates"
+        ],
+        "dtypes": {
+          "mae": "float64",
+          "model": "object",
+          "n_dates": "int64",
+          "n_obs": "int64",
+          "n_tickers": "int64",
+          "regime_label": "object",
+          "rmse": "float64"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "5",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "mae": 0,
+          "model": 0,
+          "n_dates": 0,
+          "n_obs": 0,
+          "n_tickers": 0,
+          "regime_label": 0,
+          "rmse": 0
+        },
+        "shape": [
+          6,
+          7
+        ]
+      },
+      "file_modified_utc": "2026-04-01T21:26:12.271701+00:00",
+      "file_sha256": "c91e303a19a291e4120a2cae0411167eed112c94ab9215b57f1ce1def3ded5c1",
+      "file_size_bytes": 480,
+      "nan_mask_sha256": "b6df896af33d945cbb49036c86c9f80cbfffe07de1a2cec917068abc11d632a1",
+      "path": "reports/tables/notebook06_regime_forecast_metrics.csv",
+      "schema_sha256": "68bf919b336907981f020488da98599f34c79f99b9750c8e787b6257d5ffe56f",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "6805958d5b89f5f74a09fd4354aa4d5c92ddf102aa47edf4f65d8fcf6bf752a6",
+      "dataframe_contract": {
+        "columns": [
+          "model",
+          "regime_label",
+          "n_days",
+          "annualized_return",
+          "annualized_volatility",
+          "sharpe",
+          "max_drawdown",
+          "calmar",
+          "mean_realized_vol_21d",
+          "max_realized_vol_21d"
+        ],
+        "dtypes": {
+          "annualized_return": "float64",
+          "annualized_volatility": "float64",
+          "calmar": "float64",
+          "max_drawdown": "float64",
+          "max_realized_vol_21d": "float64",
+          "mean_realized_vol_21d": "float64",
+          "model": "object",
+          "n_days": "int64",
+          "regime_label": "object",
+          "sharpe": "float64"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "5",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "annualized_return": 0,
+          "annualized_volatility": 0,
+          "calmar": 0,
+          "max_drawdown": 0,
+          "max_realized_vol_21d": 0,
+          "mean_realized_vol_21d": 0,
+          "model": 0,
+          "n_days": 0,
+          "regime_label": 0,
+          "sharpe": 0
+        },
+        "shape": [
+          6,
+          10
+        ]
+      },
+      "file_modified_utc": "2026-04-01T21:26:12.273700+00:00",
+      "file_sha256": "4199c80830915e23af12a0cdd129cdfa7becf6a51a3c604213dab773db6ea4b2",
+      "file_size_bytes": 1108,
+      "nan_mask_sha256": "f3d510d3b0f16a76a44a726349e1be1e013369ba50e3c2c3859bed3d8797928b",
+      "path": "reports/tables/notebook06_regime_portfolio_metrics.csv",
+      "schema_sha256": "636c1c7c0d4665be50444201962b3b551ca136edfc420d7eee3a21c34b0b74d7",
+      "suffix": ".csv"
+    },
+    {
+      "content_sha256": "74efaeb7cc42bf5bd899a75d3d0c3058bd1ebbb106022f9727dd84f200130542",
+      "dataframe_contract": {
+        "columns": [
+          "model",
+          "stress_window_start",
+          "stress_window_end",
+          "reference_date_used",
+          "reference_equity",
+          "trough_date",
+          "trough_equity",
+          "stress_loss_from_reference",
+          "max_drawdown_within_window",
+          "recovery_date",
+          "recovery_duration_trading_days",
+          "recovery_duration_calendar_days",
+          "recovery_censored",
+          "mean_realized_vol_21d",
+          "max_realized_vol_21d",
+          "n_stress_days"
+        ],
+        "dtypes": {
+          "max_drawdown_within_window": "float64",
+          "max_realized_vol_21d": "float64",
+          "mean_realized_vol_21d": "float64",
+          "model": "object",
+          "n_stress_days": "int64",
+          "recovery_censored": "bool",
+          "recovery_date": "object",
+          "recovery_duration_calendar_days": "int64",
+          "recovery_duration_trading_days": "int64",
+          "reference_date_used": "object",
+          "reference_equity": "float64",
+          "stress_loss_from_reference": "float64",
+          "stress_window_end": "object",
+          "stress_window_start": "object",
+          "trough_date": "object",
+          "trough_equity": "float64"
+        },
+        "index_class": "RangeIndex",
+        "index_dtype": "int64",
+        "index_duplicate_count": 0,
+        "index_end": "2",
+        "index_is_monotonic_increasing": true,
+        "index_names": [
+          "None"
+        ],
+        "index_start": "0",
+        "null_counts": {
+          "max_drawdown_within_window": 0,
+          "max_realized_vol_21d": 0,
+          "mean_realized_vol_21d": 0,
+          "model": 0,
+          "n_stress_days": 0,
+          "recovery_censored": 0,
+          "recovery_date": 0,
+          "recovery_duration_calendar_days": 0,
+          "recovery_duration_trading_days": 0,
+          "reference_date_used": 0,
+          "reference_equity": 0,
+          "stress_loss_from_reference": 0,
+          "stress_window_end": 0,
+          "stress_window_start": 0,
+          "trough_date": 0,
+          "trough_equity": 0
+        },
+        "shape": [
+          3,
+          16
+        ]
+      },
+      "file_modified_utc": "2026-04-01T22:13:38.556559+00:00",
+      "file_sha256": "b0ad997220d411a8eac7158bd568b25b81579c0b1c91ea0fd7526cfc778375e0",
+      "file_size_bytes": 910,
+      "nan_mask_sha256": "19223b1ff16f056c9efc44601ea5bd3f8a6554a2fb45d6311ae9623316582fc5",
+      "path": "reports/tables/notebook06_stress_drawdown.csv",
+      "schema_sha256": "a7daa40f730579c3fd5005c6b6febdd61d2b77bc1125b67438b6529a6575ee40",
+      "suffix": ".csv"
+    }
+  ],
+  "created_at_utc": "2026-06-02T20:40:33.225119+00:00",
+  "created_by": "Steven Archuleta",
+  "determinism": {
+    "project_seed": 692,
+    "pythonhashseed_env": ""
+  },
+  "git_branch": "main",
+  "git_head_sha": "3ce7f92aad20aec359ec9e6682783184b8b99da5",
+  "git_remote": "https://github.com/stevearchuleta/riskml-capstone.git",
+  "git_status_porcelain": "?? scripts/",
+  "golden_version": "golden-v0",
+  "machine": "AMD64",
+  "manifest_content_sha256": "47b198c1ed7655804ee2431cea9594d7c44d3a0926fd2cf9dbc681f638f7d56b",
+  "manifest_schema_version": "1.0",
+  "method_constants": {
+    "annualization_factor": 252,
+    "dag_allowed_prefixes": [
+      "VOL__",
+      "MACRO__",
+      "REGIME__"
+    ],
+    "ddof": 1,
+    "forecast_horizon_days": 20,
+    "target_construction": "two-step shift, ddof=1, 20-day forward realized volatility"
+  },
+  "package_versions": {
+    "matplotlib": "3.10.8",
+    "numpy": "2.4.2",
+    "pandas": "2.3.3",
+    "pyarrow": "23.0.0",
+    "scikit-learn": "1.8.0",
+    "statsmodels": "0.14.6",
+    "streamlit": "1.54.0",
+    "xgboost": "3.1.3"
+  },
+  "pip_freeze": "altair==6.0.0\nanyio @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_anyio_1767719033/work\nappdirs==1.4.4\narch @ file:///D:/bld/arch-py_1761050531907/work\nargon2-cffi @ file:///home/conda/feedstock_root/build_artifacts/argon2-cffi_1749017159514/work\nargon2-cffi-bindings @ file:///D:/bld/argon2-cffi-bindings_1762509368570/work\narrow @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_arrow_1760831179/work\nasttokens @ file:///home/conda/feedstock_root/build_artifacts/asttokens_1763409923949/work\nasync-lru @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_async-lru_1768752884/work\nattrs @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_attrs_1764875182/work\nbabel @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_babel_1770326844/work\nbackports.zstd @ file:///D:/bld/bld/rattler-build_backports.zstd_1767045012/work\nbeautifulsoup4 @ file:///home/conda/feedstock_root/build_artifacts/beautifulsoup4_1764520477956/work\nbleach @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_bleach_1763589981/work\nblinker==1.9.0\nBrotli @ file:///D:/bld/brotli-split_1764017006836/work\ncached-property @ file:///home/conda/feedstock_root/build_artifacts/cached_property_1615209429212/work\ncachetools==6.2.6\ncertifi @ file:///home/conda/feedstock_root/build_artifacts/certifi_1767500808759/work/certifi\ncffi @ file:///D:/bld/cffi_1761202893018/work\ncharset-normalizer @ file:///home/conda/feedstock_root/build_artifacts/charset-normalizer_1760437218288/work\nclarabel==0.11.1\nclick==8.3.1\ncolorama @ file:///home/conda/feedstock_root/build_artifacts/colorama_1733218098505/work\ncomm @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_comm_1753453984/work\ncontourpy @ file:///D:/bld/bld/rattler-build_contourpy_1769155974/work\ncoverage==7.13.3\ncurl_cffi==0.13.0\ncvxpy==1.8.1\ncycler @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_cycler_1764466758/work\ndebugpy @ file:///D:/bld/bld/rattler-build_debugpy_1769745017/work\ndecorator @ file:///home/conda/feedstock_root/build_artifacts/decorator_1740384970518/work\ndefusedxml @ file:///home/conda/feedstock_root/build_artifacts/defusedxml_1615232257335/work\net_xmlfile @ file:///home/conda/feedstock_root/build_artifacts/et_xmlfile_1733749653422/work\nexceptiongroup @ file:///home/conda/feedstock_root/build_artifacts/exceptiongroup_1763918002538/work\nexecnet==2.1.2\nexecuting @ file:///home/conda/feedstock_root/build_artifacts/executing_1756729339227/work\nfastjsonschema @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_python-fastjsonschema_1755304154/work/dist\nfeedparser==6.0.12\nfinance==0.2502\nfonttools @ file:///D:/bld/fonttools_1765632545629/work\nfqdn==1.5.1\nfredapi==0.5.2\nfrozendict==2.4.2\ngitdb==4.0.12\nGitPython==3.1.46\nh11==0.14.0\nh2 @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_h2_1756364871/work\nhighspy==1.13.0\nhpack @ file:///home/conda/feedstock_root/build_artifacts/hpack_1737618293087/work\nhtml5lib==1.1\nhttpcore==1.0.5\nhttpx==0.27.0\nhyperframe @ file:///home/conda/feedstock_root/build_artifacts/hyperframe_1737618333194/work\nidna @ file:///home/conda/feedstock_root/build_artifacts/idna_1760286409563/work\nimportlib_metadata @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_importlib-metadata_1747934053/work\nimportlib_resources @ file:///home/conda/feedstock_root/build_artifacts/importlib_resources_1736252299705/work\niniconfig @ file:///home/conda/feedstock_root/build_artifacts/iniconfig_1760831328738/work\nipykernel @ file:///D:/bld/bld/rattler-build_ipykernel_1761567966/work\nipython @ file:///D:/bld/bld/rattler-build_ipython_1770040952/work\nipython_pygments_lexers @ file:///home/conda/feedstock_root/build_artifacts/ipython_pygments_lexers_1737123620466/work\nipywidgets @ file:///home/conda/feedstock_root/build_artifacts/ipywidgets_1762040433881/work\nisoduration==20.11.0\njedi @ file:///home/conda/feedstock_root/build_artifacts/jedi_1733300866624/work\nJinja2 @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_jinja2_1764517220/work\njoblib @ file:///home/conda/feedstock_root/build_artifacts/joblib_1765794027227/work\njson5 @ file:///home/conda/feedstock_root/build_artifacts/json5_1767324980649/work\njsonpointer @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_jsonpointer_1765026384/work\njsonschema @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_jsonschema_1767839954/work\njsonschema-specifications @ file:///tmp/tmptzik3dqa/src\njupyter @ file:///home/conda/feedstock_root/build_artifacts/jupyter_1733818543322/work\njupyter-console @ file:///home/conda/feedstock_root/build_artifacts/jupyter_console_1733817997778/work\njupyter-contrib-core==0.4.2\njupyter-events @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_jupyter_events_1738765986/work\njupyter-highlight-selected-word==0.2.0\njupyter-lsp @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_jupyter-lsp_1756388269/work/jupyter-lsp\njupyter_client @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_jupyter_client_1767954655/work\njupyter_core @ file:///D:/bld/bld/rattler-build_jupyter_core_1760643889/work\njupyter_nbextensions_configurator==0.6.4\njupyter_server @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_jupyter_server_1755870522/work\njupyter_server_terminals @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_jupyter_server_terminals_1768574057/work\njupyterlab @ file:///home/conda/feedstock_root/build_artifacts/jupyterlab_1769189931916/work\njupyterlab_pygments @ file:///home/conda/feedstock_root/build_artifacts/jupyterlab_pygments_1733328101776/work\njupyterlab_server @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_jupyterlab_server_1761145478/work\njupyterlab_widgets @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_jupyterlab_widgets_1762267481/work/python/jupyterlab_widgets\nkiwisolver @ file:///D:/bld/bld/rattler-build_kiwisolver_1762488752/work\nlark @ file:///home/conda/feedstock_root/build_artifacts/lark_1761596826058/work\nlxml==6.0.2\nMarkupSafe @ file:///D:/bld/markupsafe_1759055179018/work\nmatplotlib==3.10.8\nmatplotlib-inline @ file:///home/conda/feedstock_root/build_artifacts/matplotlib-inline_1761214490209/work\nmistune @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_mistune_1766504456/work\nmultitasking==0.0.11\nmunkres==1.1.4\nnarwhals==2.16.0\nnbclient @ file:///home/conda/feedstock_root/build_artifacts/nbclient_1766485478710/work\nnbconvert @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_nbconvert-core_1769709543/work\nnbformat @ file:///home/conda/feedstock_root/build_artifacts/nbformat_1733402752141/work\nnest_asyncio @ file:///home/conda/feedstock_root/build_artifacts/nest-asyncio_1733325553580/work\nnotebook @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_notebook_1769434091/work\nnotebook_shim @ file:///home/conda/feedstock_root/build_artifacts/notebook-shim_1733408315203/work\nnumpy @ file:///D:/bld/bld/rattler-build_numpy_1770098404/work/dist/numpy-2.4.2-cp311-cp311-win_amd64.whl#sha256=1dc64abcea7678d915a259496c0283ff327afeed3b11d508be6117caf2623ad7\nopenpyxl @ file:///D:/bld/openpyxl_1769121996867/work\nosqp==1.1.0\noverrides @ file:///home/conda/feedstock_root/build_artifacts/overrides_1734587627321/work\npackaging @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_packaging_1769093650/work\npandas==2.3.3\npandas-datareader==0.10.0\npandoc==2.3\npandocfilters @ file:///home/conda/feedstock_root/build_artifacts/pandocfilters_1631603243851/work\nparso @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_parso_1755974222/work\npatsy @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_patsy_1760998269/work\npeewee==3.17.3\npillow @ file:///D:/bld/bld/rattler-build_pillow_1767353195/work\nplatformdirs @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_platformdirs_1764950726/work\npluggy @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_pluggy_1764896838/work\nplumbum==1.8.3\nprometheus_client @ file:///home/conda/feedstock_root/build_artifacts/prometheus_client_1768476496023/work\nprompt_toolkit @ file:///home/conda/feedstock_root/build_artifacts/prompt-toolkit_1756321756983/work\nprotobuf==6.33.5\npsutil @ file:///D:/bld/bld/rattler-build_psutil_1769678166/work\npure_eval @ file:///home/conda/feedstock_root/build_artifacts/pure_eval_1733569405015/work\npyarrow==23.0.0\npycparser @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_pycparser_1733195786/work\npydeck==0.9.1\nPygments @ file:///home/conda/feedstock_root/build_artifacts/pygments_1750615794071/work\npyparsing @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_pyparsing_1769003998/work\nPyPDF2==3.0.1\nPySide6==6.10.2\nPySocks @ file:///D:/bld/pysocks_1733217287171/work\npytest @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_pytest_1765062031/work\npytest-cov==7.0.0\npytest-xdist==3.8.0\npython-dateutil @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_python-dateutil_1751104122/work\npython-docx==1.2.0\npython-dotenv==1.2.1\npython-json-logger @ file:///home/conda/feedstock_root/build_artifacts/python-json-logger_1677079630776/work\npytz @ file:///home/conda/feedstock_root/build_artifacts/pytz_1742920838005/work\npywin32 @ file:///D:/bld/bld/rattler-build_pywin32_1756487145/work\npywinpty @ file:///D:/bld/pywinpty_1759556128410/work/target/wheels/pywinpty-2.0.15-cp311-none-win_amd64.whl#sha256=2ffdb50437cbecae4896ed6822b3a4157373670bd4849a2d3a0719fd624e5df6\nPyYAML @ file:///D:/bld/pyyaml_1770223251282/work\npyzmq @ file:///D:/bld/bld/rattler-build_pyzmq_1757387035/work\nreferencing @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_referencing_1760379115/work\nrequests @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_requests_1766926974/work\nrequests-futures==1.0.1\nrfc3339_validator @ file:///home/conda/feedstock_root/build_artifacts/rfc3339-validator_1733599910982/work\nrfc3986-validator @ file:///home/conda/feedstock_root/build_artifacts/rfc3986-validator_1598024191506/work\nrfc3987-syntax @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_rfc3987-syntax_1752876729/work\n# Editable install with no version control (riskml==0.1.0)\n-e c:\\users\\steve\\documents\\01_academia\\wqu\\mscfe_692_capstone_project\\riskml-capstone\nrpds-py @ file:///D:/bld/bld/rattler-build_rpds-py_1764543026/work\nruff==0.15.0\nscikit-learn @ file:///D:/bld/bld/rattler-build_scikit-learn_1765801251/work/dist/scikit_learn-1.8.0-cp311-cp311-win_amd64.whl#sha256=6b709d3d1e68d89c77b77f0fb7aa31e6f68e5148d615ecd56f94da3e1262056b\nscipy @ file:///C:/bld/scipy-split_1768799500391/work/dist/scipy-1.17.0-cp311-cp311-win_amd64.whl#sha256=ab381c0683a4c5959a4eb8ad52025d587189c73b376c9d03fe6886a42f3fe699\nscs==3.2.11\nseaborn @ file:///home/conda/feedstock_root/build_artifacts/seaborn-split_1733730015268/work\nSend2Trash @ file:///D:/bld/bld/rattler-build_send2trash_1768402455/work\nsgmllib3k==1.0.0\nshiboken6==6.10.2\nsix @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_six_1753199211/work\nsmmap==5.0.2\nsniffio @ file:///home/conda/feedstock_root/build_artifacts/sniffio_1762941432086/work\nsoupsieve @ file:///home/conda/feedstock_root/build_artifacts/soupsieve_1769034399263/work\nstack_data @ file:///home/conda/feedstock_root/build_artifacts/stack_data_1733569443808/work\nstatsmodels @ file:///D:/bld/statsmodels_1764983002197/work\nstreamlit==1.54.0\ntenacity==9.1.3\nterminado @ file:///D:/bld/bld/rattler-build_terminado_1766513806/work\nthreadpoolctl @ file:///home/conda/feedstock_root/build_artifacts/threadpoolctl_1741878222898/work\ntinycss2==1.4.0\ntoml==0.10.2\ntomli @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_tomli_1768146676/work\ntornado @ file:///D:/bld/tornado_1765836389475/work\ntraitlets @ file:///home/conda/feedstock_root/build_artifacts/traitlets_1733367359838/work\ntyping_extensions @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_typing_extensions_1756220668/work\ntyping_utils @ file:///home/conda/feedstock_root/build_artifacts/typing_utils_1733331286120/work\ntzdata @ file:///home/conda/feedstock_root/build_artifacts/python-tzdata_1765719872007/work\nunicodedata2 @ file:///D:/bld/unicodedata2_1763054618863/work\nuri-template==1.3.0\nurllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_1767817748113/work\nwatchdog==6.0.0\nwcwidth @ file:///home/conda/feedstock_root/build_artifacts/wcwidth_1769858610910/work\nwebcolors @ file:///home/conda/feedstock_root/build_artifacts/webcolors_1761899299899/work\nwebencodings @ file:///home/conda/feedstock_root/build_artifacts/webencodings_1733236011802/work\nwebsocket-client @ file:///home/conda/feedstock_root/build_artifacts/websocket-client_1759928050786/work\nwebsockets==16.0\nwidgetsnbextension @ file:///home/conda/feedstock_root/build_artifacts/widgetsnbextension_1762040310212/work\nwin_inet_pton @ file:///D:/bld/win_inet_pton_1733130564612/work\nxgboost @ file:///home/conda/feedstock_root/build_artifacts/xgboost-split_1768314083701/work/python-package\nyfinance==1.1.0\nzipp @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_zipp_1764460141/work",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 142 Stepping 12, GenuineIntel",
+  "python_executable": "C:\\Users\\steve\\anaconda3\\envs\\capstone\\python.exe",
+  "python_version": "3.11.14 | packaged by conda-forge | (main, Jan 26 2026, 23:39:55) [MSC v.1944 64 bit (AMD64)]",
+  "snapshot_kind": "immutable-evidence-snapshot-of-submitted-capstone",
+  "snapshot_note": "golden-v0 is the immutable artifact snapshot of the submitted capstone state. It is NOT a claim that the pipeline was recomputed on the freeze date."
+}
